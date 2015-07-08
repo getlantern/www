@@ -1,25 +1,74 @@
 // bower:scss
 // endbower
+@import "compass/css3/animation"
 
 body {
-  background: #fafafa;
+  background: #44D1E1;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #fff;
+  text-align: center;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+header {
+  div.logo {
+    margin: 0 auto;
+    width: 40%;
+    min-width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  #send-download-link-form {
+    input {
+      border: 2px solid #ccc;
+      background: #fff;
+      border-radius: 2px;
+      font-size: 14px; font-weight: bold; color: #ccc;
+      vertical-align: middle;
+      padding: 11px 20px;
+      width: 80%;
+      min-width: 200px;
+    }
+  }
+  #mobile-down-arrow {
+    text-decoration: none;
+    @include keyframes(arrawing) {
+      0% {
+        @include translateY(-5px);
+        opacity:0.8;
+      }
+      50% {
+        @include translateY(10px);
+        opacity:1;
+      }
+      100% {
+        @include translateY(-5px);
+        opacity:0.8;
+      }
+    }
+    @include animation(arrowing 1.5s infinite);
+  }
+}
+
+main {
+  #mechanism {
+    li {
+      padding: 20px auto;
+      list-style: decimal inside;
+      img {
+        display: block;
+margin: 0 auto;
+      }
+    }
+  }
+}
+
+footer {
+  width: 80%;
+  min-width: 200px;
+  li {
+    list-style: none;
+    text-align: left;
   }
 }
 
@@ -28,4 +77,17 @@ body {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.desktop-only {
+display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: inherit;
+  }
 }
