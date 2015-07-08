@@ -1,122 +1,134 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lantern</title>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-    </head>
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+</head>
 
-    <body>
-    <!--[if lt IE 10]>
+<body>
+<!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img class="mobile-only" src="images/laptop.png" alt="Logo">
-          <img class="desktop-only" src="images/laptop.png" alt="Logo">
-        </a>
-      </div>
-      <h1 class="desktop-only">Open Internet for Everyone</h1>
-      <button class="desktop-only">Download Lantern</button>
-      <p>Lantern is free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
-      <form action="" method="POST" id="send-download-link-form" class="mobile-only" target="_blank" novalidate name="signupForm">
-        <input type="email" value="" name="EMAIL" class="required email input-xlarge form-control" id="mce-EMAIL" placeholder="Enter your Email" />
-        <input type="submit" style="border-radius:0px;" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-inverse" value="Send me the Download link" />
-      </form>
-      <a class="mobile-only" id="mobile-down-arrow" href="#mechanism">Learn more &darr;</a>
-    </header>
+<header class="header" role="banner">
+  <div class="logo">
+    <a href="/">
+      <img class="mobile-only" src="images/laptop.png" alt="Logo">
+      <img class="desktop-only" src="images/laptop.png" alt="Logo">
+    </a>
+  </div>
+  <h1 class="desktop-only">Open Internet for Everyone</h1>
+  <button class="desktop-only">Download Lantern</button>
+  <p>Lantern is free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+  <form action="" method="POST" id="send-download-link-form" class="mobile-only">
+    <input type="email" id="send-download-link-email" placeholder="Enter your Email" />
+    <input type="submit" id="send-download-link-button" value="Send me the Download link" />
+  </form>
+  <a class="mobile-only" id="mobile-down-arrow" href="#mechanism">Learn more &darr;</a>
+</header>
 
-    <main class="main" role="main">
-    <section id="mechanism">
-      <h3>How does Lantern work?</h3>
-      <p>Lantern is an Internet proxy tool that let you access blocked sites.</p>
-      <ol>
-        <li>
-        <span>Fast</span>
-        <img src="images/fast.png" alt="Fast">
-        </li>
-        <li>
-        <span>Easy to Use</span>
-        <img src="images/easy.png" alt="Easy">
-        </li>
-        <li>
-        <span>Small Download</span>
-        <img src="images/small.png" alt="Small">
-        </li>
-        <li>
-        <span>Secure</span>
-        <img src="images/secure.png" alt="Secure">
-        </li>
-      </ol>
-    </section>
-    </main>
+<main class="main" role="main">
+<section id="mechanism">
+  <h3>How does Lantern work?</h3>
+  <p>Lantern is an Internet proxy tool that let you access blocked sites.</p>
+  <ol>
+    <li>
+    <span>Fast</span>
+    <img src="images/fast.png" alt="Fast">
+    </li>
+    <li>
+    <span>Easy to Use</span>
+    <img src="images/easy.png" alt="Easy">
+    </li>
+    <li>
+    <span>Small Download</span>
+    <img src="images/small.png" alt="Small">
+    </li>
+    <li>
+    <span>Secure</span>
+    <img src="images/secure.png" alt="Secure">
+    </li>
+  </ol>
+</section>
+</main>
 
-    <footer class="footer" role="contentinfo">
-      <h2>Follow Us:</h2>
-      <ul id="social-buttons">
-        <li>
-        <img src="images/facebook.png" alt="Facebook Persian">
-        <span>Facebook Persian</span>
-        </li>
-        <li>
-        <img src="images/facebook.png" alt="Facebook English">
-        <span>Facebook English</span>
-        </li>
-        <li>
-        <img src="images/twitter.png" alt="Twitter">
-        <span>Twitter</span>
-        </li>
-        <li>
-        <img src="images/github.png" alt="github icon">
-        <span>Contribute</span>
-        </li>
-      </ul>
-      <h2>Questions</h2>
-      <p>Head to our <a>FAQ page</a></p>
-      <form style="display:none" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate name="signupForm">
-      </form>
+<footer class="footer" role="contentinfo">
+  <section id="social">
+    <h2>Follow Us:</h2>
+    <ul id="social-buttons">
+      <li>
+      <a href="">
+      <img src="images/facebook.png" alt="Facebook Persian">
+      <span>Facebook Persian</span>
+      </a>
+      </li>
+      <li>
+      <a href="https://www.facebook.com/getlantern">
+      <img src="images/facebook.png" alt="Facebook English">
+      <span>Facebook English</span>
+      </a>
+      </li>
+      <li>
+      <a href="">
+      <img src="images/twitter.png" alt="Twitter">
+      <span>Twitter</span>
+      </a>
+      </li>
+      <li>
+      <img src="images/github.png" alt="github icon">
+      <a href="">
+      <span>Contribute</span>
+      </a>
+      </li>
+    </ul>
+  </section>
+  <section id="faq">
+    <h2>Questions</h2>
+    <p>Head to our <a>FAQ page</a></p>
+    <form style="display:none" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate name="signupForm">
+    </form>
+  </section>
 
-    </footer>
+</footer>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
                                                         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 e=o.createElement(i);r=o.getElementsByTagName(i)[0];
 e.src='https://www.google-analytics.com/analytics.js';
 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+</script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/jquery-1.11.2.min.js"></script>
-    <script src="scripts/jquery.localize.min.js"></script>
-    <script src="scripts/mandrill.js"></script>
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-    </body>
-    </html>
+<!-- build:js scripts/main.js -->
+<script src="scripts/jquery-1.11.2.min.js"></script>
+<script src="scripts/jquery.localize.min.js"></script>
+<script src="scripts/mandrill.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
