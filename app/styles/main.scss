@@ -1,19 +1,33 @@
 // bower:scss
 // endbower
-@import "compass/css3/animation"
+
+@import "partials/_animation.scss";
+@import "partials/_font.scss";
+
+$mobile-percent := 80%
+$min-width := 200px
 
 body {
   background: #44D1E1;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: LBL, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   text-align: center;
+}
+
+h1,h2,h3 {
+  font-family: LB, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p {
+  width: $mobile-percent;
+  min-width: $min-width;
 }
 
 header {
   div.logo {
     margin: 0 auto;
-    width: 40%;
-    min-width: 200px;
+    width: $mobile-percent;
+    min-width: $min-width;
     img {
       width: 100%;
     }
@@ -26,27 +40,14 @@ header {
       font-size: 14px; font-weight: bold; color: #ccc;
       vertical-align: middle;
       padding: 11px 20px;
-      width: 80%;
-      min-width: 200px;
+      width: $mobile-percent;
+      min-width: $min-width;
     }
   }
   #mobile-down-arrow {
     text-decoration: none;
-    @include keyframes(arrawing) {
-      0% {
-        @include translateY(-5px);
-        opacity:0.8;
-      }
-      50% {
-        @include translateY(10px);
-        opacity:1;
-      }
-      100% {
-        @include translateY(-5px);
-        opacity:0.8;
-      }
-    }
-    @include animation(arrowing 1.5s infinite);
+    color: #fff;
+    animation: arrowing 1.5s infinite;
   }
 }
 
@@ -57,18 +58,21 @@ main {
       list-style: decimal inside;
       img {
         display: block;
-margin: 0 auto;
+        margin: 0 auto;
       }
     }
   }
 }
 
 footer {
-  width: 80%;
-  min-width: 200px;
-  li {
-    list-style: none;
-    text-align: left;
+  #social-buttons {
+    width: $mobile-percent;
+    min-width: $min-width;
+    margin: 0 auto;
+    li {
+      list-style: none;
+      text-align: left;
+    }
   }
 }
 
@@ -80,7 +84,7 @@ footer {
 }
 
 .desktop-only {
-display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 480px) {
