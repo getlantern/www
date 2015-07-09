@@ -5,11 +5,19 @@
 @import "partials/_animation.scss";
 @import "partials/_font.scss";
 
-$mobile-percent : 40%;
-$min-width : 240px;
+$breakpoint-mobile: 800px;
+$mobile-percent: 40%;
+$mobile-min-width : 240px;
 $mobile-bg-color: #44D1E1;
 $mobile-text-color: #fff;
 $mobile-button-color: #003F46;
+$desktop-percent: 60%;
+$desktop-percent-wide: 80%;
+$desktop-min-width : 580px;
+$desktop-bg-color: #fff;
+$desktop-text-color: #000;
+$desktop-main-color: #DFE7E7;
+$desktop-footer-color: #000;
 
 body {
   background: $mobile-bg-color;
@@ -23,18 +31,18 @@ h1,h2,h3 {
 }
 
 a {
-    text-decoration: none;
-    color: $mobile-text-color;
+  text-decoration: none;
+  color: $mobile-text-color;
 }
 
 section {
-padding-top: 30px;
+  padding-top: 30px;
 }
 header {
   div.logo {
     margin: 0 auto;
     width: $mobile-percent;
-    min-width: $min-width;
+    min-width: $mobile-min-width;
     img {
       width: 100%;
     }
@@ -42,19 +50,19 @@ header {
   #send-download-link-form {
     input {
       width: $mobile-percent;
-      min-width: $min-width;
+      min-width: $mobile-min-width;
       display: block;
       margin: 10px auto;
       border: 0;
       color: $mobile-text-color;
       &#send-download-link-email {
-      padding: 7px 0;
+        padding: 7px 0;
         border-radius: 5px;
         border: 1px solid $mobile-button-color;
         box-shadow: inset 0 0 1px  $mobile-button-color;
       }
       &#send-download-link-button {
-      padding: 11px 0;
+        padding: 11px 0;
         background-color: $mobile-button-color;
         border-radius: 5px;
       }
@@ -68,7 +76,7 @@ header {
 main {
   #mechanism {
     li {
-      padding: 20px auto;
+      padding-top: 20px;
       list-style: decimal inside;
       img {
         display: block;
@@ -76,12 +84,9 @@ main {
       }
     }
   }
-}
-
-footer {
-  #social-buttons {
+  section#social {
     width: $mobile-percent;
-    min-width: $min-width;
+    min-width: $mobile-min-width;
     margin: 0 auto;
     li {
       list-style: none;
@@ -99,15 +104,4 @@ footer {
   padding: 0.2em 0;
 }
 
-.desktop-only {
-  display: none;
-}
-
-@media only screen and (min-width: 480px) {
-  .mobile-only {
-    display: none;
-  }
-  .desktop-only {
-    display: inherit;
-  }
-}
+@import "partials/_desktop.scss";

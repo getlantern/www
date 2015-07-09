@@ -32,11 +32,11 @@
   <div class="logo">
     <a href="/">
       <img class="mobile-only" src="images/laptop.png" alt="Logo">
-      <img class="desktop-only" src="images/laptop.png" alt="Logo">
+      <img class="desktop-only" src="images/headerlogo.png" alt="Logo">
     </a>
   </div>
   <h1 class="desktop-only">Open Internet for Everyone</h1>
-  <button class="desktop-only">Download Lantern</button>
+  <button id="download-button" class="desktop-only">Download Lantern</button>
   <p>Lantern is free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
   <form action="" method="POST" id="send-download-link-form" class="mobile-only">
     <input type="email" id="send-download-link-email" placeholder="Enter your Email" />
@@ -68,45 +68,73 @@
     </li>
   </ol>
 </section>
+<section id="press" class="desktop-only">
+  <h3>Read about Lantern</h3>
+  <ul>
+    <li><a class="press-image" target="_blank" href="http://sinosphere.blogs.nytimes.com/2015/03/30/q-and-a-adam-fisk-on-evading-internet-censorship-in-china/">
+      <img src="./images/press/newyorktimes.png" alt="Q. and A.: Adam Fisk on Evading Internet Censorship in China">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.scmp.com/news/china-insider/article/1372661/use-lantern-software-means-view-banned-websites-grows-china">
+      <img src="./images/press/southchinamorningpost.png" alt="US-funded Lantern program allows Chinese to dodge Great Firewall and view banned websites">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/21/using-peer-to-peer-technology-to-crowdsource-a-way-around-online-censorship/">
+      <img src="./images/press/washingtonpost.png" alt="Using peer-to-peer technology to crowdsource a way around online censorship">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.dailydot.com/politics/lantern-online-censorship/">
+      <img src="./images/press/dailydot.png" alt="How you can help demolish the Great Firewall of China from the comfort of your living room">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.wsj.com/articles/u-s-cloud-providers-face-backlash-from-chinas-censors-1426541126">
+      <img src="./images/press/wallstreetjournal.png" alt="U.S. Cloud Providers Face Backlash From China’s Censors">
+    </a></li>
+  </ul>
+</section>
+<section id="social">
+  <div id="social-title">
+    <h2>Follow Us:</h2>
+    <h2 id="contribute" class="desktop-only">Contribute</h2>
+  </div>
+  <ul id="social-buttons">
+    <li>
+    <a href="">
+      <img src="images/facebook.png" alt="Facebook Persian">
+      <span>Facebook Persian</span>
+    </a>
+    </li>
+    <li>
+    <a href="https://www.facebook.com/getlantern">
+      <img src="images/facebook.png" alt="Facebook English">
+      <span>Facebook English</span>
+    </a>
+    </li>
+    <li>
+    <a href="">
+      <img src="images/twitter.png" alt="Twitter">
+      <span>Twitter</span>
+    </a>
+    </li>
+    <li id="github">
+    <img src="images/github.png" alt="github icon">
+    <a href="">
+      <span class="mobile-only">Contribute</span>
+      <span class="desktop-only">Github</span>
+    </a>
+    </li>
+  </ul>
+</section>
+<section id="faq">
+  <h2>Questions</h2>
+  <p>Head to our <a>FAQ page</a></p>
+</section>
+<section id="subscribe" class="desktop-only">
+  <form action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" class="desktop-only validate" target="_blank" name="signupForm">
+    <input type="email" value="" style="border-radius:0px;" name="EMAIL" class="required email input-xlarge form-control" id="mce-EMAIL">
+    <input type="submit" style="border-radius:0px;" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-inverse" value="Join">
+  </form>
+</section>
+
 </main>
 
 <footer class="footer" role="contentinfo">
-  <section id="social">
-    <h2>Follow Us:</h2>
-    <ul id="social-buttons">
-      <li>
-      <a href="">
-      <img src="images/facebook.png" alt="Facebook Persian">
-      <span>Facebook Persian</span>
-      </a>
-      </li>
-      <li>
-      <a href="https://www.facebook.com/getlantern">
-      <img src="images/facebook.png" alt="Facebook English">
-      <span>Facebook English</span>
-      </a>
-      </li>
-      <li>
-      <a href="">
-      <img src="images/twitter.png" alt="Twitter">
-      <span>Twitter</span>
-      </a>
-      </li>
-      <li>
-      <img src="images/github.png" alt="github icon">
-      <a href="">
-      <span>Contribute</span>
-      </a>
-      </li>
-    </ul>
-  </section>
-  <section id="faq">
-    <h2>Questions</h2>
-    <p>Head to our <a>FAQ page</a></p>
-    <form style="display:none" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate name="signupForm">
-    </form>
-  </section>
-
 </footer>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

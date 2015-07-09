@@ -1,0 +1,95 @@
+.desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: $breakpoint-mobile) {
+  body {
+    background-color: $desktop-bg-color;
+    color: $desktop-text-color;
+  }
+  a {
+    color: $desktop-text-color;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: inherit;
+  }
+  header {
+    width: $desktop-percent;
+    min-width: $desktop-min-width;
+    margin: 0 auto;
+    h1 {
+      font-size: 46px;
+    }
+    #download-button {
+      margin: 0 auto;
+      background-color: $mobile-bg-color;
+      border: 0;
+      border-radius: 5px;
+      font-size: 36px;
+      color: #fff;
+    }
+  }
+
+  main {
+    display: table;
+    section#mechanism {
+      width: $desktop-percent;
+      margin: 0 auto;
+      li {
+        width: 50%;
+        float: left;
+        img {
+          filter: invert(100%);
+        }
+      }
+    }
+
+    section#press {
+      clear: both;
+      background-color: $desktop-main-color;
+      li {
+        display: inline;
+      }
+    }
+
+    section#social {
+      display: table-footer-group;
+      width: $desktop-percent-wide;
+      background-color: $desktop-footer-color;
+      h2, a {
+        padding-top: 20px;
+        color: #fff;
+      }
+      li {
+        display: inline;
+        padding: 0 10px;
+        img { display: none; }
+      }
+      // dirty tricks to position github link to the right
+      h2 {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 190px;
+        padding-right: 180px;
+        &#contribute{
+          margin: 0;
+          padding-left: 0;
+          float: right;
+        }
+      }
+      #github {
+        float: right;
+        padding-right: 215px;
+      }
+    }
+
+  }
+
+  footer {
+    background-color: $desktop-footer-color;
+  }
+
+}
