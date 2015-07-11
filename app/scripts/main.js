@@ -1,4 +1,4 @@
-$(function() {
+var init_mandrill = function() {
   mandrill_client = new mandrill.Mandrill('fmYlUdjEpGGonI4NDx9xeA');
   var template_name = "download-link-from-lantern-website";
   var template_content = [{
@@ -14,6 +14,9 @@ $(function() {
   var labels = [
     "example-label"
   ];
+};
+
+var set_download_link = function() {
   var os = platform.os.architecture + platform.os.family;
   var os_links = [
     {regexp: "[2-6]{2}[Ww]indows", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.exe"},
@@ -29,4 +32,9 @@ $(function() {
       break;
     }
   }
+};
+
+$(function() {
+  set_download_link();
+  init_mandrill();
 });
