@@ -7,6 +7,7 @@
 
 $breakpoint-mobile: 800px;
 $mobile-percent: 40%;
+$mobile-percent-wide: 80%;
 $mobile-min-width : 240px;
 $mobile-bg-color: #44D1E1;
 $mobile-text-color: #fff;
@@ -32,17 +33,27 @@ h1,h2,h3 {
 
 a {
   text-decoration: none;
+  transition: filter 0.3s;
+  &:hover {
+    filter: invert(30%);
+  }
   color: $mobile-text-color;
 }
 
 section {
   padding-top: 30px;
 }
+
 header {
-  div.logo {
-    margin: 0 auto;
-    width: $mobile-percent;
-    min-width: $mobile-min-width;
+  margin: 0 auto;
+  width: $mobile-percent-wide;
+  min-width: $mobile-min-width;
+  div.logo, p {
+    a {
+      &:hover {
+        filter: invert(0%);
+      }
+    }
     img {
       width: 100%;
     }
@@ -84,6 +95,9 @@ main {
       }
     }
   }
+}
+
+footer {
   section#social {
     width: $mobile-percent;
     min-width: $mobile-min-width;

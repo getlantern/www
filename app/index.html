@@ -28,7 +28,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<header class="header" role="banner">
+  <header class="header" role="banner">
   <div class="logo">
     <a href="/">
       <img class="mobile-only" src="images/laptop.png" alt="Logo">
@@ -39,7 +39,7 @@
   <button id="download-button" class="desktop-only">Download Lantern</button>
   <p>Lantern is free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
   <form action="" method="POST" id="send-download-link-form" class="mobile-only">
-    <input type="email" id="send-download-link-email" placeholder="Enter your Email" />
+    <input type="email" id="send-download-link-email" placeholder=" Enter your Email" />
     <input type="submit" id="send-download-link-button" value="Send me the Download link" />
   </form>
   <a class="mobile-only" id="mobile-down-arrow" href="#mechanism">Learn more &darr;</a>
@@ -68,6 +68,9 @@
     </li>
   </ol>
 </section>
+</main>
+
+<footer class="footer" role="contentinfo">
 <section id="press" class="desktop-only">
   <h3>Read about Lantern</h3>
   <ul>
@@ -76,6 +79,9 @@
     </a></li>
     <li><a class="press-image" target="_blank" href="http://www.scmp.com/news/china-insider/article/1372661/use-lantern-software-means-view-banned-websites-grows-china">
       <img src="./images/press/southchinamorningpost.png" alt="US-funded Lantern program allows Chinese to dodge Great Firewall and view banned websites">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://motherboard.vice.com/read/this-app-lets-chinas-netizens-use-twitter-where-its-censored">
+      <img src="./images/press/vice.png" alt="This App Lets China's Netizens Use Twitter Where It's Censored">
     </a></li>
     <li><a class="press-image" target="_blank" href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/21/using-peer-to-peer-technology-to-crowdsource-a-way-around-online-censorship/">
       <img src="./images/press/washingtonpost.png" alt="Using peer-to-peer technology to crowdsource a way around online censorship">
@@ -86,11 +92,17 @@
     <li><a class="press-image" target="_blank" href="http://www.wsj.com/articles/u-s-cloud-providers-face-backlash-from-chinas-censors-1426541126">
       <img src="./images/press/wallstreetjournal.png" alt="U.S. Cloud Providers Face Backlash From China’s Censors">
     </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.businessinsider.com/firetweet-gives-mobile-twitter-access-in-censored-countries-2015-6">
+      <img src="./images/press/businessinsider.png" alt="Here's an Android app that gives people in censored countries access to Twitter">
+    </a></li>
+    <li><a class="press-image" target="_blank" href="http://www.fastcoexist.com/3046650/is-some-autocratic-regime-blocking-your-twitter-firetweet-will-let-you-in">
+      <img src="./images/press/fastcompany.png" alt="Is Some Autocratic Regime Blocking Your Twitter? FireTweet Will Let You In">
+    </a></li>
   </ul>
 </section>
 <section id="social">
   <div id="social-title">
-    <h2>Follow Us:</h2>
+    <h2 id="follow">Follow Us:</h2>
     <h2 id="contribute" class="desktop-only">Contribute</h2>
   </div>
   <ul id="social-buttons">
@@ -113,8 +125,8 @@
     </a>
     </li>
     <li id="github">
-    <img src="images/github.png" alt="github icon">
     <a href="">
+      <img src="images/github.png" alt="github icon">
       <span class="mobile-only">Contribute</span>
       <span class="desktop-only">Github</span>
     </a>
@@ -123,18 +135,19 @@
 </section>
 <section id="faq">
   <h2>Questions</h2>
-  <p>Head to our <a>FAQ page</a></p>
+  <p>Head to our <a href="/faq.html">FAQ page</a></p>
 </section>
 <section id="subscribe" class="desktop-only">
   <form action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" class="desktop-only validate" target="_blank" name="signupForm">
-    <input type="email" value="" style="border-radius:0px;" name="EMAIL" class="required email input-xlarge form-control" id="mce-EMAIL">
-    <input type="submit" style="border-radius:0px;" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-inverse" value="Join">
+    <p>Sign up for our Newsletter:</p>
+    <input type="email" value="" name="EMAIL" class="required email input-xlarge form-control" id="mce-EMAIL">
+    <input type="submit" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-inverse" value="Join">
   </form>
 </section>
-
-</main>
-
-<footer class="footer" role="contentinfo">
+<section id="firetweet" class="desktop-only">
+  <p>Check out <a href="https://firetweet.io">FireTweet</a></p>
+  <p>our new Twitter app for Android!</p>
+</section>
 </footer>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

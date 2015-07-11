@@ -10,12 +10,16 @@
   a {
     color: $desktop-text-color;
   }
+  p {
+    font-size: 24px;
+  }
   .mobile-only {
     display: none;
   }
   .desktop-only {
     display: inherit;
   }
+
   header {
     width: $desktop-percent;
     min-width: $desktop-min-width;
@@ -34,7 +38,6 @@
   }
 
   main {
-    display: table;
     section#mechanism {
       width: $desktop-percent;
       margin: 0 auto;
@@ -46,13 +49,51 @@
         }
       }
     }
+  }
+
+  footer {
+    display: table;
+    background-color: $desktop-main-color;
 
     section#press {
       clear: both;
-      background-color: $desktop-main-color;
       li {
         display: inline;
       }
+    }
+
+    section#faq {
+      a {
+        font-weight: bold;
+      }
+    }
+    section#subscribe, section#firetweet {
+      width: $desktop-percent-wide;
+      margin: 0 auto;
+    }
+    section#subscribe {
+      form { width: 100%; }
+      input {
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 24px;
+        &[type="email"] {
+          border: 6px solid #000;
+          width: 260px;
+        }
+        &[type="submit"] {
+          background-color: #000;
+          color: #fff;
+          margin-top: 10px;
+          display: block;
+          width: 100px;
+          border: 0;
+          border-radius: 10px;
+        }
+      }
+    }
+    section#firetweet {
+      padding-top: 50px;
     }
 
     section#social {
@@ -60,12 +101,12 @@
       width: $desktop-percent-wide;
       background-color: $desktop-footer-color;
       h2, a {
-        padding-top: 20px;
+        padding-top: 60px;
         color: #fff;
       }
       li {
         display: inline;
-        padding: 0 10px;
+        padding: 0 10px 80px 10px;
         img { display: none; }
       }
       // dirty tricks to position github link to the right
@@ -85,11 +126,5 @@
         padding-right: 215px;
       }
     }
-
   }
-
-  footer {
-    background-color: $desktop-footer-color;
-  }
-
 }
