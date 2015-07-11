@@ -20,6 +20,12 @@ $desktop-text-color: #000;
 $desktop-main-color: #DFE7E7;
 $desktop-footer-color: #000;
 
+@mixin width($percent, $min) {
+  margin: 0 auto;
+  width: $percent;
+  min-width: $min;
+}
+
 body {
   background: $mobile-bg-color;
   font-family: LBL, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -45,9 +51,7 @@ section {
 }
 
 header {
-  margin: 0 auto;
-  width: $mobile-percent-wide;
-  min-width: $mobile-min-width;
+  @include width($mobile-percent-wide, $mobile-min-width);
   div.logo, p {
     a {
       &:hover {
@@ -60,10 +64,8 @@ header {
   }
   #send-download-link-form {
     input {
-      width: $mobile-percent;
-      min-width: $mobile-min-width;
+      @include width($mobile-percent, $mobile-min-width);
       display: block;
-      margin: 10px auto;
       border: 0;
       color: $mobile-text-color;
       &#send-download-link-email {
@@ -85,6 +87,7 @@ header {
 }
 
 main {
+  @include width($mobile-percent-wide, $mobile-min-width);
   #mechanism {
     li {
       padding-top: 20px;
@@ -99,9 +102,7 @@ main {
 
 footer {
   section#social {
-    width: $mobile-percent;
-    min-width: $mobile-min-width;
-    margin: 0 auto;
+    @include width($mobile-percent, $mobile-min-width);
     li {
       list-style: none;
       text-align: left;

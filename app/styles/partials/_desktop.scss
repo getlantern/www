@@ -21,9 +21,7 @@
   }
 
   header {
-    width: $desktop-percent;
-    min-width: $desktop-min-width;
-    margin: 0 auto;
+    @include width($desktop-percent, $desktop-min-width);
     h1 {
       font-size: 46px;
     }
@@ -38,9 +36,8 @@
   }
 
   main {
+    @include width($desktop-percent, $desktop-min-width);
     section#mechanism {
-      width: $desktop-percent;
-      margin: 0 auto;
       li {
         width: 50%;
         float: left;
@@ -68,8 +65,7 @@
       }
     }
     section#subscribe, section#firetweet {
-      width: $desktop-percent-wide;
-      margin: 0 auto;
+      @include width($desktop-percent-wide, $desktop-min-width);
     }
     section#subscribe {
       form { width: 100%; }
@@ -104,10 +100,13 @@
         padding-top: 60px;
         color: #fff;
       }
-      li {
-        display: inline;
-        padding: 0 10px 80px 10px;
-        img { display: none; }
+      ul {
+        -webkit-padding-start: 0;
+        li {
+          display: inline;
+          padding: 0 10px 80px 10px;
+          img { display: none; }
+        }
       }
       // dirty tricks to position github link to the right
       h2 {
