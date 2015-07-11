@@ -65,7 +65,8 @@ header {
       display: block;
       border: 0;
       &#send-download-link-email {
-        padding: 7px 0;
+        box-sizing: border-box;
+        padding: 7px 10px;
         border-radius: 5px;
         border: 1px solid $mobile-button-color;
         box-shadow: inset 0 0 1px  $mobile-button-color;
