@@ -64,7 +64,6 @@ header {
       @include width($mobile-percent, $mobile-min-width);
       display: block;
       border: 0;
-      color: $mobile-text-color;
       &#send-download-link-email {
         padding: 7px 0;
         border-radius: 5px;
@@ -74,8 +73,9 @@ header {
       &#send-download-link-button {
         margin-top: 8px;
         padding: 11px 0;
-        background-color: $mobile-button-color;
         border-radius: 5px;
+        background-color: $mobile-button-color;
+        color: $mobile-text-color;
       }
     }
   }
