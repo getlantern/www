@@ -64,6 +64,7 @@ header {
       @include width($mobile-percent, $mobile-min-width);
       display: block;
       border: 0;
+      font-size: 18px;
       &#send-download-link-email {
         box-sizing: border-box;
         padding: 7px 10px;
