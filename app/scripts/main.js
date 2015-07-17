@@ -40,5 +40,6 @@
   $(function() {
     set_download_link();
     init_mandrill();
+    $("[data-localize]").localize("locale/lang");
   });
 })();
