@@ -1,7 +1,12 @@
 (function() {
+  var template_map = {
+    "fa-IR": "download-link-from-lantern-website-fa-ir",
+    "zh-CN": "download-link-from-lantern-website-zh-cn"
+  };
   var init_mandrill = function() {
     var mandrill_client = new mandrill.Mandrill('fmYlUdjEpGGonI4NDx9xeA');
-    var template_name = "download-link-from-lantern-website";
+    var lang = navigator.language || navigator.userLanguage;
+    var template_name = template_map[lang] || "download-link-from-lantern-website";
     var template_content = [{
       "name": "example name",
       "content": "example content"
