@@ -1,59 +1,58 @@
 {
-  "OPEN_INTERNET_FOR_EVERYONE": "Open Internet for Everyone"
-  "DOWNLOAD_LANTERN": "Download Lantern"
-  "DOWNLOAD_LANTERN_MOBILE": "Send me the Download Link"
-  "LANTERN_DESCRIPTION_1": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet."
-  "HOW_DOES_LANTERN_WORK": "How does Lantern work?"
-  "LANTERN_DESCRIPTION_2": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet."
-  "FEATURE_1": "Fast"
-  "FEATURE_2": "Easy to Use"
-  "FEATURE_3": "Small Download"
-  "FEATURE_4": "Secure"
-  "QUESTIONS_1": "Questions?"
-  "QUESTIONS_2": "Head to our <a href='PLACE LINK TO FAQ PAGE HERE'>FAQ Page</a>"
-  "PRESS": "Read about Lantern"
-  "NEWSLETTER_1": "Sign up for our Newsletter"
-  "NEWSLETTER_2": "Join"
-  "FIRETWEET": "Check out <a href='https://firetweet.io/'>FireTweet</a> Our new Twitter app for Android"
-  "FOOTER_1": "Follow us"
-  "FOOTER_2": "Contribute"
-  
-  "FAQ": "Frequently Asked Questions"
-  "FAQ_DESCRIPTION": "This page provides answers to common questions about Lantern. Check out our <a href='https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers'>developers FAQ</a> for more technical information."
-  "QUESTION_1": "Who built Lantern?"
-  "ANSWER_1_A": "Lantern is built by the <a href='http://bravenewsoftware.org'>Brave New Software Project, Inc,</a> a registered 501(c)3 non-profit dedicated to creating software that tackles tough global challenges."
-  "ANSWER_1_B": "Brave New Software’s founder and Lantern lead developer, Adam Fisk, was formerly a lead developer of the peer-to-peer file sharing services LimeWire and LittleShoot."
-  "ANSWER_1_C": "While working on those P2P architectures, Adam realized they could be useful in providing unfiltered Internet access."
-  "QUESTION_2": "How does Lantern work?"
-  "ANSWER_2_A": "Lantern was built to give users fast access to the blocked Internet."
-  "ANSWER_2_B": "Lantern automatically detects whether or not a site is blocked and then accesses the blocked site either through our own servers or through Lantern users running as access points in the uncensored world."
-  "ANSWER_2_C": "If a site is unblocked, Lantern gets out of the way, and your browser accesses it directly to give you the fastest possible access."
-  "QUESTION_3": "What makes Lantern unique?"
-  "ANSWER_3_A": "Lantern is unique in that it uses a variety of techniques to stay unblocked around the world, falling back to other approaches if some of those techniques become blocked."
-  "ANSWER_3_B": "Those techniques include centralized and sophisticated peer-to-peer architectures."
-  "ANSWER_3_C": "Usability and user feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns."
-  "QUESTION_4": "Can I trust Lantern?"
-  "ANSWER_4_A": "Lantern is open, anyone can check our <a href='https://github.com/getlantern/lantern'>source code</a> and see how everything works and make an informed decision."
-  "ANSWER_4_B": "We welcome experts to audit our system and would appreciate any feedback (security@getlantern.org)."
-  "QUESTION_5": "Can anyone view my traffic when I’m using Lantern?"
-  "ANSWER_5_A": "Lantern encrypts all of your traffic when you are accessing a blocked site, but Lantern does not change traffic to unblocked sites in any way."
-  "ANSWER_5_B": "This means a network observer, such as a censoring government or an ISP, cannot read your traffic to blocked sites."
-  "ANSWER_5_C": "Lantern users acting as access points can see the website you’re accessing and where you’re accessing it from, but the actual content you are reading from or posting to that site is not visible to them because it is encrypted over HTTPS."
-  "ANSWER_5_D": "Lantern only sends HTTPS traffic to Lantern users acting as access points."
-  "QUESTION_6": "What user information does Lantern collect?"
-  "ANSWER_6_A": "Lantern allows you to provide the Lantern team with useful information and analytics that will help us improve the Lantern program."
-  "ANSWER_6_B": "You can change this option in your Lantern settings."
-  "ANSWER_6_C": "If you choose to send Lantern this data we will only use it for improving the Lantern service so that we can continue to offer better service for you and others."
-  "QUESTION_7": "Does Lantern give me anonymity online?"
-  "ANSWER_7_A": "Lantern is not an anonymity tool."
-  "ANSWER_7_B": "Lantern was built for fast and open Internet access."
-  "ANSWER_7_C": "If you feel you need to be anonymous online (if you are posting something you think could bring legal action against you, for example) we recommend using Tor."
-  "ANSWER_7_D": "Otherwise, Lantern will give you faster access to blocked sites."
-  "QUESTION_8": "How do I know if Lantern is working?"
-  "ANSWER_8_A": "Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX."
-  "ANSWER_8_B": "As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically."
-  "ANSWER_8_C": "If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar."
-  "QUESTION_9": "Where do I go if I have more questions?"
+  "OPEN_INTERNET_FOR_EVERYONE": "Open Internet for Everyone",
+  "DOWNLOAD_LANTERN": "Download Lantern",
+  "DOWNLOAD_LANTERN_MOBILE": "Send me the Download Link",
+  "LANTERN_DESCRIPTION_1": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.",
+  "HOW_DOES_LANTERN_WORK": "How does Lantern work?",
+  "LANTERN_DESCRIPTION_2": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.",
+  "FEATURE_1": "Fast",
+  "FEATURE_2": "Easy to Use",
+  "FEATURE_3": "Small Download",
+  "FEATURE_4": "Secure",
+  "QUESTIONS_1": "Questions?",
+  "QUESTIONS_2": "Head to our <a href='PLACE LINK TO FAQ PAGE HERE'>FAQ Page</a>",
+  "PRESS": "Read about Lantern",
+  "NEWSLETTER_1": "Sign up for our Newsletter",
+  "NEWSLETTER_2": "Join",
+  "FIRETWEET": "Check out <a href='https://firetweet.io/'>FireTweet</a> Our new Twitter app for Android",
+  "FOOTER_1": "Follow us",
+  "FOOTER_2": "Contribute",
+  "FAQ": "Frequently Asked Questions",
+  "FAQ_DESCRIPTION": "This page provides answers to common questions about Lantern. Check out our <a href='https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers'>developers FAQ</a> for more technical information.",
+  "QUESTION_1": "Who built Lantern?",
+  "ANSWER_1_A": "Lantern is built by the <a href='http://bravenewsoftware.org'>Brave New Software Project, Inc,</a> a registered 501(c)3 non-profit dedicated to creating software that tackles tough global challenges.",
+  "ANSWER_1_B": "Brave New Software’s founder and Lantern lead developer, Adam Fisk, was formerly a lead developer of the peer-to-peer file sharing services LimeWire and LittleShoot.",
+  "ANSWER_1_C": "While working on those P2P architectures, Adam realized they could be useful in providing unfiltered Internet access.",
+  "QUESTION_2": "How does Lantern work?",
+  "ANSWER_2_A": "Lantern was built to give users fast access to the blocked Internet.",
+  "ANSWER_2_B": "Lantern automatically detects whether or not a site is blocked and then accesses the blocked site either through our own servers or through Lantern users running as access points in the uncensored world.",
+  "ANSWER_2_C": "If a site is unblocked, Lantern gets out of the way, and your browser accesses it directly to give you the fastest possible access.",
+  "QUESTION_3": "What makes Lantern unique?",
+  "ANSWER_3_A": "Lantern is unique in that it uses a variety of techniques to stay unblocked around the world, falling back to other approaches if some of those techniques become blocked.",
+  "ANSWER_3_B": "Those techniques include centralized and sophisticated peer-to-peer architectures.",
+  "ANSWER_3_C": "Usability and user feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns.",
+  "QUESTION_4": "Can I trust Lantern?",
+  "ANSWER_4_A": "Lantern is open, anyone can check our <a href='https://github.com/getlantern/lantern'>source code</a> and see how everything works and make an informed decision.",
+  "ANSWER_4_B": "We welcome experts to audit our system and would appreciate any feedback (security@getlantern.org).",
+  "QUESTION_5": "Can anyone view my traffic when I’m using Lantern?",
+  "ANSWER_5_A": "Lantern encrypts all of your traffic when you are accessing a blocked site, but Lantern does not change traffic to unblocked sites in any way.",
+  "ANSWER_5_B": "This means a network observer, such as a censoring government or an ISP, cannot read your traffic to blocked sites.",
+  "ANSWER_5_C": "Lantern users acting as access points can see the website you’re accessing and where you’re accessing it from, but the actual content you are reading from or posting to that site is not visible to them because it is encrypted over HTTPS.",
+  "ANSWER_5_D": "Lantern only sends HTTPS traffic to Lantern users acting as access points.",
+  "QUESTION_6": "What user information does Lantern collect?",
+  "ANSWER_6_A": "Lantern allows you to provide the Lantern team with useful information and analytics that will help us improve the Lantern program.",
+  "ANSWER_6_B": "You can change this option in your Lantern settings.",
+  "ANSWER_6_C": "If you choose to send Lantern this data we will only use it for improving the Lantern service so that we can continue to offer better service for you and others.",
+  "QUESTION_7": "Does Lantern give me anonymity online?",
+  "ANSWER_7_A": "Lantern is not an anonymity tool.",
+  "ANSWER_7_B": "Lantern was built for fast and open Internet access.",
+  "ANSWER_7_C": "If you feel you need to be anonymous online (if you are posting something you think could bring legal action against you, for example) we recommend using Tor.",
+  "ANSWER_7_D": "Otherwise, Lantern will give you faster access to blocked sites.",
+  "QUESTION_8": "How do I know if Lantern is working?",
+  "ANSWER_8_A": "Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX.",
+  "ANSWER_8_B": "As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically.",
+  "ANSWER_8_C": "If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.",
+  "QUESTION_9": "Where do I go if I have more questions?",
   "ANSWER_9_A": "If you have more questions, please connect with us on <a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> or visit our <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>User Forum</a>."
 
 }
