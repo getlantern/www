@@ -10,20 +10,23 @@
   a {
     color: $desktop-text-color;
   }
+  p {
+    font-size: 24px;
+  }
   .mobile-only {
     display: none;
   }
   .desktop-only {
     display: inherit;
   }
+
   header {
-    width: $desktop-percent;
-    min-width: $desktop-min-width;
-    margin: 0 auto;
+    @include width($desktop-percent, $desktop-min-width);
     h1 {
-      font-size: 46px;
+      font-size: 42px;
     }
     #download-button {
+      width: 300px;
       margin: 0 auto;
       background-color: $mobile-bg-color;
       border: 0;
@@ -34,10 +37,8 @@
   }
 
   main {
-    display: table;
+    @include width($desktop-percent, $desktop-min-width);
     section#mechanism {
-      width: $desktop-percent;
-      margin: 0 auto;
       li {
         width: 50%;
         float: left;
@@ -46,13 +47,50 @@
         }
       }
     }
+  }
+
+  footer {
+    display: table;
+    background-color: $desktop-main-color;
 
     section#press {
       clear: both;
-      background-color: $desktop-main-color;
       li {
         display: inline;
       }
+    }
+
+    section#faq {
+      a {
+        font-weight: bold;
+      }
+    }
+    section#subscribe, section#firetweet {
+      @include width($desktop-percent-wide, $desktop-min-width);
+    }
+    section#subscribe {
+      form { width: 100%; }
+      input {
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 24px;
+        &[type="email"] {
+          border: 6px solid #000;
+          width: 260px;
+        }
+        &[type="submit"] {
+          background-color: #000;
+          color: #fff;
+          margin-top: 10px;
+          display: block;
+          width: 100px;
+          border: 0;
+          border-radius: 10px;
+        }
+      }
+    }
+    section#firetweet {
+      padding-top: 50px;
     }
 
     section#social {
@@ -60,13 +98,16 @@
       width: $desktop-percent-wide;
       background-color: $desktop-footer-color;
       h2, a {
-        padding-top: 20px;
+        padding-top: 60px;
         color: #fff;
       }
-      li {
-        display: inline;
-        padding: 0 10px;
-        img { display: none; }
+      ul {
+        -webkit-padding-start: 0;
+        li {
+          display: inline;
+          padding: 0 10px 80px 10px;
+          img { display: none; }
+        }
       }
       // dirty tricks to position github link to the right
       h2 {
@@ -85,11 +126,5 @@
         padding-right: 215px;
       }
     }
-
   }
-
-  footer {
-    background-color: $desktop-footer-color;
-  }
-
 }
