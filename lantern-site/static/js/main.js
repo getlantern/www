@@ -34,10 +34,24 @@ $(document).ready(function(){
   };
 
   var language_chooser = function() {
+    var lang = "en";
+
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
       $("[data-localize]").localize("/static/locale/lang", { language: lang });
+      if (Modernizr.localstorage) {
+        window.localStorage.setItem("lang", lang);
+      }
     });
+
+    if (Modernizr.localstorage) {
+      lang = window.localStorage.getItem("lang");
+      if (lang) {
+        $("#language-chooser").val(lang);
+      }
+    };
+
+    $("[data-localize]").localize("/static/locale/lang", {language: lang});
   };
 
   $('.question a').click(function(){
@@ -47,7 +61,6 @@ $(document).ready(function(){
 
   init_mandrill();
 
-  $("[data-localize]").localize("/static/locale/lang");
 
   language_chooser();
 });
