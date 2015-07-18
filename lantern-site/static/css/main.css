@@ -110,8 +110,10 @@ p a {
 
 p#thanks-after-email {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
   display: none;
+  color: #2B8C9D;
 }
 
 p.centered {
@@ -174,6 +176,21 @@ i.fa {
 .footer-link a i {
   font-size: 1.8rem;
   vertical-align: bottom;
+}
+
+select#language-chooser {
+  height: 2.3rem;
+  display: block;
+  margin: 1.8rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 42, 42);
+  border-radius: 5px;
+  width: 15vw;
+  font: normal .8rem/1.2rem prxnv_sb, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 0px;
+  float: right;
 }
 
 /*Forms*/
@@ -443,5 +460,26 @@ section#faq {
   form.download-mobile {
     display: block;
     margin-bottom: 3rem;
+  }
+  
+  .footer-link a i {
+    font-size: 2.8rem;
+    vertical-align: middle;
+  }
+  
+  select#language-chooser {
+    height: 3.3rem;
+    display: block;
+    margin: 1.8rem 10%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(42, 42, 42);
+    border-radius: 5px;
+    width: 80%;
+    font: normal 1.2rem/1.2rem prxnv_sb, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0px;
+    float: none;
+    -webkit-appearance: none;
   }
 }

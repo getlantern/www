@@ -108,6 +108,14 @@ p a {
   color: #2a2a2a;
 }
 
+p#thanks-after-email {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  display: none;
+  color: #2B8C9D;
+}
+
 p.centered {
   width: 40vw;
   margin: 1.250rem auto;
@@ -115,7 +123,7 @@ p.centered {
 }
 
 p.white, p.white a {
-  color: #fff; 
+  color: #fff;
 }
 
 p.bold {
@@ -147,7 +155,7 @@ a.go-faq {
   font: normal 1.250rem/1.4rem 'prxnv_sb', sans-serif;
   text-decoration: none;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.1rem 0;
 }
 
 .footer-link {
@@ -163,6 +171,26 @@ a.go-faq {
 
 i.fa {
   color: #97D4DF;
+}
+
+.footer-link a i {
+  font-size: 1.8rem;
+  vertical-align: bottom;
+}
+
+select#language-chooser {
+  height: 2.3rem;
+  display: block;
+  margin: 1.8rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 42, 42);
+  border-radius: 5px;
+  width: 15vw;
+  font: normal .8rem/1.2rem prxnv_sb, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 0px;
+  float: right;
 }
 
 /*Forms*/
@@ -325,7 +353,7 @@ section#faq {
   html, body {
     font-size: 14px;
   }
-  
+
   a.button-dwnld, a.go-faq {
     min-width: 250px;
   }
@@ -336,10 +364,10 @@ section#faq {
   a.button-dwnld, a.go-faq {
     min-width: 250px;
   }
-  
+
   .col img {
     height: 5rem;
-  } 
+  }
 
   .icons {
     padding: 0;
@@ -348,7 +376,7 @@ section#faq {
   .press {
     padding: 0;
   }
-  
+
   .press a {
     margin: 0 1.5rem 2rem 1.5rem;
   }
@@ -360,22 +388,22 @@ section#faq {
   .follow-us {
     text-align: center;
   }
-  
+
   section#faq {
     width: 70vw;
   }
-  
+
 }
 
 @media all and (max-width: 649px) and (min-width: 320px) {
   html, body {
     font-size: 11px;
   }
-  
+
   h2 {
     padding: 0 2rem;
   }
-  
+
   p.centered {
     width: 60vw;
   }
@@ -384,11 +412,11 @@ section#faq {
     width: 50%;
     margin-bottom: 3.5rem;
   }
-  
+
   section#how {
     padding: 5rem 2rem;
   }
-  
+
   a.go-faq {
     min-width: 80%;
   }
@@ -404,7 +432,7 @@ section#faq {
   .footer-link {
     display: block;
   }
-  
+
   h5 {
     font-size: 1.6rem;
     margin-bottom: 2rem;
@@ -420,11 +448,11 @@ section#faq {
   footer {
     padding: 4rem;
   }
-  
+
   section#faq {
     width: 77vw;
   }
-  
+
   a.download-desktop {
     display: none;
   }
@@ -432,5 +460,26 @@ section#faq {
   form.download-mobile {
     display: block;
     margin-bottom: 3rem;
+  }
+  
+  .footer-link a i {
+    font-size: 2.8rem;
+    vertical-align: middle;
+  }
+  
+  select#language-chooser {
+    height: 3.3rem;
+    display: block;
+    margin: 1.8rem 10%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(42, 42, 42);
+    border-radius: 5px;
+    width: 80%;
+    font: normal 1.2rem/1.2rem prxnv_sb, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0px;
+    float: none;
+    -webkit-appearance: none;
   }
 }

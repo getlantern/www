@@ -2,25 +2,15 @@
 
 {% block body %}
 <header>
-  <nav class="dropdown">
-    <a href="#">Change Language</a>
-    <div> 
-      <a href="">English Farsi</a>
-      <a href="">Chinese</a>
-    </div>
-  </nav>
+  <select id="language-chooser" name="language-chooser">
+    <option value="en_US">English (United States)</option>
+    <option value="es">Español</option>
+    <option value="fa_IR">فارسی</option>
+    <option value="zh_CN">中文</option>
+  </select>
   <h1></h1>
   <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
   <p class="centered">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
-
-  <p class="centered">
-    <select id="language-chooser" name="language-chooser">
-      <option value="en_US">English (United States)</option>
-      <option value="es">Español</option>
-      <option value="fa_IR">فارسی</option>
-      <option value="zh_CN">中文</option>
-    </select>
-  </p>
 
   <a href="" class="button-dwnld download-desktop">Download Lantern</a>
 
@@ -30,7 +20,7 @@
   </form>
 
   <p id="thanks-after-email" class="centered">
-    Thanks!
+    Thank you!<br>An email will be arriving shortly.
   </p>
 
 </header>

@@ -10,19 +10,43 @@
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="icon" href="/static/images/favicon.png">
       <script src="/static/js/vendor/modernizr-2.6.2.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
   </head>
   <body>
 
     
 <header>
+  <select id="language-chooser" name="language-chooser">
+    <option value="en_US">English (United States)</option>
+    <option value="es">Español</option>
+    <option value="fa_IR">فارسی</option>
+    <option value="zh_CN">中文</option>
+  </select>
   <h1></h1>
-  <h2>Open Internet for Everyone</h2>
+  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
   <p class="centered">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+
   <a href="" class="button-dwnld download-desktop">Download Lantern</a>
-  <form action="" class="download-mobile">
-    <input type="email" placeholder="your@email.com">
+
+  <form action="" class="download-mobile" id="send-download-form">
+    <input id="send-download-link-email" type="email" placeholder="your@email.com">
     <input type="submit" value="Send me the Download Link">
   </form>
+
+  <p id="thanks-after-email" class="centered">
+    Thank you!<br>An email will be arriving shortly.
+  </p>
+
 </header>
 <section id="how">
   <h3>How does Lantern work?</h3>
@@ -43,9 +67,9 @@
     <div class="col">
       <img src="/static/images/icon_secure.svg" alt="">
       <span>Secure</span>
-    </div>   
+    </div>
   </div>
- 
+
   <p class="centered white bold">Questions?</p>
   <a href="/faq/" class="go-faq">Head to our FAQ Page</a>
 </section>
@@ -79,8 +103,8 @@
   </div>
   <div class="newsletter">
     <h4>Sign Up for our Newsletter</h4>
-    <form class="news-form" action="">
-      <input type="email" placeholder="your@email.com">
+    <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
+      <input name="EMAIL" type="email" placeholder="your@email.com">
       <input type="submit" value="Join">
     </form>
   </div>
@@ -115,6 +139,9 @@
 
 
     <script src="/static/js/vendor/jquery-1.10.1.js"></script>
+    <script src="/static/js/vendor/jquery.localize.min.js"></script>
+    <script src="/static/js/vendor/mandrill.js"></script>
+    <script src="/static/js/vendor/platform.js"></script>
     <script src="/static/js/vendor/bootstrap.js"></script>
     <script src="/static/js/main.js"></script>
   </body>
