@@ -2,7 +2,7 @@
 host = https://www.transifex.com
 
 [getlanternorg-new]
-file_filter = app/locale/lang-<lang>.json
-source_file = app/locale/lang-en_US.json
+file_filter = lantern-site/locale/lang-<lang>.json
+source_file = lantern-site/locale/lang-en_US.json
 source_lang = en_US
 type = KEYVALUEJSON

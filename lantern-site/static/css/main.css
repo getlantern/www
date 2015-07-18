@@ -108,6 +108,12 @@ p a {
   color: #2a2a2a;
 }
 
+p#thanks-after-email {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: none;
+}
+
 p.centered {
   width: 40vw;
   margin: 1.250rem auto;
@@ -115,7 +121,7 @@ p.centered {
 }
 
 p.white, p.white a {
-  color: #fff; 
+  color: #fff;
 }
 
 p.bold {
@@ -330,7 +336,7 @@ section#faq {
   html, body {
     font-size: 14px;
   }
-  
+
   a.button-dwnld, a.go-faq {
     min-width: 250px;
   }
@@ -341,10 +347,10 @@ section#faq {
   a.button-dwnld, a.go-faq {
     min-width: 250px;
   }
-  
+
   .col img {
     height: 5rem;
-  } 
+  }
 
   .icons {
     padding: 0;
@@ -353,7 +359,7 @@ section#faq {
   .press {
     padding: 0;
   }
-  
+
   .press a {
     margin: 0 1.5rem 2rem 1.5rem;
   }
@@ -365,22 +371,22 @@ section#faq {
   .follow-us {
     text-align: center;
   }
-  
+
   section#faq {
     width: 70vw;
   }
-  
+
 }
 
 @media all and (max-width: 649px) and (min-width: 320px) {
   html, body {
     font-size: 11px;
   }
-  
+
   h2 {
     padding: 0 2rem;
   }
-  
+
   p.centered {
     width: 60vw;
   }
@@ -389,11 +395,11 @@ section#faq {
     width: 50%;
     margin-bottom: 3.5rem;
   }
-  
+
   section#how {
     padding: 5rem 2rem;
   }
-  
+
   a.go-faq {
     min-width: 80%;
   }
@@ -409,7 +415,7 @@ section#faq {
   .footer-link {
     display: block;
   }
-  
+
   h5 {
     font-size: 1.6rem;
     margin-bottom: 2rem;
@@ -425,11 +431,11 @@ section#faq {
   footer {
     padding: 4rem;
   }
-  
+
   section#faq {
     width: 77vw;
   }
-  
+
   a.download-desktop {
     display: none;
   }
