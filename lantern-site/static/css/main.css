@@ -147,7 +147,7 @@ a.go-faq {
   font: normal 1.250rem/1.4rem 'prxnv_sb', sans-serif;
   text-decoration: none;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.1rem 0;
 }
 
 .footer-link {
@@ -163,6 +163,11 @@ a.go-faq {
 
 i.fa {
   color: #97D4DF;
+}
+
+.footer-link a i {
+  font-size: 1.8rem;
+  vertical-align: bottom;
 }
 
 /*Forms*/
