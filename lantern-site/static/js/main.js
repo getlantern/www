@@ -36,7 +36,7 @@ $(document).ready(function(){
   var language_chooser = function() {
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
-      $("[data-localize]").localize("locale/lang", { language: lang });
+      $("[data-localize]").localize("static/locale/lang", { language: lang });
     });
   };
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   init_mandrill();
 
-  $("[data-localize]").localize("locale/lang");
+  $("[data-localize]").localize("static/locale/lang");
 
   language_chooser();
 });
