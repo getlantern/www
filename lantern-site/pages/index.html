@@ -3,13 +3,29 @@
 {% block body %}
 <header>
   <h1></h1>
-  <h2>Open Internet for Everyone</h2>
+  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
   <p class="centered">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+
+  <p class="centered">
+    <select id="language-chooser" name="language-chooser">
+      <option value="en_US">English (United States)</option>
+      <option value="es">Español</option>
+      <option value="fa_IR">فارسی</option>
+      <option value="zh_CN">中文</option>
+    </select>
+  </p>
+
   <a href="" class="button-dwnld download-desktop">Download Lantern</a>
-  <form action="" class="download-mobile">
-    <input type="email" placeholder="your@email.com">
+
+  <form action="" class="download-mobile" id="send-download-form">
+    <input id="send-download-link-email" type="email" placeholder="your@email.com">
     <input type="submit" value="Send me the Download Link">
   </form>
+
+  <p id="thanks-after-email" class="centered">
+    Thanks!
+  </p>
+
 </header>
 <section id="how">
   <h3>How does Lantern work?</h3>
@@ -30,9 +46,9 @@
     <div class="col">
       <img src="/static/images/icon_secure.svg" alt="">
       <span>Secure</span>
-    </div>   
+    </div>
   </div>
- 
+
   <p class="centered white bold">Questions?</p>
   <a href="/faq/" class="go-faq">Head to our FAQ Page</a>
 </section>
@@ -66,8 +82,8 @@
   </div>
   <div class="newsletter">
     <h4>Sign Up for our Newsletter</h4>
-    <form class="news-form" action="">
-      <input type="email" placeholder="your@email.com">
+    <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
+      <input name="EMAIL" type="email" placeholder="your@email.com">
       <input type="submit" value="Join">
     </form>
   </div>

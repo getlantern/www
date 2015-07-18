@@ -1,3 +1,5 @@
 ## generic files
 
 *.DS_Store
+*.pyc
+*.sw?
