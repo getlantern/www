@@ -10,11 +10,11 @@
   "FEATURE_3": "Small Download",
   "FEATURE_4": "Secure",
   "QUESTIONS_1": "Questions?",
-  "QUESTIONS_2": "Head to our <a href='/faq.html'>FAQ Page</a>",
+  "QUESTIONS_2": "Head to our FAQ Page",
   "PRESS": "Read about Lantern",
   "NEWSLETTER_1": "Sign up for our Newsletter",
   "NEWSLETTER_2": "Join",
-  "FIRETWEET": "Check out <a href='https://firetweet.io/'>FireTweet</a> Our new Twitter app for Android",
+  "FIRETWEET": "Check out <a href=\"https://firetweet.io/\">FireTweet</a> Our new Twitter app for Android",
   "FOOTER_1": "Follow us",
   "FOOTER_2": "Contribute",
   "FAQ": "Frequently Asked Questions",
@@ -53,6 +53,7 @@
   "ANSWER_8_B": "As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically.",
   "ANSWER_8_C": "If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.",
   "QUESTION_9": "Where do I go if I have more questions?",
-  "ANSWER_9_A": "If you have more questions, please connect with us on <a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> or visit our <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>User Forum</a>."
-
+  "ANSWER_9_A": "If you have more questions, please connect with us on <a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> or visit our <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>User Forum</a>.",
+  "ANSWER_9_B": "If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.</span>",
+  "EMAIL_THANK_YOU": "Thank you!<br>An email will be arriving shortly."
 }
