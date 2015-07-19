@@ -21,6 +21,10 @@ $(document).ready(function(){
         break;
       }
     }
+
+    $('#download-button').on('click', function() {
+      ga('send', 'event', 'button', 'click', 'download');
+    });
   };
 
   var init_mandrill = function() {
