@@ -11,70 +11,71 @@
       <link rel="icon" href="/static/images/favicon.png">
       <script src="/static/js/vendor/modernizr-2.6.2.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-21815217-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
   </head>
   <body>
 
     
 <header>
   <select id="language-chooser" name="language-chooser">
-    <option value="en_US">English (United States)</option>
-    <option value="es">Español</option>
-    <option value="fa_IR">فارسی</option>
-    <option value="zh_CN">中文</option>
-  </select>
-  <h1></h1>
-  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
-  <p class="centered">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+  <option value="en_US">English (United States)</option>
+  <option value="es">Español</option>
+  <option value="fa_IR">فارسی</option>
+  <!-- <option value="zh_CN">中文</option> -->
+</select>
 
-  <a href="" class="button-dwnld download-desktop">Download Lantern</a>
+  <a href="/"><h1></h1></a>
+  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
+  <p class="centered" data-localize="LANTERN_DESCRIPTION_1">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+
+  <a href="" id="download-button" data-localize="DOWNLOAD_LANTERN" class="button-dwnld download-desktop">Download Lantern</a>
 
   <form action="" class="download-mobile" id="send-download-form">
     <input id="send-download-link-email" type="email" placeholder="your@email.com">
-    <input type="submit" value="Send me the Download Link">
+    <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
   </form>
 
-  <p id="thanks-after-email" class="centered">
+  <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
     Thank you!<br>An email will be arriving shortly.
   </p>
 
 </header>
 <section id="how">
-  <h3>How does Lantern work?</h3>
-  <p class="centered white">Lantern is an internet proxy tool that lets you access blocked sites.</p>
+  <h3 data-localize="QUESTION_2">How does Lantern work?</h3>
+  <p class="centered white" data-localize="LANTERN_DESCRIPTION_2">Lantern is an Internet proxy tool that lets you access blocked sites.</p>
   <div class="icons">
      <div class="col">
        <img src="/static/images/icon_fast.svg" alt="">
-       <span>Fast</span>
+       <span data-localize="FEATURE_1">Fast</span>
     </div>
     <div class="col">
       <img src="/static/images/icon_userfriendly.svg" alt="">
-      <span>Easy to Use</span>
+      <span data-localize="FEATURE_2">Easy to Use</span>
     </div>
     <div class="col">
       <img src="/static/images/icon_small.svg" alt="">
-      <span>Small Download</span>
+      <span data-localize="FEATURE_3">Small Download</span>
     </div>
     <div class="col">
       <img src="/static/images/icon_secure.svg" alt="">
-      <span>Secure</span>
+      <span data-localize="FEATURE_4">Secure</span>
     </div>
   </div>
 
-  <p class="centered white bold">Questions?</p>
-  <a href="/faq/" class="go-faq">Head to our FAQ Page</a>
+  <p class="centered white bold" data-localize="QUESTIONS_1">Questions?</p>
+  <a href="/faq/" class="go-faq" data-localize="QUESTIONS_2">Head to our FAQ page</a>
 </section>
 <section id="extra">
-  <h4>Read about Lantern</h4>
+  <h4 data-localize="PRESS">Read about Lantern</h4>
   <div class="press">
     <a href="http://sinosphere.blogs.nytimes.com/2015/03/30/q-and-a-adam-fisk-on-evading-internet-censorship-in-china/" target="_blank">
       <img src="/static/images/nytimes.svg" alt="">
@@ -102,18 +103,18 @@
     </a>
   </div>
   <div class="newsletter">
-    <h4>Sign Up for our Newsletter</h4>
+    <h4 data-localize="NEWSLETTER_1">Sign Up for our Newsletter</h4>
     <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
       <input name="EMAIL" type="email" placeholder="your@email.com">
       <input type="submit" value="Join">
     </form>
   </div>
-  <p class="centered white bold">Check out <a href="https://Firetweet.io" target="_blank">FireTweet</a><br>Our new Twitter app for Android! </p>
+  <p class="centered white bold" data-localize="FIRETWEET">Check out <a href="https://firetweet.io" target="_blank">FireTweet</a><br>Our new Twitter app for Android! </p>
 </section>
 
 <footer>
   <div class="follow-us">
-    <h5>Follow Us</h5>
+    <h5 data-localize="FOOTER_1">Follow Us</h5>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">
         <i class="fa fa-facebook-square fa-fw"></i> FB English

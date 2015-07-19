@@ -11,103 +11,145 @@
       <link rel="icon" href="/static/images/favicon.png">
       <script src="/static/js/vendor/modernizr-2.6.2.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-21815217-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
   </head>
   <body>
 
     
 <header>
-  <h1></h1>
-  <h2>Frequently Asked Questions</h2>
-  <p class="centered">This page provides answers to common questions about Lantern. Check out our  <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A</a> for more technical information.</p>
+  <select id="language-chooser" name="language-chooser">
+  <option value="en_US">English (United States)</option>
+  <option value="es">Español</option>
+  <option value="fa_IR">فارسی</option>
+  <!-- <option value="zh_CN">中文</option> -->
+</select>
+
+  <a href="/"><h1></h1></a>
+  <h2 data-localize="FAQ">Frequently Asked Questions</h2>
+  <p class="centered" data-localize="FAQ_DESCRIPTION">This page provides answers to common questions about Lantern. Check out our  <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A</a> for more technical information.</p>
 </header>
 <section id="faq">
- 
+
   <div class="question">
-    <a href="">Who built Lantern? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_1">Who built Lantern?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern is built by the <a href="http://www.bravenewsoftware.org/" target="_blank">Brave New Software Project, Inc,</a> a registered 501(c)3 non-profit dedicated to creating software that tackles tough global challenges. Brave New Software’s founder and Lantern lead developer, Adam Fisk, was formerly a lead developer of the peer-to-peer file sharing services LimeWire and LittleShoot. While working on those P2P architectures, Adam realized they could be useful in providing unfiltered Internet access.</p>
+      <p>
+        <span data-localize="ANSWER_1_A">Lantern is built by the <a href="http://www.bravenewsoftware.org/" target="_blank">Brave New Software Project, Inc,</a> a registered 501(c)3 non-profit dedicated to creating software that tackles tough global challenges.</span>
+        <span data-localize="ANSWER_1_B">Brave New Software’s founder and Lantern lead developer, Adam Fisk, was formerly a lead developer of the peer-to-peer file sharing services LimeWire and LittleShoot.</span>
+        <span data-localize="ANSWER_1_C">While working on those P2P architectures, Adam realized they could be useful in providing unfiltered Internet access.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">How does Lantern work? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_2">How does Lantern work?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern was built to give users fast access to the blocked Internet. Lantern automatically detects whether or not a site is blocked and then accesses the blocked site either through our own servers or through Lantern users running as access points in the uncensored world. If a site is unblocked, Lantern gets out of the way, and your browser accesses it directly to give you the fastest possible access.</p>
+      <p>
+        <span data-localize="ANSWER_2_A">Lantern was built to give users fast access to the blocked Internet.</span>
+        <span data-localize="ANSWER_2_B">Lantern automatically detects whether or not a site is blocked and then accesses the blocked site either through our own servers or through Lantern users running as access points in the uncensored world.</span>
+        <span data-localize="ANSWER_2_C">If a site is unblocked, Lantern gets out of the way, and your browser accesses it directly to give you the fastest possible access.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">What makes Lantern unique? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_3">What makes Lantern unique?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern is unique in that it uses a variety of techniques to stay unblocked around the world, falling back to other approaches if some of those techniques become blocked. Those techniques include centralized and sophisticated peer-to-peer architectures. Usability and user feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns.</p>
+      <p>
+        <span data-localize="ANSWER_3_A">Lantern is unique in that it uses a variety of techniques to stay unblocked around the world, falling back to other approaches if some of those techniques become blocked.</span>
+        <span data-localize="ANSWER_3_B">Those techniques include centralized and sophisticated peer-to-peer architectures.</span>
+        <span data-localize="ANSWER_3_C">Usability and user feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">Can I trust Lantern? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_4">Can I trust Lantern?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern is open, anyone can <a href="https://github.com/getlantern" target="_blank">check our source code</a> and see how everything works and make an informed decision. We welcome experts to audit our system and would appreciate any feedback (<a href="mailto:security@getlantern.org">security@getlantern.org</a>).</p>
+      <p>
+        <span data-localize="ANSWER_4_A">Lantern is open, anyone can <a href="https://github.com/getlantern" target="_blank">check our source code</a> and see how everything works and make an informed decision.</span>
+        <span data-localize="ANSWER_4_B">We welcome experts to audit our system and would appreciate any feedback (<a href="mailto:security@getlantern.org">security@getlantern.org</a>).</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">Can anyone view my traffic when I’m using Lantern? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_5">Can anyone view my traffic when I’m using Lantern?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern encrypts all of your traffic when you are accessing a blocked site, but Lantern does not change traffic to unblocked sites in any way. This means a network observer, such as a censoring government or an ISP, cannot read your traffic to blocked sites. Lantern users acting as access points can see the website you’re accessing and where you’re accessing it from, but the actual content you are reading from or posting to that site is not visible to them because it is encrypted over HTTPS. Lantern only sends HTTPS traffic to Lantern users acting as access points.</p>
+      <p>
+        <span data-localize="ANSWER_5_A">Lantern encrypts all of your traffic when you are accessing a blocked site, but Lantern does not change traffic to unblocked sites in any way.</span>
+        <span data-localize="ANSWER_5_B">This means a network observer, such as a censoring government or an ISP, cannot read your traffic to blocked sites.</span>
+        <span data-localize="ANSWER_5_C">Lantern users acting as access points can see the website you’re accessing and where you’re accessing it from, but the actual content you are reading from or posting to that site is not visible to them because it is encrypted over HTTPS.</span>
+        <span data-localize="ANSWER_5_D">Lantern only sends HTTPS traffic to Lantern users acting as access points.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">What user information does Lantern collect? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_6">What user information does Lantern collect?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern allows you to provide the Lantern team with useful information and analytics that will help us improve the Lantern program. You can change this option in your Lantern settings. If you choose to send Lantern this data we will only use it for improving the Lantern service so that we can continue to offer better service for you and others.</p>
+      <p>
+        <span data-localize="ANSWER_6_A">Lantern allows you to provide the Lantern team with useful information and analytics that will help us improve the Lantern program.</span>
+        <span data-localize="ANSWER_6_B">You can change this option in your Lantern settings.</span>
+        <span data-localize="ANSWER_6_C">If you choose to send Lantern this data we will only use it for improving the Lantern service so that we can continue to offer better service for you and others.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">Does Lantern give me anonymity online? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_7">Does Lantern give me anonymity online?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Lantern is not an anonymity tool. Lantern was built for fast and open Internet access. If you feel you need to be anonymous online (if you are posting something you think could bring legal action against you, for example) we recommend using Tor. Otherwise, Lantern will give you faster access to blocked sites.</p>
+      <p>
+        <span data-localize="ANSWER_7_A">Lantern is not an anonymity tool.</span>
+        <span data-localize="ANSWER_7_B">Lantern was built for fast and open Internet access.</span>
+        <span data-localize="ANSWER_7_C">If you feel you need to be anonymous online (if you are posting something you think could bring legal action against you, for example) we recommend using Tor.</span>
+        <span data-localize="ANSWER_7_D">Otherwise, Lantern will give you faster access to blocked sites.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">How do I know if Lantern is working? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_8">How do I know if Lantern is working?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX. As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically. If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.</p>
+      <p>
+        <span data-localize="ANSWER_8_A">Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX.</span>
+        <span data-localize="ANSWER_8_B">As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically.</span>
+        <span data-localize="ANSWER_8_C">If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.</span>
+      </p>
     </div>
   </div>
-  
+
   <div class="question">
-    <a href="">Where do I go if I have more questions? <i class="fa fa-angle-down"></i></a>
+    <a href=""><span data-localize="QUESTION_9">Where do I go if I have more questions?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>If you have more questions, please connect with us on <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">Facebook</a> or visit our <a href="https://groups.google.com/forum/#!forum/lantern-users-en" target="_blank">User Forum</a>. <br><br>
-         If you have more technical questions, please see the <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A section</a> of our developers forum.</p>
+      <p>
+        <span data-localize="ANSWER_9_A">If you have more questions, please connect with us on <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">Facebook</a> or visit our <a href="https://groups.google.com/forum/#!forum/lantern-users-en" target="_blank">User Forum</a>.</span>
+        <br><br>
+        <span data-localize="ANSWER_9_B">If you have more technical questions, please see the <a href="https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A section</a> of our developers forum.</span>
+      </p>
     </div>
   </div>
-  
 </section>
 
 <section class="download">
-  <a href="" class="button-dwnld download-desktop">Download Lantern</a>
+  <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_LANTERN">Download Lantern</a>
   <form action="" class="download-mobile">
     <input type="email" placeholder="your@email.com">
-    <input type="submit" value="Send me the Download Link">
+    <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
   </form>
 </section>
 <footer>
   <div class="follow-us">
-    <h5>Follow Us</h5>
+    <h5 data-localize="FOOTER_1">Follow Us</h5>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">
         <i class="fa fa-facebook-square fa-fw"></i> FB English
