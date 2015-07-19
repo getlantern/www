@@ -142,10 +142,13 @@
 
 <section class="download">
   <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_LANTERN">Download Lantern</a>
-  <form action="" class="download-mobile">
-    <input type="email" placeholder="your@email.com">
+  <form action="" class="download-mobile" id="send-download-form">
+    <input id="send-download-link-email" type="email" placeholder="your@email.com">
     <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
   </form>
+  <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
+    Thank you!<br>An email will be arriving shortly.
+  </p>
 </section>
 <footer>
   <div class="follow-us">
