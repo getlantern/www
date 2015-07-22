@@ -20,7 +20,7 @@
     "FAQ": "常见问题",
     "FAQ_DESCRIPTION": "本页面回答一些关于Lantern的常见问题。更多技术细节，请访问<a href='https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers'>developers FAQ</a>。",
     "QUESTION_1": "谁开发了Lantern？",
-    "ANSWER_1_A": "Lantern由<a href='http://bravenewsoftware.org'>Brave New Software Project, Inc,</a>开发。这是一个501(c)3的非赢利机构，专注于用软件解决艰巨的全球性问题。",
+    "ANSWER_1_A": "Lantern由<a href='http://bravenewsoftware.org'>Brave New Software Project, Inc</a>开发。这是一个501(c)3的非赢利机构，专注于用软件解决艰巨的全球性问题。",
     "ANSWER_1_B": "Brave New Software的创始人，也是 Lantern的首席开发者，Adam Fisk，曾是P2P文件共享服务LimeWire和LittleShoot的主力程序员。",
     "ANSWER_1_C": "在搭建P2P架构的过程中，他发现同样的架构也能用于提供不受限制的互联网访问。",
     "QUESTION_2": "Lantern 是如何工作的？",
