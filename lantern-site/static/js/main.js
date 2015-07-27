@@ -56,7 +56,7 @@ $(document).ready(function(){
   };
 
   var language_chooser = function() {
-    var lang = "en";
+    var lang;
 
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
@@ -68,10 +68,9 @@ $(document).ready(function(){
 
     if (Modernizr.localstorage) {
       lang = window.localStorage.getItem("lang");
-      if (lang) {
-        $("#language-chooser").val(lang);
-      }
     };
+
+    $("#language-chooser").val(lang || "en_US");
 
     $("[data-localize]").localize("/static/locale/lang", {language: lang});
   };
