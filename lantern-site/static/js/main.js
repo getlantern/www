@@ -10,8 +10,8 @@ $(document).ready(function(){
     var os_links = [
       {regexp: "[2-6]{2}[Ww]indows", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.exe"},
       {regexp: "[2-6]{2}OS X", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.dmg"},
-      {regexp: "32.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-32.deb"},
-      {regexp: "64.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-64.deb"},
+      {regexp: "32.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-32-bit.deb"},
+      {regexp: "64.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-64-bit.deb"},
       {regexp: ".*", link: "https://github.com/getlantern/lantern/wiki/Lantern-Beta-Versions#download-links"}
     ];
     for (i = 0; i < os_links.length; ++i) {
