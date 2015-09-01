@@ -1,8 +1,10 @@
+SOURCE ?= getlantern.org
+
 run:
-	cd lantern-site && cactus serve
+	cd $(SOURCE) && cactus serve
 
 build:
-	cd lantern-site && rm -rf .build build && cactus build && mv .build build
+	cd $(SOURCE) && rm -rf .build build && cactus build && mv .build build
 
 deploy: build
-	cd lantern-site/build && s3cmd sync -P --recursive . s3://getlantern.org
+	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://getlantern.org
