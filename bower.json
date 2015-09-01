@@ -1,7 +1,0 @@
-{
-  "name": "www",
-  "private": true,
-  "dependencies": {
-    "modernizr": "~2.8.1"
-  }
-}

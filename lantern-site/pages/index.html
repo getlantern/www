@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block body %}
+<header>
+  {% include "language.html" %}
+  <a href="/"><h1></h1></a>
+  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
+  <p class="centered" data-localize="LANTERN_DESCRIPTION_1">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
+
+  <a href="" id="download-button" data-localize="DOWNLOAD_LANTERN" class="button-dwnld download-desktop">Download Lantern</a>
+
+  <form action="" class="download-mobile" id="send-download-form">
+    <input id="send-download-link-email" type="email" placeholder="your@email.com">
+    <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
+  </form>
+
+  <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
+    Thank you!<br>An email will be arriving shortly.
+  </p>
+
+</header>
+<section id="how">
+  <h3 data-localize="QUESTION_2">How does Lantern work?</h3>
+  <p class="centered white" data-localize="LANTERN_DESCRIPTION_2">Lantern is an Internet proxy tool that lets you access blocked sites.</p>
+  <div class="icons">
+     <div class="col">
+       <img src="/static/images/icon_fast.svg" alt="">
+       <span data-localize="FEATURE_1">Fast</span>
+    </div>
+    <div class="col">
+      <img src="/static/images/icon_userfriendly.svg" alt="">
+      <span data-localize="FEATURE_2">Easy to Use</span>
+    </div>
+    <div class="col">
+      <img src="/static/images/icon_small.svg" alt="">
+      <span data-localize="FEATURE_3">Small Download</span>
+    </div>
+    <div class="col">
+      <img src="/static/images/icon_secure.svg" alt="">
+      <span data-localize="FEATURE_4">Secure</span>
+    </div>
+  </div>
+
+  <p class="centered white bold" data-localize="QUESTIONS_1">Questions?</p>
+  <a href="/faq/index.html" class="go-faq" data-localize="QUESTIONS_2">Head to our FAQ page</a>
+</section>
+<section id="extra">
+  <h4 data-localize="PRESS">Read about Lantern</h4>
+  <div class="press">
+    <a href="http://sinosphere.blogs.nytimes.com/2015/03/30/q-and-a-adam-fisk-on-evading-internet-censorship-in-china/" target="_blank">
+      <img src="/static/images/nytimes.svg" alt="">
+    </a>
+    <a href="http://www.scmp.com/news/china-insider/article/1372661/use-lantern-software-means-view-banned-websites-grows-china" target="_blank">
+      <img src="/static/images/schmpost.svg" alt="">
+    </a>
+    <a href="http://motherboard.vice.com/read/this-app-lets-chinas-netizens-use-twitter-where-its-censored" target="_blank">
+      <img src="/static/images/vice.svg" alt="">
+    </a>
+    <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/21/using-peer-to-peer-technology-to-crowdsource-a-way-around-online-censorship/" target="_blank">
+      <img src="/static/images/washpost.svg" alt="">
+    </a>
+    <a href="http://www.dailydot.com/politics/lantern-online-censorship/" target="_blank">
+      <img src="/static/images/dailydot.svg" alt="">
+    </a>
+    <a href=" http://www.wsj.com/articles/u-s-cloud-providers-face-backlash-from-chinas-censors-1426541126" target="_blank">
+      <img src="/static/images/wallstjournal.svg" alt="">
+    </a>
+    <a href="http://www.businessinsider.com/firetweet-gives-mobile-twitter-access-in-censored-countries-2015-6" target="_blank">
+      <img src="/static/images/bussins.svg" alt="">
+    </a>
+    <a href="http://www.fastcoexist.com/3046650/is-some-autocratic-regime-blocking-your-twitter-firetweet-will-let-you-in" target="_blank">
+      <img src="/static/images/fastco.svg" alt="">
+    </a>
+  </div>
+  <div class="newsletter">
+    <h4 data-localize="NEWSLETTER_1">Sign Up for our Newsletter</h4>
+    <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
+      <input name="EMAIL" type="email" placeholder="your@email.com">
+      <input type="submit" value="Join">
+    </form>
+  </div>
+  <p class="centered white bold" data-localize="FIRETWEET">Check out <a href="https://firetweet.io" target="_blank">FireTweet</a>, our new Twitter app for Android! </p>
+</section>
+
+{% include 'footer.html' %}
+{% endblock %}
