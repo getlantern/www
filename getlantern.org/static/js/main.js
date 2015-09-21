@@ -60,7 +60,7 @@ $(document).ready(function(){
     if(lang == "fa_IR") {
         $("html").attr("dir", "rtl");
     }else{
-        $("html").attr("dir", false);
+        $("html").attr("dir", "ltr");
     };
   }
 
