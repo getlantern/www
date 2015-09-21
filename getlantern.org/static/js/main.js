@@ -55,6 +55,15 @@ $(document).ready(function(){
     });
   };
 
+  var check_rtl = function() {
+    var lang = $("#language-chooser").val();
+    if(lang == "fa_IR") {
+        $("html").attr("dir", "rtl");
+    }else{
+        $("html").attr("dir", false);
+    };
+  }
+
   var language_chooser = function() {
     var lang;
 
@@ -64,6 +73,7 @@ $(document).ready(function(){
       if (Modernizr.localstorage) {
         window.localStorage.setItem("lang", lang);
       }
+      check_rtl();
     });
 
     if (Modernizr.localstorage) {
@@ -71,6 +81,8 @@ $(document).ready(function(){
     };
 
     $("#language-chooser").val(lang || "en_US");
+
+    check_rtl();
 
     $("[data-localize]").localize("/static/locale/lang", {language: lang});
   };
