@@ -244,7 +244,7 @@ form.news-form input[type="email"] {
   float: left;
 }
 
-form.news-form input[type="submit"] {
+form.news-form button[type="submit"] {
   display: inline-block;
   height: 3.750rem;
   width: 28%;
