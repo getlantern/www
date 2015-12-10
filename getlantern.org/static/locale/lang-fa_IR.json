@@ -55,5 +55,6 @@
     "QUESTION_9": "برای اطلاعات بیشتر به کجا مراجعه کنم؟",
     "ANSWER_9_A": "اگر سوالات بیشتری دارید لطفا به<a href='https://www.facebook.com/getlantern?ref=hl'> صفحه فیس بوک</a> یا <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>فروم کاربران</a> ما سر بزنید.",
     "ANSWER_9_B": "‫اگر سوالات فنی بیشتری دارید، لطفا <a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">قسمت سوال و جواب توسعه‌دهندگان</a> لنترن را ببینید. ",
-    "EMAIL_THANK_YOU": "ممنون<br> به زودی یک ایمیل دریافت خواهید کرد."
+    "EMAIL_THANK_YOU": "ممنون<br> به زودی یک ایمیل دریافت خواهید کرد.",
+    "CURRENT_VERSION": "نسخه فعلی %s"
 }
