@@ -144,7 +144,7 @@ a.button-dwnld {
   padding: 1rem 0;
 }
 
-p.version-number {
+p.current-version {
 	color: #999;
 	display: none;
 	margin: 0 auto 2rem;
@@ -464,7 +464,7 @@ section#faq {
     display: none;
   }
   
-  p.version-number {
+  p.current-version {
 	  display: none !important;
   }
 

@@ -67,21 +67,9 @@ $(document).ready(function(){
   
   var update_version_number = function() {
     $.getJSON(last_release, function(data) {
-      $("#version-number").data("version", data["tag_name"]);
-      var lang = $("#language-chooser").find("option:selected").val() || "en";
-      $("[data-localize]").localize("/static/locale/lang", { language: lang, callback: set_version_number });
+      $("#version-number").text(data["tag_name"]);
+	  $(".current-version").show();
     });
-  }
-  
-  var set_version_number = function(data, defaultCallback) {
-    var ver = $("#version-number").data("version");
-    if("CURRENT_VERSION" in data && ver != undefined) {
-	  $("#version-number").show();
-      data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
-    }else{
-      $("#version-number").hide();
-    }
-    defaultCallback(data);
   }
 
   var language_chooser = function() {
@@ -89,7 +77,7 @@ $(document).ready(function(){
 
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
-      $("[data-localize]").localize("/static/locale/lang", { language: lang, callback: set_version_number });
+      $("[data-localize]").localize("/static/locale/lang", { language: lang });
       if (Modernizr.localstorage) {
         window.localStorage.setItem("lang", lang);
       }
@@ -104,7 +92,7 @@ $(document).ready(function(){
 
     check_rtl();
 
-    $("[data-localize]").localize("/static/locale/lang", {language: lang, callback: set_version_number});
+    $("[data-localize]").localize("/static/locale/lang", {language: lang });
   };
 
   $('.question a').click(function(){
