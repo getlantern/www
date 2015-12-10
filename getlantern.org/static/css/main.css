@@ -133,7 +133,7 @@ p.bold {
 a.button-dwnld {
   height: 3.750rem;
   display: block;
-  margin: 4rem auto;
+  margin: 4rem auto 1.5rem;
   background-color: #75CBDA;
   color: #fff;
   border-radius: 5px;
@@ -142,6 +142,13 @@ a.button-dwnld {
   text-decoration: none;
   text-align: center;
   padding: 1rem 0;
+}
+
+p.current-version {
+	color: #999;
+	display: none;
+	margin: 0 auto 2rem;
+	font-size: 1rem;
 }
 
 a.go-faq {
@@ -455,6 +462,10 @@ section#faq {
 
   a.download-desktop {
     display: none;
+  }
+  
+  p.current-version {
+	  display: none !important;
   }
 
   form.download-mobile {

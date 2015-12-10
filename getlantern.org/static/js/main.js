@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
   var template_map = {
     "fa-IR": "download-link-from-lantern-website-fa-ir",
     "zh-CN": "download-link-from-lantern-website-zh-cn"
@@ -63,6 +64,13 @@ $(document).ready(function(){
         $("html").attr("dir", "ltr");
     };
   }
+  
+  var update_version_number = function() {
+    $.getJSON(last_release, function(data) {
+      $("#version-number").text(data["tag_name"]);
+	  $(".current-version").show();
+    });
+  }
 
   var language_chooser = function() {
     var lang;
@@ -84,15 +92,16 @@ $(document).ready(function(){
 
     check_rtl();
 
-    $("[data-localize]").localize("/static/locale/lang", {language: lang});
+    $("[data-localize]").localize("/static/locale/lang", {language: lang });
   };
 
   $('.question a').click(function(){
     $(this).closest('div').toggleClass('show');
     return false;
   });
-
+  
   set_download_link();
   init_mandrill();
   language_chooser();
+  update_version_number();  
 });
