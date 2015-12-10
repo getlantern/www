@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
   var template_map = {
     "fa-IR": "download-link-from-lantern-website-fa-ir",
     "zh-CN": "download-link-from-lantern-website-zh-cn"
@@ -63,13 +64,29 @@ $(document).ready(function(){
         $("html").attr("dir", "ltr");
     };
   }
+  
+  var update_version_number = function() {
+	$.getJSON(last_release, function(data) {
+	  $("#vesrion-number").data("version", data["tag_name"]);
+	  var lang = $("#language-chooser").find("option:selected").val() || "en";
+      $("#language-chooser").val(lang);
+	});
+  }
+  
+  var set_version_number = function(data, defaultCallback) {
+    defaultCallback(data);
+	if("CURRENT_VERSION" in data) {
+	  var ver = $("#vesrion-number").data("version");
+	  data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
+  	}
+  }
 
   var language_chooser = function() {
     var lang;
 
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
-      $("[data-localize]").localize("/static/locale/lang", { language: lang });
+      $("[data-localize]").localize("/static/locale/lang", { language: lang, callback: set_version_number });
       if (Modernizr.localstorage) {
         window.localStorage.setItem("lang", lang);
       }
@@ -84,15 +101,16 @@ $(document).ready(function(){
 
     check_rtl();
 
-    $("[data-localize]").localize("/static/locale/lang", {language: lang});
+    $("[data-localize]").localize("/static/locale/lang", {language: lang, callback: set_version_number});
   };
 
   $('.question a').click(function(){
     $(this).closest('div').toggleClass('show');
     return false;
   });
-
+  
   set_download_link();
   init_mandrill();
   language_chooser();
+  update_version_number();  
 });

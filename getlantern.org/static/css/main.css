@@ -133,7 +133,7 @@ p.bold {
 a.button-dwnld {
   height: 3.750rem;
   display: block;
-  margin: 4rem auto;
+  margin: 4rem auto 1.5rem;
   background-color: #75CBDA;
   color: #fff;
   border-radius: 5px;
@@ -142,6 +142,12 @@ a.button-dwnld {
   text-decoration: none;
   text-align: center;
   padding: 1rem 0;
+}
+
+p.vesrion-number {
+	color: #999;
+	margin: 0 auto 2rem;
+	font-size: 1rem;
 }
 
 a.go-faq {

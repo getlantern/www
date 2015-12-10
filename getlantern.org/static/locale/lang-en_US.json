@@ -55,5 +55,6 @@
   "QUESTION_9": "Where do I go if I have more questions?",
   "ANSWER_9_A": "If you have more questions, please connect with us on <a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> or visit our <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>User Forum</a>.",
   "ANSWER_9_B": "If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.",
-  "EMAIL_THANK_YOU": "Thank you!<br>An email will be arriving shortly."
+  "EMAIL_THANK_YOU": "Thank you!<br>An email will be arriving shortly.",
+  "CURRENT_VERSION": "Currently v%s"
 }
