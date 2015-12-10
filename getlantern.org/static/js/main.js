@@ -66,18 +66,21 @@ $(document).ready(function(){
   }
   
   var update_version_number = function() {
-	$.getJSON(last_release, function(data) {
-	  $("#version-number").data("version", data["tag_name"]);
-	  var lang = $("#language-chooser").find("option:selected").val() || "en";
-      $("#language-chooser").val(lang);
-	});
+    $.getJSON(last_release, function(data) {
+      $("#version-number").data("version", data["tag_name"]);
+      var lang = $("#language-chooser").find("option:selected").val() || "en";
+      $("[data-localize]").localize("/static/locale/lang", { language: lang, callback: set_version_number });
+    });
   }
   
   var set_version_number = function(data, defaultCallback) {
-	var ver = $("#version-number").data("version");
-	if("CURRENT_VERSION" in data && ver != undefined) {
-	  data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
-  	}
+    var ver = $("#version-number").data("version");
+    if("CURRENT_VERSION" in data && ver != undefined) {
+	  $("#version-number").show();
+      data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
+    }else{
+      $("#version-number").hide();
+    }
     defaultCallback(data);
   }
 

@@ -146,6 +146,7 @@ a.button-dwnld {
 
 p.version-number {
 	color: #999;
+	display: none;
 	margin: 0 auto 2rem;
 	font-size: 1rem;
 }
