@@ -74,11 +74,11 @@ $(document).ready(function(){
   }
   
   var set_version_number = function(data, defaultCallback) {
-    defaultCallback(data);
-	if("CURRENT_VERSION" in data) {
-	  var ver = $("#version-number").data("version");
+	var ver = $("#version-number").data("version");
+	if("CURRENT_VERSION" in data && ver != undefined) {
 	  data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
   	}
+    defaultCallback(data);
   }
 
   var language_chooser = function() {
