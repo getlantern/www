@@ -59,16 +59,16 @@ $(document).ready(function(){
   var check_rtl = function() {
     var lang = $("#language-chooser").val();
     if(lang == "fa_IR") {
-        $("html").attr("dir", "rtl");
+      $("html").attr("dir", "rtl");
     }else{
-        $("html").attr("dir", "ltr");
+      $("html").attr("dir", "ltr");
     };
   }
-  
+
   var update_version_number = function() {
     $.getJSON(last_release, function(data) {
-      $("#version-number").text(data["tag_name"]);
-	  $(".current-version").show();
+      $("#version-number").text(data.tag_name);
+      $(".current-version").show();
     });
   }
 
@@ -99,9 +99,9 @@ $(document).ready(function(){
     $(this).closest('div').toggleClass('show');
     return false;
   });
-  
+
   set_download_link();
   init_mandrill();
   language_chooser();
-  update_version_number();  
+  update_version_number();
 });
