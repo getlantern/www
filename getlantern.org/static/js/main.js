@@ -67,7 +67,7 @@ $(document).ready(function(){
   
   var update_version_number = function() {
 	$.getJSON(last_release, function(data) {
-	  $("#vesrion-number").data("version", data["tag_name"]);
+	  $("#version-number").data("version", data["tag_name"]);
 	  var lang = $("#language-chooser").find("option:selected").val() || "en";
       $("#language-chooser").val(lang);
 	});
@@ -76,7 +76,7 @@ $(document).ready(function(){
   var set_version_number = function(data, defaultCallback) {
     defaultCallback(data);
 	if("CURRENT_VERSION" in data) {
-	  var ver = $("#vesrion-number").data("version");
+	  var ver = $("#version-number").data("version");
 	  data["CURRENT_VERSION"] = data["CURRENT_VERSION"].replace("%s", ver);
   	}
   }
