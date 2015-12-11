@@ -146,7 +146,7 @@ a.button-dwnld {
 
 p.current-version {
 	color: #999;
-	display: none;
+	visibility: hidden;
 	margin: 0 auto 2rem;
 	font-size: 1rem;
 }
@@ -463,9 +463,9 @@ section#faq {
   a.download-desktop {
     display: none;
   }
-  
+
   p.current-version {
-	  display: none !important;
+    visibility: hidden !important;
   }
 
   form.download-mobile {

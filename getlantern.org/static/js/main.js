@@ -67,10 +67,12 @@ $(document).ready(function(){
 
   var update_version_number = function() {
     $.getJSON(last_release, function(data) {
-      $("#version-number").text(data.tag_name);
-      $(".current-version").show();
+      if (data.tag_name) {
+        $("#version-number").text(data.tag_name);
+        $(".current-version").css("visibility", "visible");
+      }
     });
-  }
+  };
 
   var language_chooser = function() {
     var lang;
@@ -86,7 +88,7 @@ $(document).ready(function(){
 
     if (Modernizr.localstorage) {
       lang = window.localStorage.getItem("lang");
-    };
+    }
 
     $("#language-chooser").val(lang || "en_US");
 
