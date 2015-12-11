@@ -55,5 +55,6 @@
     "QUESTION_9": "如果我有别的问题，去哪里寻求帮助？",
     "ANSWER_9_A": "请通过<a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> 或者 <a href='https://groups.google.com/forum/#!forum/lantern-users-zh'>用户论坛</a>和我们取得联系。",
     "ANSWER_9_B": "如果有其他技术问题，请参阅<a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">开发者问答</a>，或者到 <a href=\"https://groups.google.com/group/lantern-devel\" target=\"_blank\">开发者论坛</a> 上发帖。",
-    "EMAIL_THANK_YOU": "谢谢！<br>邮件已发出，请稍后查收。"
+    "EMAIL_THANK_YOU": "谢谢！<br>邮件已发出，请稍后查收。",
+    "CURRENT_VERSION": "当前版本："
 }

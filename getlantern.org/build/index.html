@@ -46,6 +46,7 @@
   <select id="language-chooser" name="language-chooser">
   <option value="en_US">English (United States)</option>
   <option value="es">Español</option>
+  <option value="ru">Русский</option>
   <option value="fa_IR">فارسی</option>
   <option value="zh_CN">中文</option>
 </select>
@@ -55,6 +56,10 @@
   <p class="centered" data-localize="LANTERN_DESCRIPTION_1">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
 
   <a href="" id="download-button" data-localize="DOWNLOAD_LANTERN" class="button-dwnld download-desktop">Download Lantern</a>
+  <p class="centered current-version">
+    <span data-localize="CURRENT_VERSION">Current version:</span>
+    <span id="version-number"></span>
+  </p>
 
   <form action="" class="download-mobile" id="send-download-form">
     <input id="send-download-link-email" type="email" placeholder="your@email.com">
@@ -123,7 +128,7 @@
     <h4 data-localize="NEWSLETTER_1">Sign Up for our Newsletter</h4>
     <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
       <input name="EMAIL" type="email" placeholder="your@email.com">
-      <input type="submit" value="Join">
+      <button data-localize="NEWSLETTER_2" type="submit">Join</button>
     </form>
   </div>
   <p class="centered white bold" data-localize="FIRETWEET">Check out <a href="https://firetweet.io" target="_blank">FireTweet</a>, our new Twitter app for Android! </p>
