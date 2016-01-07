@@ -1,6 +1,8 @@
 {
   "OPEN_INTERNET_FOR_EVERYONE": "Open Internet for Everyone",
   "DOWNLOAD_LANTERN": "Download Lantern",
+  "DOWNLOAD_ANDROID": "Download Lantern Android",
+  "DOWNLOAD_OTHER_SYSTEMS": "Or for other systems",
   "DOWNLOAD_LANTERN_MOBILE": "Send me the Download Link",
   "LANTERN_DESCRIPTION_1": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.",
   "HOW_DOES_LANTERN_WORK": "How does Lantern work?",
