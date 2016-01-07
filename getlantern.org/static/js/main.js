@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-  var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
-  var template_map = {
-    "fa-IR": "download-link-from-lantern-website-fa-ir",
-    "zh-CN": "download-link-from-lantern-website-zh-cn"
-  };
+var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk";
 
   var set_download_link = function() {
     var os = platform.os.architecture + platform.os.family;
@@ -13,7 +9,9 @@ $(document).ready(function(){
       {regexp: "[2-6]{2}OS X", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.dmg"},
       {regexp: "32.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-32-bit.deb"},
       {regexp: "64.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-64-bit.deb"},
-      {regexp: ".*", link: "https://github.com/getlantern/lantern/wiki/Lantern-Beta-Versions#download-links"}
+      // for Android devices with large screen
+      {regexp: "Android", link: ANDROID_LINK},
+      {regexp: ".*", link: "https://github.com/getlantern/lantern#lantern-"}
     ];
     for (i = 0; i < os_links.length; ++i) {
       re = new RegExp(os_links[i].regexp);
@@ -28,7 +26,18 @@ $(document).ready(function(){
     });
   };
 
+  var prepare_android_download = function() {
+    if (platform.os.family === "Android") {
+      $("#download-android-button").attr("href", ANDROID_LINK);
+      $("#download-android").css("display", "block");
+    }
+  };
   var init_mandrill = function() {
+    var template_map = {
+      "fa-IR": "download-link-from-lantern-website-fa-ir",
+      "zh-CN": "download-link-from-lantern-website-zh-cn"
+    };
+
     var mandrill_client = new mandrill.Mandrill('fmYlUdjEpGGonI4NDx9xeA');
     var lang = navigator.language || navigator.userLanguage;
     var template_name = template_map[lang] || "download-link-from-lantern-website";
@@ -66,10 +75,11 @@ $(document).ready(function(){
   }
 
   var update_version_number = function() {
+    var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
     $.getJSON(last_release, function(data) {
       if (data.tag_name) {
         $("#version-number").text(data.tag_name);
-        $(".current-version").css("visibility", "visible");
+        $("#current-version").css("visibility", "visible");
       }
     });
   };
@@ -103,6 +113,7 @@ $(document).ready(function(){
   });
 
   set_download_link();
+  prepare_android_download();
   init_mandrill();
   language_chooser();
   update_version_number();
