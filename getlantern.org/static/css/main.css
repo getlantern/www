@@ -49,20 +49,16 @@ header {
   padding-bottom: 3rem;
 }
 
-#download-desktop {
-  margin-top: 4rem;
+#download-desktop, #download-android {
+  margin-top: 2rem;
   display: block;
 }
 
 #download-mobile {
   display: none;
   padding: 0 10%;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
-}
-
-#download-mobile #download-android {
-  display: none;
 }
 
 #how {
@@ -161,15 +157,15 @@ a.button-dwnld {
 }
 
 a.button-dwnld#download-android-button {
-  width: 100%;
   padding: 10px;
   height: 60px;
   line-height: 40px;
 }
 
 p#other-systems {
+  display: none;
   color: #999;
-  padding-top: 2rem;
+  padding-top: 3rem;
   font-size: 1.5rem;
 }
 
@@ -231,11 +227,11 @@ select#language-chooser {
 
 /*Forms*/
 
-form#send-download-form {
+form#send-download-link-form {
   width: 100%;
 }
 
-form#send-download-form input[type="email"] {
+form#send-download-link-form input[type="email"] {
   display: block;
   height: 60px;
   width: 100%;
@@ -247,7 +243,7 @@ form#send-download-form input[type="email"] {
   margin-bottom: .8rem;
 }
 
-form#send-download-form input[type="submit"] {
+form#send-download-link-form input[type="submit"] {
   display: block;
   height: 60px;
   width: 100%;
@@ -486,12 +482,21 @@ section#faq {
     width: 77vw;
   }
 
-  section#download-desktop {
+  #download-desktop {
     display: none;
   }
 
-  section#download-mobile {
+  #download-android {
+    padding: 0 10%;
+    display: none;
+  }
+
+  #download-mobile {
     display: block;
+  }
+
+  a.button-dwnld#download-android-button {
+    width: 100%;
   }
 
   .footer-link a i {
