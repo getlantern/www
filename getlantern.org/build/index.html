@@ -46,6 +46,7 @@
   <select id="language-chooser" name="language-chooser">
   <option value="en_US">English (United States)</option>
   <option value="es">Español</option>
+  <option value="fr">Français</option>
   <option value="ru">Русский</option>
   <option value="fa_IR">فارسی</option>
   <option value="zh_CN">中文</option>
@@ -54,30 +55,45 @@
   <a href="/"><h1></h1></a>
   <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
   <p class="centered" data-localize="LANTERN_DESCRIPTION_1">Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.</p>
-
-  <a href="" id="download-button" data-localize="DOWNLOAD_LANTERN" class="button-dwnld download-desktop">Download Lantern</a>
-  <p class="centered current-version">
-    <span data-localize="CURRENT_VERSION">Current version:</span>
-    <span id="version-number"></span>
-  </p>
-
-  <form action="" class="download-mobile" id="send-download-form">
-    <input id="send-download-link-email" type="email" placeholder="your@email.com">
-    <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
-  </form>
-
-  <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
-    Thank you!<br>An email will be arriving shortly.
-  </p>
-
 </header>
+
+<section id="download">
+  <div id="download-desktop">
+    <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_DESKTOP">Download Desktop</a>
+    <p id="current-version" class="centered">
+      <span data-localize="CURRENT_VERSION">Current version:</span>
+      <span id="version-number"></span>
+    </p>
+  </div>
+
+  <div id="download-android">
+    <a href="" id="download-android-button" class="button-dwnld" data-localize="DOWNLOAD_ANDROID">Download Android</a>
+  </div>
+
+  <p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">
+    Or for other systems
+  </p>
+
+  <div id="download-mobile">
+    <form action="" id="send-download-link-form">
+      <input id="send-download-link-email" type="email" placeholder="your@email.com">
+      <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
+    </form>
+
+    <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
+      Thank you!<br>An email will be arriving shortly.
+    </p>
+  </div>
+</section>
+
+
 <section id="how">
   <h3 data-localize="QUESTION_2">How does Lantern work?</h3>
   <p class="centered white" data-localize="LANTERN_DESCRIPTION_2">Lantern is an Internet proxy tool that lets you access blocked sites.</p>
   <div class="icons">
-     <div class="col">
-       <img src="/static/images/icon_fast.svg" alt="">
-       <span data-localize="FEATURE_1">Fast</span>
+    <div class="col">
+      <img src="/static/images/icon_fast.svg" alt="">
+      <span data-localize="FEATURE_1">Fast</span>
     </div>
     <div class="col">
       <img src="/static/images/icon_userfriendly.svg" alt="">

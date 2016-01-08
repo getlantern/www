@@ -1,9 +1,13 @@
 {
     "OPEN_INTERNET_FOR_EVERYONE": "人人可享的开放网络",
-    "DOWNLOAD_LANTERN": "下载 Lantern",
+    "DOWNLOAD_DESKTOP": "下载桌面版",
+    "DOWNLOAD_ANDROID": "下载安卓版",
+    "EMAIL_THANK_YOU": "谢谢！<br>邮件已发出，请稍后查收。",
+    "CURRENT_VERSION": "当前版本：",
+    "DOWNLOAD_OTHER_SYSTEMS": "其它平台",
     "DOWNLOAD_LANTERN_MOBILE": "给我发送下载链接",
     "LANTERN_DESCRIPTION_1": "Lantern是一个免费的桌面程序。它能帮助你随时随地快速、可靠、安全地访问互联网。",
-    "HOW_DOES_LANTERN_WORK": "Lantern 是如何工作的？",
+    "HOW_DOES_LANTERN_WORK": "Lantern是如何工作的？",
     "LANTERN_DESCRIPTION_2": "Lantern是一个互联网代理工具。它能帮助你访问被封锁的网站。",
     "FEATURE_1": "快速",
     "FEATURE_2": "易用",
@@ -21,9 +25,9 @@
     "FAQ_DESCRIPTION": "本页面回答一些关于Lantern的常见问题。更多技术细节，请访问<a href='https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers'>developers FAQ</a>。",
     "QUESTION_1": "谁开发了Lantern？",
     "ANSWER_1_A": "Lantern由<a href='http://bravenewsoftware.org'>Brave New Software Project, Inc</a>开发。这是一个501(c)3的非赢利机构，专注于用软件解决艰巨的全球性问题。",
-    "ANSWER_1_B": "Brave New Software的创始人，也是 Lantern的首席开发者，Adam Fisk，曾是P2P文件共享服务LimeWire和LittleShoot的主力程序员。",
+    "ANSWER_1_B": "Brave New Software的创始人，也是Lantern的首席开发者，Adam Fisk，曾是P2P文件共享服务LimeWire和LittleShoot的主力程序员。",
     "ANSWER_1_C": "在搭建P2P架构的过程中，他发现同样的架构也能用于提供不受限制的互联网访问。",
-    "QUESTION_2": "Lantern 是如何工作的？",
+    "QUESTION_2": "Lantern是如何工作的？",
     "ANSWER_2_A": "Lantern让用户能流畅地访问被封锁的互联网站点。",
     "ANSWER_2_B": "Lantern自动检测一个网站是否被封锁。对那些被封锁的网站，Lantern通过自有的服务器，或者未封锁地区的用户运行的Lantern，来提供访问。",
     "ANSWER_2_C": "如果网站没有被封锁，Lantern选择靠边站。浏览器就能直接访问网站，速度不受影响。",
@@ -54,7 +58,5 @@
     "ANSWER_8_C": "如果你想停止Lantern，请点击该图标，在弹出的菜单中选择“退出Lantern”。",
     "QUESTION_9": "如果我有别的问题，去哪里寻求帮助？",
     "ANSWER_9_A": "请通过<a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> 或者 <a href='https://groups.google.com/forum/#!forum/lantern-users-zh'>用户论坛</a>和我们取得联系。",
-    "ANSWER_9_B": "如果有其他技术问题，请参阅<a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">开发者问答</a>，或者到 <a href=\"https://groups.google.com/group/lantern-devel\" target=\"_blank\">开发者论坛</a> 上发帖。",
-    "EMAIL_THANK_YOU": "谢谢！<br>邮件已发出，请稍后查收。",
-    "CURRENT_VERSION": "当前版本："
+    "ANSWER_9_B": "如果有其他技术问题，请参阅<a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">开发者问答</a>，或者到 <a href=\"https://groups.google.com/group/lantern-devel\" target=\"_blank\">开发者论坛</a> 上发帖。"
 }
