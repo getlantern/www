@@ -1,16 +1,20 @@
 {
     "OPEN_INTERNET_FOR_EVERYONE": "اینترنت بدون فیلتر برای همه",
-    "DOWNLOAD_LANTERN": "‫دانلود لنترن",
+    "LANTERN_DESCRIPTION_1": "Lantern is a free application that delivers fast, reliable and secure access to the open Internet.",
+    "DOWNLOAD_DESKTOP": "دانلود دسکتاپ",
+    "CURRENT_VERSION": "نسخه فعلی:",
+    "DOWNLOAD_ANDROID": "دانلود اندروید",
+    "DOWNLOAD_OTHER_SYSTEMS": "Or for other systems",
     "DOWNLOAD_LANTERN_MOBILE": "لینک دانلود را برای من بفرست",
-    "LANTERN_DESCRIPTION_1": "لنترن، راهی برای دسترسی سریع، رایگان و امن به اینترنت بازاست.",
+    "EMAIL_THANK_YOU": "ممنون<br> به زودی یک ایمیل دریافت خواهید کرد.",
     "HOW_DOES_LANTERN_WORK": "لنترن چگونه کار می کند؟",
-    "LANTERN_DESCRIPTION_2": "لنترن یک پراکسی است که به شما امکان دسترسی به وبسایت های مسدود شده را می دهد.",
+    "LANTERN_DESCRIPTION_2": "لنترن یک ابزار پراکسی است که به شما امکان دسترسی به وبسایت های مسدود شده را می دهد.",
     "FEATURE_1": " سریع",
     "FEATURE_2": "استفاده راحت",
     "FEATURE_3": "حجم دانلود پایین",
     "FEATURE_4": "امن",
     "QUESTIONS_1": "پرسش ها",
-    "QUESTIONS_2": "پرسش های متداول",
+    "QUESTIONS_2": "به صفحه پرسش های متداول برو",
     "PRESS": "درباره لنترن",
     "NEWSLETTER_1": "عضوخبرنامه شوید",
     "NEWSLETTER_2": "ثبت نام",
@@ -54,7 +58,5 @@
     "ANSWER_8_C": " اگر می‌خواهید لنترن را متوقف کنید، روی آیکون لنترن کلیک کرده و از طریق منویی که باز می شود، برنامه را ببندید.",
     "QUESTION_9": "برای اطلاعات بیشتر به کجا مراجعه کنم؟",
     "ANSWER_9_A": "اگر سوالات بیشتری دارید لطفا به<a href='https://www.facebook.com/getlantern?ref=hl'> صفحه فیس بوک</a> یا <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>فروم کاربران</a> ما سر بزنید.",
-    "ANSWER_9_B": "‫اگر سوالات فنی بیشتری دارید، لطفا <a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">قسمت سوال و جواب توسعه‌دهندگان</a> لنترن را ببینید. ",
-    "EMAIL_THANK_YOU": "ممنون<br> به زودی یک ایمیل دریافت خواهید کرد.",
-    "CURRENT_VERSION": "نسخه فعلی:"
+    "ANSWER_9_B": "a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">قسمت سوال و جواب توسعه‌دهندگان</a> لنترن را ببینید."
 }
