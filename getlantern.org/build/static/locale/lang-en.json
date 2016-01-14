@@ -1,8 +1,12 @@
 {
   "OPEN_INTERNET_FOR_EVERYONE": "Open Internet for Everyone",
-  "DOWNLOAD_LANTERN": "Download Lantern",
-  "DOWNLOAD_LANTERN_MOBILE": "Send me the Download Link",
   "LANTERN_DESCRIPTION_1": "Lantern is a free desktop application that delivers fast, reliable and secure access to the open Internet.",
+  "DOWNLOAD_DESKTOP": "Download Desktop",
+  "CURRENT_VERSION": "Current version:",
+  "DOWNLOAD_ANDROID": "Download Android",
+  "DOWNLOAD_OTHER_SYSTEMS": "Or for other systems",
+  "DOWNLOAD_LANTERN_MOBILE": "Send me the Download Link",
+  "EMAIL_THANK_YOU": "Thank you!<br>An email will be arriving shortly.",
   "HOW_DOES_LANTERN_WORK": "How does Lantern work?",
   "LANTERN_DESCRIPTION_2": "Lantern is an Internet proxy tool that lets you access blocked sites.",
   "FEATURE_1": "Fast",
@@ -54,7 +58,5 @@
   "ANSWER_8_C": "If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.",
   "QUESTION_9": "Where do I go if I have more questions?",
   "ANSWER_9_A": "If you have more questions, please connect with us on <a href='https://www.facebook.com/getlantern?ref=hl'>Facebook</a> or visit our <a href='https://groups.google.com/forum/#!forum/lantern-users-en'>User Forum</a>.",
-  "ANSWER_9_B": "If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.",
-  "EMAIL_THANK_YOU": "Thank you!<br>An email will be arriving shortly.",
-  "CURRENT_VERSION": "Current version:"
+  "ANSWER_9_B": "If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum."
 }

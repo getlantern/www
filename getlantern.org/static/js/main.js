@@ -27,9 +27,10 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-bet
   };
 
   var prepare_android_download = function() {
+    $("#download-android-button").attr("href", ANDROID_LINK);
     if (platform.os.family === "Android") {
-      $("#download-android-button").attr("href", ANDROID_LINK);
       $("#download-android").css("display", "block");
+      $("#other-systems").css("display", "block");
     }
   };
   var init_mandrill = function() {

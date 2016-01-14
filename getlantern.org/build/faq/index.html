@@ -46,6 +46,7 @@
   <select id="language-chooser" name="language-chooser">
   <option value="en_US">English (United States)</option>
   <option value="es">Español</option>
+  <option value="fr">Français</option>
   <option value="ru">Русский</option>
   <option value="fa_IR">فارسی</option>
   <option value="zh_CN">中文</option>
@@ -55,6 +56,7 @@
   <h2 data-localize="FAQ">Frequently Asked Questions</h2>
   <p class="centered" data-localize="FAQ_DESCRIPTION">This page provides answers to common questions about Lantern. Check out our  <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A</a> for more technical information.</p>
 </header>
+
 <section id="faq" dir="auto">
 
   <div class="question">
@@ -157,17 +159,35 @@
     </div>
   </div>
 </section>
+<section id="download">
+  <div id="download-desktop">
+    <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_DESKTOP">Download Desktop</a>
+    <p id="current-version" class="centered">
+      <span data-localize="CURRENT_VERSION">Current version:</span>
+      <span id="version-number"></span>
+    </p>
+  </div>
 
-<section class="download">
-  <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_LANTERN">Download Lantern</a>
-  <form action="" class="download-mobile" id="send-download-form">
-    <input id="send-download-link-email" type="email" placeholder="your@email.com">
-    <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
-  </form>
-  <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
-    Thank you!<br>An email will be arriving shortly.
+  <div id="download-android">
+    <a href="" id="download-android-button" class="button-dwnld" data-localize="DOWNLOAD_ANDROID">Download Android</a>
+  </div>
+
+  <p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">
+    Or for other systems
   </p>
+
+  <div id="download-mobile">
+    <form action="" id="send-download-link-form">
+      <input id="send-download-link-email" type="email" placeholder="your@email.com">
+      <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
+    </form>
+
+    <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
+      Thank you!<br>An email will be arriving shortly.
+    </p>
+  </div>
 </section>
+
 <footer>
   <div class="follow-us">
     <h5 data-localize="FOOTER_1">Follow Us</h5>
