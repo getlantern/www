@@ -147,16 +147,17 @@ p.bold {
 }
 
 a.button-dwnld {
+  height: 3.750rem;
   display: block;
   margin: 0 auto 1.5rem;
   background-color: #75CBDA;
   color: #fff;
   border-radius: 5px;
-  width: 35vw;
+  width: 25vw;
   font: normal 1.875rem/2rem 'prxnv_sb', sans-serif;
   text-decoration: none;
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
 }
 
 p#other-systems {
@@ -520,6 +521,9 @@ section#faq {
   }
 
   a.button-dwnld {
+    padding: 10px;
+    height: 60px;
+    line-height: 40px;
     width: 100%;
   }
 
