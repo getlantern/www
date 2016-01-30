@@ -49,6 +49,10 @@ header {
   padding-bottom: 3rem;
 }
 
+#download {
+  padding-bottom: 3rem;
+}
+
 #download-panels {
   margin-top: 2rem;
   display: block;
@@ -148,7 +152,7 @@ a.button-dwnld {
   background-color: #75CBDA;
   color: #fff;
   border-radius: 5px;
-  width: 25vw;
+  width: 35vw;
   font: normal 1.875rem/2rem 'prxnv_sb', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -162,11 +166,15 @@ p#other-systems {
   font-size: 1.5rem;
 }
 
-p#current-version {
+#current-version {
   color: #999;
   visibility: hidden;
   margin: 0 auto 2rem;
   font-size: 1rem;
+}
+
+#current-version.version-added.visable {
+  visibility: visible;
 }
 
 a.go-faq {
@@ -242,7 +250,7 @@ select#language-chooser {
 }
 
 #os-links li i {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #444;
 }
 
@@ -503,7 +511,7 @@ section#faq {
     width: 77vw;
   }
 
-  #os-links, #current-version, #download-panels > .tab-pane {
+  #os-links, #current-version, #download-panels > .tab-content {
     display: none;
   }
 

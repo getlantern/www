@@ -1,5 +1,13 @@
 $(document).ready(function(){
   var set_download_link = function() {
+    $("a[data-toggle='tab']").on('shown.bs.tab', function(e) {
+      if($(e.target).attr('href') == '#android') {
+        $("#current-version").removeClass("visable");
+      }else{
+        $("#current-version").addClass("visable");
+      }
+    });
+
     var os = platform.os.architecture + platform.os.family;
     var os_links = [
       {regexp: "[2-6]{2}[Ww]indows", name: "windows"},
@@ -9,6 +17,7 @@ $(document).ready(function(){
       {regexp: "32.*|64.*", name: "linux"},
       {regexp: ".*", name: "other"}
     ];
+
     for (i = 0; i < os_links.length; ++i) {
       re = new RegExp(os_links[i].regexp);
       if (os.match(re)) {
@@ -17,14 +26,6 @@ $(document).ready(function(){
       }
     }
 
-    $("a[data-toggle='tab']").on('shown.bs.tab', function(e) {
-      if($(e.target).attr('href') == '#android') {
-         $("#current-version").css("visibility", "hidden");
-      }else{
-        $("#current-version").css("visibility", "visible");
-      }
-    })
-
     $('.button-dwnld').on('click', function() {
       ga('send', 'event', 'button', 'click', 'download');
     });
@@ -32,7 +33,7 @@ $(document).ready(function(){
 
   var prepare_android_download = function() {
     if (platform.os.family === "Android") {
-      $("#android").add("#other-systems").show();
+      $("#download-panels > .tab-content").add("#other-systems").show();
     }
   };
   var init_mandrill = function() {
@@ -82,7 +83,7 @@ $(document).ready(function(){
     $.getJSON(last_release, function(data) {
       if (data.tag_name) {
         $("#version-number").text(data.tag_name);
-        $("#current-version").css("visibility", "visible");
+        $("#current-version").addClass("version-added visable");
       }
     });
   };
