@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   var prepare_android_download = function() {
     if (platform.os.family === "Android") {
-      $("#download-panels > .tab-content").add("#other-systems").show();
+      $("#download-panels > .tab-content").add("#other-systems").css({"display": "block"});
     }
   };
   var init_mandrill = function() {
@@ -83,7 +83,10 @@ $(document).ready(function(){
     $.getJSON(last_release, function(data) {
       if (data.tag_name) {
         $("#version-number").text(data.tag_name);
-        $("#current-version").addClass("version-added visable");
+        $("#current-version").addClass("version-added");
+        if(!$("a[href='#android']").parent().hasClass('active')) {
+          $("#current-version").addClass("visable");
+        }
       }
     });
   };
