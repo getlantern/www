@@ -1,21 +1,36 @@
 <section id="download">
-  <div id="download-desktop">
-    <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_DESKTOP">Download Desktop</a>
+  <div id="download-panels">
+    <ul id="os-links" role="tablist">
+      <li role="presentation"><a href="#windows" aria-controls="windows" role="tab" data-toggle="tab"><i class="fa fa-fw fa-windows"></i></a></li>
+      <li role="presentation"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab"><i class="fa fa-fw fa-linux"></i></a></li>
+      <li role="presentation"><a href="#mac" aria-controls="mac" role="tab" data-toggle="tab"><i class="fa fa-fw fa-apple"></i></a></li>
+      <li role="presentation"><a href="#android" aria-controls="android" role="tab" data-toggle="tab"><i class="fa fa-fw fa-android"></i></a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="windows">
+        <a href="https://s3.amazonaws.com/lantern/lantern-installer-beta.exe" class="button-dwnld" data-localize="DOWNLOAD_WINDOWS">Download Windows</a>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="linux">
+        <a href="https://s3.amazonaws.com/lantern/lantern-installer-beta-32-bit.deb" class="button-dwnld" data-localize="DOWNLOAD_LINUX_32">Download Linux 32</a>
+        <a href="https://s3.amazonaws.com/lantern/lantern-installer-beta-64-bit.deb" class="button-dwnld" data-localize="DOWNLOAD_LINUX_64">Download Linux 64</a>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="mac">
+        <a href="https://s3.amazonaws.com/lantern/lantern-installer-beta.dmg" class="button-dwnld" data-localize="DOWNLOAD_MAC">Download Mac</a>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="android">
+        <a href="https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk" class="button-dwnld" data-localize="DOWNLOAD_Android">Download Android</a>
+      </div>
+    </div>
+
     <p id="current-version" class="centered">
       <span data-localize="CURRENT_VERSION">Current version:</span>
       <span id="version-number"></span>
     </p>
   </div>
 
-  <div id="download-android">
-    <a href="" id="download-android-button" class="button-dwnld" data-localize="DOWNLOAD_ANDROID">Download Android</a>
-  </div>
-
-  <p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">
-    Or for other systems
-  </p>
-
   <div id="download-mobile">
+    <p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">Or for other systems</p>
     <form action="" id="send-download-link-form">
       <input id="send-download-link-email" type="email" placeholder="your@email.com">
       <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">

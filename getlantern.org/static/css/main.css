@@ -49,15 +49,15 @@ header {
   padding-bottom: 3rem;
 }
 
-#download-desktop, #download-android {
+#download-panels {
   margin-top: 2rem;
   display: block;
+  padding: 0 10%;
 }
 
 #download-mobile {
   display: none;
   padding: 0 10%;
-  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -143,7 +143,6 @@ p.bold {
 }
 
 a.button-dwnld {
-  height: 3.750rem;
   display: block;
   margin: 0 auto 1.5rem;
   background-color: #75CBDA;
@@ -153,19 +152,13 @@ a.button-dwnld {
   font: normal 1.875rem/2rem 'prxnv_sb', sans-serif;
   text-decoration: none;
   text-align: center;
-  padding: 1rem 0;
-}
-
-a.button-dwnld#download-android-button {
-  padding: 10px;
-  height: 60px;
-  line-height: 40px;
+  padding: 1.2rem 0;
 }
 
 p#other-systems {
   display: none;
   color: #999;
-  padding-top: 3rem;
+  padding: 1.5rem 0;
   font-size: 1.5rem;
 }
 
@@ -223,6 +216,34 @@ select#language-chooser {
   text-align: center;
   /*padding: 1rem 0px;*/ /* Fix for https://github.com/getlantern/www/issues/32 */
   float: right;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+
+#os-links {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#os-links li {
+  display: inline-block;
+  margin: 0 .5rem;
+  padding: 0 .2rem 1.5rem;
+  border-bottom: 3px solid transparent;
+}
+
+#os-links li.active {
+  border-bottom-color: #75CBDA;
+}
+
+#os-links li i {
+  font-size: 3rem;
+  color: #444;
 }
 
 /*Forms*/
@@ -482,12 +503,7 @@ section#faq {
     width: 77vw;
   }
 
-  #download-desktop {
-    display: none;
-  }
-
-  #download-android {
-    padding: 0 10%;
+  #os-links, #current-version, #download-panels > .tab-pane {
     display: none;
   }
 
@@ -495,7 +511,7 @@ section#faq {
     display: block;
   }
 
-  a.button-dwnld#download-android-button {
+  a.button-dwnld {
     width: 100%;
   }
 
