@@ -164,7 +164,7 @@ p#other-systems {
   display: none;
   color: #999;
   padding: 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #current-version {
@@ -253,6 +253,12 @@ select#language-chooser {
 #os-links li i {
   font-size: 3.5rem;
   color: #444;
+}
+
+#download-lantern-for {
+  color: #777;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 /*Forms*/
@@ -512,7 +518,7 @@ section#faq {
     width: 77vw;
   }
 
-  #os-links, #current-version, #download-panels > .tab-content {
+  #os-links, #current-version, #download-panels > .tab-content, #download-lantern-for {
     display: none;
   }
 

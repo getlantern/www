@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   var prepare_android_download = function() {
     if (platform.os.family === "Android") {
-      $("#download-panels > .tab-content").add("#other-systems").css({"display": "block"});
+      $("#download-panels > .tab-content, #other-systems, #download-lantern-for").css({"display": "block"});
     }
   };
   var init_mandrill = function() {
