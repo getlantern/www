@@ -1,5 +1,7 @@
-$(document).ready(function(){
-  var set_download_link = function() {
++function ($) {
+  'use strict';
+
+  function set_download_tab() {
     $("a[data-toggle='tab']").on('shown.bs.tab', function(e) {
       if($(e.target).attr('href') == '#android') {
         $("#current-version").removeClass("visable");
@@ -15,11 +17,10 @@ $(document).ready(function(){
       // for Android devices with large screen
       {regexp: "Android", name: "android"},
       {regexp: "32.*|64.*", name: "linux"},
-      {regexp: ".*", name: "other"}
     ];
 
-    for (i = 0; i < os_links.length; ++i) {
-      re = new RegExp(os_links[i].regexp);
+    for (var i = 0; i < os_links.length; ++i) {
+      var re = new RegExp(os_links[i].regexp);
       if (os.match(re)) {
         $("[href='#" + os_links[i].name + "']").tab('show');
         break;
@@ -31,12 +32,13 @@ $(document).ready(function(){
     });
   };
 
-  var prepare_android_download = function() {
+  function prepare_android_download() {
     if (platform.os.family === "Android") {
       $("#download-panels > .tab-content, #other-systems, #download-lantern-for").css({"display": "block"});
     }
   };
-  var init_mandrill = function() {
+
+  function init_mandrill() {
     var template_map = {
       "fa-IR": "download-link-from-lantern-website-fa-ir",
       "zh-CN": "download-link-from-lantern-website-zh-cn"
@@ -69,7 +71,7 @@ $(document).ready(function(){
     });
   };
 
-  var check_rtl = function() {
+  function check_rtl() {
     var lang = $("#language-chooser").val();
     if(lang == "fa_IR") {
       $("html").attr("dir", "rtl");
@@ -78,7 +80,7 @@ $(document).ready(function(){
     };
   }
 
-  var update_version_number = function() {
+  function update_version_number() {
     var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
     $.getJSON(last_release, function(data) {
       if (data.tag_name) {
@@ -91,7 +93,7 @@ $(document).ready(function(){
     });
   };
 
-  var language_chooser = function() {
+  function language_chooser() {
     var lang;
 
     $("#language-chooser").change(function() {
@@ -114,14 +116,17 @@ $(document).ready(function(){
     $("[data-localize]").localize("/static/locale/lang", {language: lang });
   };
 
-  $('.question a').click(function(){
-    $(this).closest('div').toggleClass('show');
-    return false;
-  });
+  $(function () {
+    $('.question a').click(function(){
+      $(this).closest('div').toggleClass('show');
+      return false;
+    });
 
-  set_download_link();
-  prepare_android_download();
-  init_mandrill();
-  language_chooser();
-  update_version_number();
-});
+    set_download_tab();
+    prepare_android_download();
+    init_mandrill();
+    language_chooser();
+    update_version_number();
+  })
+
+}(jQuery);
