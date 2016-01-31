@@ -1,39 +1,44 @@
-$(document).ready(function(){
++function ($) {
+  'use strict';
 
-var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk";
+  function set_download_tab() {
+    $("a[data-toggle='tab']").on('shown.bs.tab', function(e) {
+      if($(e.target).attr('href') == '#android') {
+        $("#current-version").removeClass("visable");
+      }else{
+        $("#current-version").addClass("visable");
+      }
+    });
 
-  var set_download_link = function() {
     var os = platform.os.architecture + platform.os.family;
     var os_links = [
-      {regexp: "[2-6]{2}[Ww]indows", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.exe"},
-      {regexp: "[2-6]{2}OS X", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.dmg"},
-      {regexp: "32.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-32-bit.deb"},
-      {regexp: "64.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-64-bit.deb"},
+      {regexp: "[2-6]{2}[Ww]indows", name: "windows"},
+      {regexp: "[2-6]{2}OS X", name: "mac"},
       // for Android devices with large screen
-      {regexp: "Android", link: ANDROID_LINK},
-      {regexp: ".*", link: "https://github.com/getlantern/lantern#lantern-"}
+      {regexp: "Android", name: "android"},
+      {regexp: "32.*|64.*", name: "linux"},
     ];
-    for (i = 0; i < os_links.length; ++i) {
-      re = new RegExp(os_links[i].regexp);
+
+    for (var i = 0; i < os_links.length; ++i) {
+      var re = new RegExp(os_links[i].regexp);
       if (os.match(re)) {
-        $("#download-button").attr("href", os_links[i].link);
+        $("[href='#" + os_links[i].name + "']").tab('show');
         break;
       }
     }
 
-    $('#download-button').on('click', function() {
+    $('.button-dwnld').on('click', function() {
       ga('send', 'event', 'button', 'click', 'download');
     });
   };
 
-  var prepare_android_download = function() {
-    $("#download-android-button").attr("href", ANDROID_LINK);
+  function prepare_android_download() {
     if (platform.os.family === "Android") {
-      $("#download-android").css("display", "block");
-      $("#other-systems").css("display", "block");
+      $("#download-panels > .tab-content, #other-systems, #download-lantern-for").css({"display": "block"});
     }
   };
-  var init_mandrill = function() {
+
+  function init_mandrill() {
     var template_map = {
       "fa-IR": "download-link-from-lantern-website-fa-ir",
       "zh-CN": "download-link-from-lantern-website-zh-cn"
@@ -66,7 +71,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-bet
     });
   };
 
-  var check_rtl = function() {
+  function check_rtl() {
     var lang = $("#language-chooser").val();
     if(lang == "fa_IR") {
       $("html").attr("dir", "rtl");
@@ -75,17 +80,20 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-bet
     };
   }
 
-  var update_version_number = function() {
+  function update_version_number() {
     var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
     $.getJSON(last_release, function(data) {
       if (data.tag_name) {
         $("#version-number").text(data.tag_name);
-        $("#current-version").css("visibility", "visible");
+        $("#current-version").addClass("version-added");
+        if(!$("a[href='#android']").parent().hasClass('active')) {
+          $("#current-version").addClass("visable");
+        }
       }
     });
   };
 
-  var language_chooser = function() {
+  function language_chooser() {
     var lang;
 
     $("#language-chooser").change(function() {
@@ -108,14 +116,17 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-bet
     $("[data-localize]").localize("/static/locale/lang", {language: lang });
   };
 
-  $('.question a').click(function(){
-    $(this).closest('div').toggleClass('show');
-    return false;
-  });
+  $(function () {
+    $('.question a').click(function(){
+      $(this).closest('div').toggleClass('show');
+      return false;
+    });
 
-  set_download_link();
-  prepare_android_download();
-  init_mandrill();
-  language_chooser();
-  update_version_number();
-});
+    set_download_tab();
+    prepare_android_download();
+    init_mandrill();
+    language_chooser();
+    update_version_number();
+  })
+
+}(jQuery);
