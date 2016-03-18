@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var ANDROID_LINK = "https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk";
+var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk";
 
   var set_download_link = function() {
     var os = platform.os.architecture + platform.os.family;
