@@ -46,7 +46,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
       "name": "example name",
       "content": "example content"
     }];
-    $("#send-download-form").on("submit", function(event) {
+    $("#send-download-link-form").on("submit", function(event) {
       var email = $("#send-download-link-email").val();
       if (email) {
         var message = {
@@ -59,7 +59,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
           "template_content": template_content,
           "message": message
         });
-        $("#send-download-form").hide();
+        $("#send-download-link-form").hide();
         $("#thanks-after-email").fadeIn("slow");
       }
       event.preventDefault();
