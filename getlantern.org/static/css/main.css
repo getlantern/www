@@ -77,6 +77,43 @@ footer {
   padding: 2rem 4rem 2.5rem;
 }
 
+#notice {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 10px;
+  width: 440px;
+  height: 140px;
+  background-color: #f50057;
+  font-size: 18px;
+  line-height: 24;
+  z-index: 2;
+}
+
+#notice * {
+  color: #ffffff;
+}
+
+#notice p {
+  position: relative;
+  padding: 12px 18px;
+}
+
+#notice p a {
+font-weight: 700;
+}
+
+#notice #close-notice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+
+#notice a {
+  text-decoration: none;
+}
+
 /*Headings & Text*/
 
 h1 {
