@@ -106,6 +106,26 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
     check_rtl();
 
     $("[data-localize]").localize("/static/locale/lang", {language: lang });
+    show_notice(lang);
+  };
+
+  var show_notice = function(lang) {
+    if (lang === 'zh_CN') {
+      var show = true;
+      if (Modernizr.localstorage && window.localStorage.getItem("hide-notice")) {
+        show = false;
+      }
+      if (show) {
+        $("#notice").show();
+        $("#notice #close-notice").click(function() {
+          // uncomment to remember visitor's choice
+          /*if (Modernizr.localstorage) {
+            window.localStorage.setItem("hide-notice", true);
+          }*/
+          $("#notice").hide();
+        });
+      }
+    }
   };
 
   $('.question a').click(function(){
