@@ -6,6 +6,7 @@
     "DOWNLOAD_ANDROID": "下载安卓版",
     "DOWNLOAD_OTHER_SYSTEMS": "其它平台",
     "DOWNLOAD_LANTERN_MOBILE": "把下载链接发给我",
+    "ALSO_AVAILABLE": "或者移步到",
     "EMAIL_THANK_YOU": "谢谢！<br>邮件已发出，请稍后查收。",
     "HOW_DOES_LANTERN_WORK": "Lantern 是如何工作的？",
     "LANTERN_DESCRIPTION_2": "Lantern 是一个互联网代理工具。它能帮助你访问被封锁的网站。",
