@@ -193,10 +193,33 @@ a.button-dwnld {
   padding: 1rem 0;
 }
 
+p#current-version {
+  color: #999;
+  visibility: hidden;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
 a.button-dwnld#download-android-button {
   padding: 10px;
   height: 60px;
   line-height: 40px;
+}
+
+p#google-play {
+  color: #999;
+  margin: 0 auto 2rem;
+}
+
+p#google-play span {
+  padding-left: 8px;
+  font-size: 1rem;
+  vetical-align: text-bottom;
+}
+
+p#google-play img {
+  height: 50px;
+  vertical-align: middle;
 }
 
 p#other-systems {
@@ -204,13 +227,6 @@ p#other-systems {
   color: #999;
   padding-top: 3rem;
   font-size: 1.5rem;
-}
-
-p#current-version {
-  color: #999;
-  visibility: hidden;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
 }
 
 a.go-faq {

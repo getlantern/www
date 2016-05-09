@@ -72,8 +72,13 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
       $("html").attr("dir", "rtl");
     }else{
       $("html").attr("dir", "ltr");
-    };
-  }
+    }
+  };
+
+  var change_gplay_barge = function() {
+    var lang = $("#language-chooser").val();
+    $("#gplay_badge").attr("src", "/static/images/gplay/"+lang+".png");
+  };
 
   var update_version_number = function() {
     var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
@@ -95,6 +100,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
         window.localStorage.setItem("lang", lang);
       }
       check_rtl();
+      change_gplay_barge();
     });
 
     if (Modernizr.localstorage) {
@@ -104,6 +110,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
     $("#language-chooser").val(lang || "en_US");
 
     check_rtl();
+    change_gplay_barge();
 
     $("[data-localize]").localize("/static/locale/lang", {language: lang });
     show_notice(lang);
