@@ -46,11 +46,11 @@ html, body {
 
 header {
   border-top: 10px solid #75CBDA;
-  padding-bottom: 3rem;
+  padding-bottom: 2.25rem;
 }
 
 #download-desktop, #download-android {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: block;
 }
 
@@ -182,7 +182,7 @@ p.bold {
 a.button-dwnld {
   height: 3.750rem;
   display: block;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem;
   background-color: #75CBDA;
   color: #fff;
   border-radius: 5px;
@@ -193,10 +193,33 @@ a.button-dwnld {
   padding: 1rem 0;
 }
 
+p#current-version {
+  color: #999;
+  visibility: hidden;
+  margin: 1rem auto 1rem;
+  font-size: 1rem;
+}
+
 a.button-dwnld#download-android-button {
   padding: 10px;
   height: 60px;
   line-height: 40px;
+}
+
+p#google-play {
+  color: #999;
+  margin: 0 auto 4.5rem;
+}
+
+p#google-play span {
+  padding-left: 8px;
+  font-size: 1rem;
+  vetical-align: text-bottom;
+}
+
+p#google-play img {
+  height: 50px;
+  vertical-align: middle;
 }
 
 p#other-systems {
@@ -204,13 +227,6 @@ p#other-systems {
   color: #999;
   padding-top: 3rem;
   font-size: 1.5rem;
-}
-
-p#current-version {
-  color: #999;
-  visibility: hidden;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
 }
 
 a.go-faq {

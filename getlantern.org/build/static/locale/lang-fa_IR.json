@@ -1,11 +1,12 @@
 {
     "OPEN_INTERNET_FOR_EVERYONE": "اینترنت بدون فیلتر برای همه",
-    "LANTERN_DESCRIPTION_1": "Lantern is a free application that delivers fast, reliable and secure access to the open Internet.",
+    "LANTERN_DESCRIPTION_1": "لنترن یک برنامه مجانی است که اتصال دائم، پر سرعت و امن را با اینترنت ازاد فراهم می‌کند.",
     "DOWNLOAD_DESKTOP": "دانلود دسکتاپ",
     "CURRENT_VERSION": "نسخه فعلی:",
     "DOWNLOAD_ANDROID": "دانلود اندروید",
     "DOWNLOAD_OTHER_SYSTEMS": "یا برای سیستم های دیگر",
     "DOWNLOAD_LANTERN_MOBILE": "لینک دانلود را برای من بفرست",
+    "ALSO_AVAILABLE": "نیز موجود است در",
     "EMAIL_THANK_YOU": "ممنون<br> به زودی یک ایمیل دریافت خواهید کرد.",
     "HOW_DOES_LANTERN_WORK": "لنترن چگونه کار می کند؟",
     "LANTERN_DESCRIPTION_2": "لنترن یک ابزار پراکسی است که به شما امکان دسترسی به وبسایت های مسدود شده را می دهد.",
