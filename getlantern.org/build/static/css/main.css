@@ -46,11 +46,11 @@ html, body {
 
 header {
   border-top: 10px solid #75CBDA;
-  padding-bottom: 20px;
+  padding-bottom: 2.25rem;
 }
 
 #download-desktop, #download-android {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: block;
 }
 
@@ -196,7 +196,7 @@ a.button-dwnld {
 p#current-version {
   color: #999;
   visibility: hidden;
-  margin: 0 auto 2rem;
+  margin: 1rem auto 1rem;
   font-size: 1rem;
 }
 
