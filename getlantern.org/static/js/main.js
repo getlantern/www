@@ -99,8 +99,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
       if (Modernizr.localstorage) {
         window.localStorage.setItem("lang", lang);
       }
-      check_rtl();
-      change_gplay_barge();
+      on_change_lang(lang);
     });
 
     if (Modernizr.localstorage) {
@@ -109,29 +108,36 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
 
     $("#language-chooser").val(lang || "en_US");
 
+    $("[data-localize]").localize("/static/locale/lang", {language: lang });
+    on_change_lang(lang);
+  };
+
+  var on_change_lang = function(lang) {
     check_rtl();
     change_gplay_barge();
-
-    $("[data-localize]").localize("/static/locale/lang", {language: lang });
     show_notice(lang);
   };
 
   var show_notice = function(lang) {
+    var show = false;
     if (lang === 'zh_CN') {
-      var show = true;
+      show = true;
       if (Modernizr.localstorage && window.localStorage.getItem("hide-notice")) {
         show = false;
       }
-      if (show) {
-        $("#notice").show();
-        $("#notice #close-notice").click(function() {
-          // uncomment to remember visitor's choice
-          /*if (Modernizr.localstorage) {
-            window.localStorage.setItem("hide-notice", true);
+    }
+
+    if (show) {
+      $("#notice").show();
+      $("#notice #close-notice").click(function() {
+        // uncomment to remember visitor's choice
+        /*if (Modernizr.localstorage) {
+          window.localStorage.setItem("hide-notice", true);
           }*/
-          $("#notice").hide();
-        });
-      }
+        $("#notice").hide();
+      });
+    } else {
+      $("#notice").hide();
     }
   };
 
