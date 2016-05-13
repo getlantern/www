@@ -82,7 +82,7 @@ footer {
   position: fixed;
   left: 0;
   top: 10px;
-  width: 440px;
+  max-width: 440px;
   height: 140px;
   background-color: #f50057;
   font-size: 18px;
