@@ -113,6 +113,7 @@ var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk"
   };
 
   var on_change_lang = function(lang) {
+    document.body.lang = lang.replace('_', '-');
     check_rtl();
     change_gplay_barge();
     show_notice(lang);
