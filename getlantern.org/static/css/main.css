@@ -172,7 +172,7 @@ h2 {
 }
 ul.why-download {
     list-style: none;
-    margin: 4rem auto;
+    margin: 1.75rem auto;
     padding: 0;
     display: inline-block;
     text-align: center;
@@ -202,12 +202,13 @@ span.blue-checkmark {
     direction: rtl;
 }
 .download-buttons a {
-    display: inline-block;
+    display: block;
     float: none;
-    margin: 0 .6rem;
-    vertical-align: top;
-    height: 40px;
-    padding-top: 8px;
+    margin: auto;
+    vertical-align: middle;
+    height: 56px;
+    width: 222px;
+    padding-top: 13px;
     font-size: 1.25rem;
 }
 a.get-android {
@@ -215,12 +216,16 @@ a.get-android {
     background: #fff;
     border-radius: 3px;
     border: 2px solid #ff4081;
-    padding-top: 6px;
+    padding-top: 10px;
 }
 a.get-android:hover {
     color: #da205f;
     border-color: #da205f;
 }
+#download-button {
+    margin-top: 15px;
+}
+
 .download-buttons > span {
     display: block;
     color: #006064;
