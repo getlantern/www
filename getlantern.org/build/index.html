@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html class="no-js">
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Lantern - Open Internet for Everyone</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
-      <meta property="og:image" content="https://getlantern.org/static/images/headerlogo.png">
-      <link rel="stylesheet" href="/static/css/main.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <link rel="icon" href="/static/images/favicon.png">
-      <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lantern</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="https://getlantern.org/static/images/headerlogo.png">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-21815217-1', 'auto');
+ga('send', 'pageview');
+    </script>
 
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-21815217-1', 'auto');
-        ga('send', 'pageview');
-
-      </script>
-
-      <!-- Facebook Pixel Code -->
-      <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','//connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '486497101510375');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=486497101510375&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '486497101510375');
+fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                                        src="https://www.facebook.com/tr?id=486497101510375&ev=PageView&noscript=1"
+                                        /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
 
-    
-<header>
-  <select id="language-chooser" name="language-chooser">
+    <header class="fixed">
+      <div class="header-wrapper">
+        <h1><a href="/">
+          <img src="/static/images/logo.png" alt="Lantern">
+        </a></h1>
+        
+        <a href="#download-now" class="download" data-localize="DOWNLOAD">Download</a>
+        
+        <div class="language-wrapper">
+          <select id="language-chooser" name="language-chooser">
   <option value="en_US">English (United States)</option>
   <option value="es">Español</option>
   <option value="fr">Français</option>
@@ -52,83 +57,150 @@
   <option value="zh_CN">中文</option>
 </select>
 
-  <a href="/"><h1></h1></a>
-  <h2 data-localize="OPEN_INTERNET_FOR_EVERYONE">Open Internet for Everyone</h2>
-  <p class="centered" data-localize="LANTERN_DESCRIPTION_1">Lantern is a free application that delivers fast, reliable and secure access to the open Internet.</p>
+        </div>
+        
+      </div>
 </header>
 
-<div id="notice">
-  <p>
-    <a id="close-notice" href="#">X</a>
-  </p>
-  <p>
-    <a href="https://getlantern.org" target="_blank">GetLantern.org</a>是蓝灯唯一的官方网站。其他网站的下载链接都可能包含有病毒，并且盗取你的资金和个人信息。请从<a href="https://getlantern.org" target="_blank">官网</a>或<a href="https://github.com/getlantern/forum#蓝灯lantern最新版本下载" target="_blank">GitHub</a>(免翻墙)下载蓝灯软件。
-  </p>
-</div>
 
-<section id="download">
-  <p id="current-version" class="centered">
-    <span data-localize="CURRENT_VERSION">Current version:</span>
-    <span id="version-number"></span>
-  </p>
+    
 
-  <div id="download-desktop">
-    <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_DESKTOP">Download Desktop</a>
-  </div>
 
-  <div id="download-android">
-    <a href="" id="download-android-button" class="button-dwnld" data-localize="DOWNLOAD_ANDROID">Download Android</a>
-  </div>
 
-  <!--<p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">
-    Or for other systems
-  </p>-->
-
-  <div id="download-mobile">
-    <form action="" id="send-download-link-form">
-      <input id="send-download-link-email" type="email" placeholder="your@email.com">
-      <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
-    </form>
-
-    <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
-      Thank you!<br>An email will be arriving shortly.
-    </p>
-  </div>
-
-  <p id="google-play" class="centered">
-    <span data-localize="ALSO_AVAILABLE">Also available on</span>
-    <a href="https://play.google.com/store/apps/details?id=org.getlantern.lantern" target="_blank"><img id="gplay_badge" /></a>
-  </p>
+<section class="w100" id="cover-img">
+  <hgroup>
+  <h2 data-localize="BETTER_THAN_A_VPN">Better than a VPN</h2>
+  </hgroup>
 </section>
 
 
-<section id="how">
-  <h3 data-localize="QUESTION_2">How does Lantern work?</h3>
-  <p class="centered white" data-localize="LANTERN_DESCRIPTION_2">Lantern is an Internet proxy tool that lets you access blocked sites.</p>
-  <div class="icons">
-    <div class="col">
-      <img src="/static/images/icon_fast.svg" alt="">
-      <span data-localize="FEATURE_1">Fast</span>
+<section class="w100" id="download-now">
+  <div class="section-wrapper">
+    <h2 data-localize="DOWNLOAD_NOW_UPGRADE_PRO">Download Now and Upgrade to Pro</h2>
+    <ul class="why-download">
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="FASTER_SPEED">Faster Speed</span>
+      </li>
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="UNLIMITED_DATA">Unlimited Data</span>
+      </li>
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="BLOCKING_RESISTANCE">Blocking Resistance</span>
+      </li>
+    </ul>
+    <div class="download-buttons">
+
+      <a href="" id="download-button" class="get-desktop" data-localize="GET_DESKTOP">Get Desktop</a>
+      <a href="" id="download-android-button" class="get-android" data-localize="GET_ANDROID">Get Android</a>
+      <div class="send-link">
+        <form action="">
+          <input type="email" placeholder="your@email.com">
+          <input type="submit" value="Send Link">
+        </form>
+      </div>
+      <span data-localize="FOR_OS">For Windows, Android, Mac, Ubuntu. iOS coming soon</span>
+    </div>
+    <div class="google-play">
+        <span data-localize="ALSO_AVAILABLE">Also available on</span>
+        <a href="https://play.google.com/store/apps/details?id=org.getlantern.lantern" target="_blank">
+          <img src="/static/images/google-play-badge.png" alt="">
+        </a>
+    </div>
+    <span class="learn-more">Learn More &darr;</span>
+  </div>
+</section>
+
+
+<section class="w100" id="features">
+  <div class="section-wrapper">
+    <div class="icons">
+     <div class="col">
+       <img src="/static/images/icon_fast.svg" alt="">
+       <span data-localize="FEATURE_1">Fast</span>
+       <p data-localize="FEATURE_1_DETAIL">Lantern delivers fast access to the open Internet</p>
     </div>
     <div class="col">
-      <img src="/static/images/icon_userfriendly.svg" alt="">
-      <span data-localize="FEATURE_2">Easy to Use</span>
+      <img src="/static/images/icon_easy.svg" alt="">
+      <span data-localize="FEATURE_2">Easy</span>
+      <p data-localize="FEATURE_2_DETAIL">Just download, install, and start browsing and using apps!</p>
     </div>
     <div class="col">
-      <img src="/static/images/icon_small.svg" alt="">
-      <span data-localize="FEATURE_3">Small Download</span>
+      <img src="/static/images/icon_smart.svg" alt="">
+      <span data-localize="FEATURE_3">Smart</span>
+      <p data-localize="FEATURE_3_DETAIL">Lantern uses a variety of tecniques to stay unblocked</p>
     </div>
     <div class="col">
       <img src="/static/images/icon_secure.svg" alt="">
       <span data-localize="FEATURE_4">Secure</span>
+      <p data-localize="FEATURE_4_DETAIL">Lantern encrypts all of your traffic to blocked sites</p>
     </div>
   </div>
-
-  <p class="centered white bold" data-localize="QUESTIONS_1">Questions?</p>
-  <a href="/faq/index.html" class="go-faq" data-localize="QUESTIONS_2">Head to our FAQ page</a>
+  </div>
 </section>
-<section id="extra">
-  <h4 data-localize="PRESS">Read about Lantern</h4>
+
+
+
+<section class="w100" id="reasons">
+  <div class="section-wrapper">
+    <h2 data-localize="WHY_PRO_AWESOME">Why is Lantern Pro so awesome?</h2>
+    <div class="awesome-reasons">
+      <div>
+        <span class="checkmark">
+          <img src="/static/images/large_check.svg" alt="">
+        </span>
+        <span class="text"><b data-localize="REASON_1">Faster Speed:</b> <span data-localize="REASON_1_DETAIL">Race through websites, apps, and videos with the fastest connection possible.</span></span>
+      </div>
+      <div>
+        <span class="checkmark">
+          <img src="/static/images/large_check.svg" alt="">
+        </span>
+        <span class="text"><b data-localize="REASON_2">No Limits:</b> <span data-localize="REASON_2_DETAIL">Lantern Pro has no limits.</span></span>
+      </div>
+      <div>
+        <span class="checkmark">
+          <img src="/static/images/large_check.svg" alt="">
+        </span>
+        <span class="text"><b data-localize="REASON_3">Multiple Devices:</b> <span data-localize="REASON_3_DETAIL">Lantern Pro works on up to 3 devices.</span></span>
+      </div>
+      <div>
+        <span class="checkmark">
+          <img src="/static/images/large_check.svg" alt="">
+        </span>
+        <span class="text"><b data-localize="REASON_4">Blocking Resistant:</b> <span data-localize="REASON_4_DETAIL">Lantern Pro finds the best server in Asia, Europe and US to keep you online and surfing.</span></span>
+      </div>
+    </div>
+    <span data-localize="JUST_RELAX">Just relax and let Lantern Pro get you the best Internet connection possible.</span>
+    <p class="centered" data-localize="VISIT_FAQ">Visit our FAQs page to learn more about Lantern</p>
+    <a href="/faq/" class="faqlink" data-localize="FAQ_LINK">FAQ</a>
+  </div>
+</section>
+
+<section class="w100" id="enterprise">
+    <div class="section-wrapper">
+        <h3 data-localize="ENTERPRISE">Lantern Enterprise</h3>
+        <div class="enterprise">
+            <span data-localize="ENTERPRISE_CONTACT"></span>
+        </div>
+    </div>
+</section>
+
+
+
+ 
+
+
+<section class="w100" id="press">
+  <div class="section-wrapper">
+    <h3 data-localize="PRESS">Read about Lantern</h3>
   <div class="press">
     <a href="http://sinosphere.blogs.nytimes.com/2015/03/30/q-and-a-adam-fisk-on-evading-internet-censorship-in-china/" target="_blank">
       <img src="/static/images/nytimes.svg" alt="">
@@ -155,40 +227,61 @@
       <img src="/static/images/fastco.svg" alt="">
     </a>
   </div>
-  <div class="newsletter">
-    <h4 data-localize="NEWSLETTER_1">Sign Up for our Newsletter</h4>
+  </div>
+</section>
+
+
+<section class="w100" id="coming-soon">
+  <div class="section-wrapper">
+    <div class="cs-image">
+      <img src="/static/images/pink_wall.svg" alt="">
+    </div>
+    <div class="cs-text">
+      <div class="quote">
+        <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+        <p data-localize="USER_COMMENT_1">"Awesome. It's truly better than any VPN."</p>
+        <span class="author" data-localize="USER_COMMENT_2">- Lantern User comment on Google Play Store</span>
+      </div>
+      <p class="cs-ios" data-localize="IOS_COMING_SOON">Lantern for iOS coming soon</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <footer>
+    <div class="newsletter">
+    <h4 data-localize="NEWSLETTER_1">Sign up for our newsletter to receive updates</h4>
     <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
       <input name="EMAIL" type="email" placeholder="your@email.com">
       <button data-localize="NEWSLETTER_2" type="submit">Join</button>
+      <!--<input type="submit" value="Join" data-localize="NEWSLETTER_2">-->
     </form>
   </div>
-  <p class="centered white bold" data-localize="FIRETWEET">Check out <a href="https://firetweet.io" target="_blank">FireTweet</a>, our new Twitter app for Android! </p>
-</section>
-
-<footer>
+  
   <div class="follow-us">
-    <h5 data-localize="FOOTER_1">Follow Us</h5>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">
-        <i class="fa fa-facebook-square fa-fw"></i> FB English
+      Facebook
       </a>
     </div>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlanternpersian?fref=ts" target="_blank">
-        <i class="fa fa-facebook-square fa-fw"></i> FB Persian
+      Facebook Persian
       </a>
     </div>
     <div class="footer-link">
       <a href="https://twitter.com/getlantern" target="_blank">
-        <i class="fa fa-twitter-square fa-fw"></i> Twitter
+       Twitter
       </a>
     </div>
     <div class="footer-link">
       <a href="https://github.com/getlantern" target="_blank">
-        <i class="fa fa-github-square fa-fw"></i> Contribute on Github
+        Contribute on Github
       </a>
     </div>
   </div>
+  
 </footer>
 
 
@@ -199,6 +292,7 @@
     <script src="/static/js/vendor/bootstrap.min.js"></script>
     <script src="/static/js/main.js"></script>
   </body>
+
   
   
 </html>

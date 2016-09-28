@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html class="no-js">
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Lantern - Open Internet for Everyone</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
-      <meta property="og:image" content="https://getlantern.org/static/images/headerlogo.png">
-      <link rel="stylesheet" href="/static/css/main.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <link rel="icon" href="/static/images/favicon.png">
-      <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lantern</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="https://getlantern.org/static/images/headerlogo.png">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-21815217-1', 'auto');
+ga('send', 'pageview');
+    </script>
 
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-21815217-1', 'auto');
-        ga('send', 'pageview');
-
-      </script>
-
-      <!-- Facebook Pixel Code -->
-      <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','//connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '486497101510375');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=486497101510375&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '486497101510375');
+fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                                        src="https://www.facebook.com/tr?id=486497101510375&ev=PageView&noscript=1"
+                                        /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
 
-    
-<header>
-  <select id="language-chooser" name="language-chooser">
+    <header class="fixed">
+      <div class="header-wrapper">
+        <h1><a href="/">
+          <img src="/static/images/logo.png" alt="Lantern">
+        </a></h1>
+        
+        <a href="#download-now" class="download" data-localize="DOWNLOAD">Download</a>
+        
+        <div class="language-wrapper">
+          <select id="language-chooser" name="language-chooser">
   <option value="en_US">English (United States)</option>
   <option value="es">Español</option>
   <option value="fr">Français</option>
@@ -52,181 +57,244 @@
   <option value="zh_CN">中文</option>
 </select>
 
-  <a href="/"><h1></h1></a>
-  <h2 data-localize="FAQ">Frequently Asked Questions</h2>
-  <p class="centered" data-localize="FAQ_DESCRIPTION">This page provides answers to common questions about Lantern. Check out our  <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A</a> for more technical information.</p>
+        </div>
+        
+      </div>
 </header>
 
-<section id="faq" dir="auto">
 
+    
+<section id="faq-section">
+  <div class="section-wrapper">
+    
+    <h2>Frequently Asked Questions</h2>
+  <p class="centered">This page provides answers to common questions about Lantern. Check out our  <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A</a> for more technical information.</p>
+<section id="faq">
+ 
   <div class="question">
-    <a href=""><span data-localize="QUESTION_1">Who built Lantern?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_1">What is Lantern?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_1_A">Lantern is built by the <a href="http://www.bravenewsoftware.org/" target="_blank">Brave New Software Project, Inc,</a> a registered 501(c)3 non-profit dedicated to creating software that tackles tough global challenges.</span>
-        <span data-localize="ANSWER_1_B">Brave New Software’s founder and Lantern lead developer, Adam Fisk, was formerly a lead developer of the peer-to-peer file sharing services LimeWire and LittleShoot.</span>
-        <span data-localize="ANSWER_1_C">While working on those P2P architectures, Adam realized they could be useful in providing unfiltered Internet access.</span>
-      </p>
+      <p data-localize="ANSWER_1_A">Lantern is a software application for desktop and mobile that gives access to blocked websites and apps.</p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_2">How does Lantern work?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_2">What makes Lantern unique?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_2_A">Lantern was built to give users fast access to the blocked Internet.</span>
-        <span data-localize="ANSWER_2_B">Lantern automatically detects whether or not a site is blocked and then accesses the blocked site either through our own servers or through Lantern users running as access points in the uncensored world.</span>
-        <span data-localize="ANSWER_2_C">If a site is unblocked, Lantern gets out of the way, and your browser accesses it directly to give you the fastest possible access.</span>
-      </p>
+      <p data-localize="ANSWER_2_A">Lantern is unique because it uses a variety of techniques to stay unblocked in censored regions around the world, falling back to other approaches if some of those techniques are blocked. The developer team at Lantern is constantly adapting and revising those techniques depending on the blocking environment. User feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns.</p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_3">What makes Lantern unique?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_3">What is Lantern Pro?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_3_A">Lantern is unique in that it uses a variety of techniques to stay unblocked around the world, falling back to other approaches if some of those techniques become blocked.</span>
-        <span data-localize="ANSWER_3_B">Those techniques include centralized and sophisticated peer-to-peer architectures.</span>
-        <span data-localize="ANSWER_3_C">Usability and user feedback are also integral parts of Lantern, with new releases incorporating suggestions and addressing concerns.</span>
-      </p>
+        <p><span data-localize="ANSWER_3_A">Lantern Pro gives you all the features of our free version and more:</span><br><br>
+
+        <span data-localize="ANSWER_3_B">Faster speeds</span><br>
+        <span data-localize="ANSWER_3_C">Lantern Pro limits the number of users on each server to offer you faster speeds.</span><br><br>
+
+        <span data-localize="ANSWER_3_D">Three devices</span><br>
+        <span data-localize="ANSWER_3_E">With a Pro account, you can use Lantern on three devices and enjoy the benefits of Lantern on your desktop and mobile devices </span><br><br>
+
+        <span data-localize="ANSWER_3_F">Better performance</span><br>
+        <span data-localize="ANSWER_3_G">With servers distributed globally, Lantern Pro’s dynamic server allocation is constantly looking to connect you to the best performing server ensuring a smooth and uninterrupted connection.</span><br><br> 
+
+        <span data-localize="ANSWER_3_H">Unlimited data</span><br> 
+        <span data-localize="ANSWER_3_I">Lantern Pro provides you with unlimited data to browse the web, stream videos and download content..</span></p>
     </div>
   </div>
-
+  
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_4">Can I trust Lantern?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_4">How does Lantern work?</span> <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_4_A">Lantern is open, anyone can <a href="https://github.com/getlantern" target="_blank">check our source code</a> and see how everything works and make an informed decision.</span>
-        <span data-localize="ANSWER_4_B">We welcome experts to audit our system and would appreciate any feedback (<a href="mailto:security@getlantern.org">security@getlantern.org</a>).</span>
-      </p>
+        <p><span data-localize="ANSWER_4_A">With Lantern you get to the Internet the fastest way possible.</span><br><br> 
+
+        <span data-localize="ANSWER_4_B">When a website is not blocked, Lantern gets you there faster by directing you to that website directly, without going through Lantern servers.</span><br><br>  
+
+        <span data-localize="ANSWER_4_C">When a website is blocked, Lantern directs you through its fastest proxy node, to get to the site.</span></p>
     </div>
   </div>
-
+  
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_5">Can anyone view my traffic when I’m using Lantern?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_5">Can anyone view my traffic when I’m using Lantern?</span><i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_5_A">Lantern encrypts all of your traffic when you are accessing a blocked site, but Lantern does not change traffic to unblocked sites in any way.</span>
-        <span data-localize="ANSWER_5_B">This means a network observer, such as a censoring government or an ISP, cannot read your traffic to blocked sites.</span>
-        <span data-localize="ANSWER_5_C">Lantern users acting as access points can see the website you’re accessing and where you’re accessing it from, but the actual content you are reading from or posting to that site is not visible to them because it is encrypted over HTTPS.</span>
-        <span data-localize="ANSWER_5_D">Lantern only sends HTTPS traffic to Lantern users acting as access points.</span>
-      </p>
+      <p data-localize="ANSWER_5_A">Lantern encrypts all your traffic in transit through our servers to protect your data and privacy.</p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_6">What user information does Lantern collect?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_6">What user information does Lantern collect?</span> 
+ <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_6_A">Lantern allows you to provide the Lantern team with useful information and analytics that will help us improve the Lantern program.</span>
-        <span data-localize="ANSWER_6_B">You can change this option in your Lantern settings.</span>
-        <span data-localize="ANSWER_6_C">If you choose to send Lantern this data we will only use it for improving the Lantern service so that we can continue to offer better service for you and others.</span>
-      </p>
+      <p data-localize="ANSWER_6_A">Lantern collects diagnostic information when users share feedback and other information for  debugging purposes.  We also collect usage analytics of our apps and website to offer you a better user experience. The Lantern settings allow you to configure this according to your personal preferences. If you choose to send Lantern diagnostic and usage data, we will not share, sell or lease this data to third parties or use it for any other purpose than making our services better for our users.</p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_7">Does Lantern give me anonymity online?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_7">Does Lantern give me anonymity online?</span><i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_7_A">Lantern is not an anonymity tool.</span>
-        <span data-localize="ANSWER_7_B">Lantern was built for fast and open Internet access.</span>
-        <span data-localize="ANSWER_7_C">If you feel you need to be anonymous online (if you are posting something you think could bring legal action against you, for example) we recommend using Tor.</span>
-        <span data-localize="ANSWER_7_D">Otherwise, Lantern will give you faster access to blocked sites.</span>
-      </p>
+      <p data-localize="ANSWER_7_A">Lantern is designed to provide you with unfettered access to information online. Lantern is not an anonymity tool, so if you need or would like to be anonymous online, please use <a href="https://torproject.org" target="_blank">Tor</a>. Otherwise, Lantern will give you faster access to blocked sites.</p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_8">How do I know if Lantern is working?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_8">What is the difference between Lantern and Lantern Pro?</span>
+ <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_8_A">Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX.</span>
-        <span data-localize="ANSWER_8_B">As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically.</span>
-        <span data-localize="ANSWER_8_C">If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.</span>
-      </p>
+        <p><span data-localize="ANSWER_8_A">Lantern Pro is built on the same improved Lantern technology, but is faster, more blocking resistant and has unlimited data.</span><br><br>  
+        <span data-localize="ANSWER_8_B">Faster: Pro allocates less users per server, thereby giving users improved performance. Furthermore, Pro uses different servers than Free.</span><br><br>  
+<span data-localize="ANSWER_8_C">Blocking resistant: Lantern Pro is more blocking resistant because Censors can’t identify the servers unless they also have Pro. Also, Lantern Pro employs Smart Servers so if one server is not performing, the user is transferred to another, ensuring steady connection. This allows for improved defense against censor interference with your connection. The Lantern dev team works on a 24 hour schedule to be able to identify blocking techniques by censors and respond
+    quickly to ensure that any users experiencing blocking are online as soon as possible.</span><br><br>  
+<span data-localize="ANSWER_8_D">Unlimited Data: Lantern Pro doesn’t limit data usage, so that those that are reliant on a fast unblocked connection can access all their online content and information whenever they need.</span>
+<br><br>
+<span data-localize="ANSWER_8_E">To switch from the free version to Lantern Pro, just download Lantern and click on the upgrade button within the interface.</span></p>
     </div>
   </div>
-
+  
   <div class="question">
-    <a href=""><span data-localize="QUESTION_9">Where do I go if I have more questions?</span> <i class="fa fa-angle-down"></i></a>
+      <a href=""><span data-localize="QUESTION_9">Why do I have to pay for Lantern Pro?</span>
+ <i class="fa fa-angle-down"></i></a>
     <div class="answer">
-      <p>
-        <span data-localize="ANSWER_9_A">If you have more questions, please connect with us on <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">Facebook</a> or visit our <a href="https://groups.google.com/forum/#!forum/lantern-users-en" target="_blank">User Forum</a>.</span>
-        <br><br>
-        <span data-localize="ANSWER_9_B">If you have more technical questions, please see the <a href="https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A section</a> of our developers forum.</span>
-      </p>
+      <p data-localize="ANSWER_9_A">The payment feature makes Lantern more blocking resistant because censors cannot infiltrate or block Lantern Pro without paying, which gives you, the user, more stability.  We’ve offered Lantern Pro at a competitive price to help us stay around to continue to provide the fastest and most blocking resistant way to get you online. </p>
     </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_10">How much does Lantern Pro cost?</span>
+ <i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+      <p data-localize="ANSWER_10_A">You can purchase one year of Pro for $27, or two years of Pro for $48. We accept Alipay and the following credit cards: Visa, MasterCard, American Express, JCB, Discover, and Diners Club.</p>
+    </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_11">Can I get Lantern Pro for free?</span>
+ <i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+      <p data-localize="ANSWER_11_A">Every Pro user gets a unique referral code that can be shared with friends. If a friend signs up for the 2 year plan using your code, you get 3 months free! Start inviting!</p>
+    </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_12">Why does Lantern have a data bandwidth limit?</span>  <i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+        <p><span data-localize="ANSWER_12_A">As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee.</span><br><br>
+        <span data-localize="ANSWER_12_B">To keep our free version running, we implemented a bandwidth limitation of 800 MB/ month.. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.</span></p>
+    </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_13">Can I trust Lantern?</span><i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+      <p data-localize="ANSWER_13_A">Lantern is open, anyone can check our <a href="https://github.com/getlantern/lantern" target="_blank">source code</a> to see how everything works and make an informed decision. We welcome experts to audit our system and would appreciate any feedback (<a href="mailto:security@getlantern.org">security@getlantern.org</a>).</p>
+    </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_14">How do I know if Lantern is working?</span> <i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+      <p data-localize="ANSWER_14_A">Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX. As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically. If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.</p>
+    </div>
+  </div>
+  
+  <div class="question">
+      <a href=""><span data-localize="QUESTION_15">Where do I go if I have more questions?</span> <i class="fa fa-angle-down"></i></a>
+    <div class="answer">
+        <p><span data-localize="ANSWER_15_A">If you have more questions, please connect with us on <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">Facebook</a> or visit our <a href="https://groups.google.com/forum/#!forum/lantern-users-en" target="_blank">User Forum</a>.</span><br><br>
+        <span data-localize="ANSWER_15_B">If you have more technical questions, please see the <a href=" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers" target="_blank">Developers Q&amp;A section</a> of our developers forum.</span></p>
+    </div>
+  </div>
+  
+</section>
+
   </div>
 </section>
-<div id="notice">
-  <p>
-    <a id="close-notice" href="#">X</a>
-  </p>
-  <p>
-    <a href="https://getlantern.org" target="_blank">GetLantern.org</a>是蓝灯唯一的官方网站。其他网站的下载链接都可能包含有病毒，并且盗取你的资金和个人信息。请从<a href="https://getlantern.org" target="_blank">官网</a>或<a href="https://github.com/getlantern/forum#蓝灯lantern最新版本下载" target="_blank">GitHub</a>(免翻墙)下载蓝灯软件。
-  </p>
-</div>
 
-<section id="download">
-  <p id="current-version" class="centered">
-    <span data-localize="CURRENT_VERSION">Current version:</span>
-    <span id="version-number"></span>
-  </p>
 
-  <div id="download-desktop">
-    <a href="" id="download-button" class="button-dwnld download-desktop" data-localize="DOWNLOAD_DESKTOP">Download Desktop</a>
+<section class="w100" id="download-now">
+  <div class="section-wrapper">
+    <h2 data-localize="DOWNLOAD_NOW_UPGRADE_PRO">Download Now and Upgrade to Pro</h2>
+    <ul class="why-download">
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="FASTER_SPEED">Faster Speed</span>
+      </li>
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="UNLIMITED_DATA">Unlimited Data</span>
+      </li>
+      <li>
+        <span class="blue-checkmark">
+          <img src="/static/images/blue_check.svg" alt="">
+        </span>
+        <span data-localize="BLOCKING_RESISTANCE">Blocking Resistance</span>
+      </li>
+    </ul>
+    <div class="download-buttons">
+
+      <a href="" id="download-button" class="get-desktop" data-localize="GET_DESKTOP">Get Desktop</a>
+      <a href="" id="download-android-button" class="get-android" data-localize="GET_ANDROID">Get Android</a>
+      <div class="send-link">
+        <form action="">
+          <input type="email" placeholder="your@email.com">
+          <input type="submit" value="Send Link">
+        </form>
+      </div>
+      <span data-localize="FOR_OS">For Windows, Android, Mac, Ubuntu. iOS coming soon</span>
+    </div>
+    <div class="google-play">
+        <span data-localize="ALSO_AVAILABLE">Also available on</span>
+        <a href="https://play.google.com/store/apps/details?id=org.getlantern.lantern" target="_blank">
+          <img src="/static/images/google-play-badge.png" alt="">
+        </a>
+    </div>
+    <span class="learn-more">Learn More &darr;</span>
   </div>
+</section>
 
-  <div id="download-android">
-    <a href="" id="download-android-button" class="button-dwnld" data-localize="DOWNLOAD_ANDROID">Download Android</a>
-  </div>
 
-  <!--<p id="other-systems" class="centered" data-localize="DOWNLOAD_OTHER_SYSTEMS">
-    Or for other systems
-  </p>-->
 
-  <div id="download-mobile">
-    <form action="" id="send-download-link-form">
-      <input id="send-download-link-email" type="email" placeholder="your@email.com">
-      <input type="submit" data-localize="DOWNLOAD_LANTERN_MOBILE" value="Send me the Download Link">
+
+
+    <footer>
+    <div class="newsletter">
+    <h4 data-localize="NEWSLETTER_1">Sign up for our newsletter to receive updates</h4>
+    <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
+      <input name="EMAIL" type="email" placeholder="your@email.com">
+      <button data-localize="NEWSLETTER_2" type="submit">Join</button>
+      <!--<input type="submit" value="Join" data-localize="NEWSLETTER_2">-->
     </form>
-
-    <p id="thanks-after-email" data-localize="EMAIL_THANK_YOU" class="centered">
-      Thank you!<br>An email will be arriving shortly.
-    </p>
   </div>
-
-  <p id="google-play" class="centered">
-    <span data-localize="ALSO_AVAILABLE">Also available on</span>
-    <a href="https://play.google.com/store/apps/details?id=org.getlantern.lantern" target="_blank"><img id="gplay_badge" /></a>
-  </p>
-</section>
-
-<footer>
+  
   <div class="follow-us">
-    <h5 data-localize="FOOTER_1">Follow Us</h5>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlantern?fref=ts" target="_blank">
-        <i class="fa fa-facebook-square fa-fw"></i> FB English
+      Facebook
       </a>
     </div>
     <div class="footer-link">
       <a href="https://www.facebook.com/getlanternpersian?fref=ts" target="_blank">
-        <i class="fa fa-facebook-square fa-fw"></i> FB Persian
+      Facebook Persian
       </a>
     </div>
     <div class="footer-link">
       <a href="https://twitter.com/getlantern" target="_blank">
-        <i class="fa fa-twitter-square fa-fw"></i> Twitter
+       Twitter
       </a>
     </div>
     <div class="footer-link">
       <a href="https://github.com/getlantern" target="_blank">
-        <i class="fa fa-github-square fa-fw"></i> Contribute on Github
+        Contribute on Github
       </a>
     </div>
   </div>
+  
 </footer>
 
 
@@ -237,6 +305,7 @@
     <script src="/static/js/vendor/bootstrap.min.js"></script>
     <script src="/static/js/main.js"></script>
   </body>
+
   
   
 </html>
