@@ -208,7 +208,7 @@ span.blue-checkmark {
     vertical-align: middle;
     height: 56px;
     width: 222px;
-    padding-top: 12px;
+    padding-top: 13px;
     font-size: 1.25rem;
 }
 a.get-android {
@@ -216,7 +216,7 @@ a.get-android {
     background: #fff;
     border-radius: 3px;
     border: 2px solid #ff4081;
-    padding-top: 6px;
+    padding-top: 12px;
 }
 a.get-android:hover {
     color: #da205f;
@@ -388,6 +388,13 @@ a.faqlink {
     height: 40px;
     border-radius: 3px;
 }
+/*Enterprise*/
+#enterprise {
+    padding: 3rem 0;
+    background: 
+}
+
+
 /*Press*/
 
 #press {

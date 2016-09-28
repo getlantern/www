@@ -216,7 +216,7 @@ a.get-android {
     background: #fff;
     border-radius: 3px;
     border: 2px solid #ff4081;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 a.get-android:hover {
     color: #da205f;
@@ -388,8 +388,44 @@ a.faqlink {
     height: 40px;
     border-radius: 3px;
 }
-/*Press*/
+/*Enterprise*/
+#enterprise {
+    padding: 3rem 0;
+    background: #006064;
+}
 
+#enterprise .section-wrapper {
+    overflow: auto;
+}
+
+#enterprise h3 {
+    margin: 15px 0 0 0;
+    color: #ffffff;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.enterprise {
+    width: 100%;
+    min-height: 304px;
+    color: #ffffff;
+    padding: 0;
+    margin: 40px 0 0 0;
+    min-height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-family: "Istok Web";
+}
+
+.enterprise a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+/*Press*/
 #press {
     padding: 3rem 0;
     background: #f5f5f5;
