@@ -48,6 +48,7 @@ $(document).ready(function(){
       if (platform.os.family === "Android") {
           $("#download-android").css("display", "block");
           $("#other-systems").css("display", "block");
+          $("#download-android-button").before($("#download-button"));
       }
   }; 
 

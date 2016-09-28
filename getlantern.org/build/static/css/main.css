@@ -222,7 +222,8 @@ a.get-android:hover {
     color: #da205f;
     border-color: #da205f;
 }
-#download-button {
+
+.download-buttons a:nth-child(2) {
     margin-top: 15px;
 }
 
@@ -399,19 +400,18 @@ a.faqlink {
 }
 
 #enterprise h3 {
-    margin: 15px 0 0 0;
     color: #ffffff;
+    padding-top: 20px;
     font-size: 2.25rem;
     text-align: center;
 }
 
 .enterprise {
     width: 100%;
-    min-height: 304px;
     color: #ffffff;
     padding: 0;
+    padding-bottom: 30px;
     margin: 40px 0 0 0;
-    min-height: 40px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
