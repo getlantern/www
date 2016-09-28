@@ -206,7 +206,8 @@ span.blue-checkmark {
     float: none;
     margin: auto;
     vertical-align: middle;
-    height: 56px;
+    height: auto;
+    min-height: 56px;
     width: 222px;
     padding-top: 13px;
     font-size: 1.25rem;
@@ -386,7 +387,8 @@ a.faqlink {
     width: 150px;
     padding: 8px 15px;
     text-decoration: none;
-    height: 40px;
+    height: auto;
+    min-height: 40px;
     border-radius: 3px;
 }
 /*Enterprise*/
