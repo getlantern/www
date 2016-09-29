@@ -9,7 +9,6 @@ $(document).ready(function(){
   });
   
   $('a#on-mobile').click(function(){
-    console.log("yaasss");
     $('.send-link').toggle('slow');
     return false;
   });
@@ -131,6 +130,10 @@ $(document).ready(function(){
   };
 
   var show_notice = function(lang) {
+      if (!lang) {
+          lang = $('#language-chooser').find("option:selected").val() || "en";
+      }
+            
       var show = false;
       if (lang === 'zh_CN') {
           show = true;
@@ -143,9 +146,9 @@ $(document).ready(function(){
           $("#notice").show();
           $("#notice #close-notice").click(function() {
               // uncomment to remember visitor's choice
-              /*if (Modernizr.localstorage) {
+              if (Modernizr.localstorage) {
                 window.localStorage.setItem("hide-notice", true);
-                }*/
+              }
               $("#notice").hide();
           });
       } else {
@@ -162,5 +165,6 @@ $(document).ready(function(){
   prepare_android_download();
   init_mandrill();
   language_chooser();
+  show_notice();
   update_version_number();
 });

@@ -9,7 +9,6 @@ $(document).ready(function(){
   });
   
   $('a#on-mobile').click(function(){
-    console.log("yaasss");
     $('.send-link').toggle('slow');
     return false;
   });
