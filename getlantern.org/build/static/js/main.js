@@ -123,6 +123,8 @@ $(document).ready(function(){
 
     if (uri && uri.includes("/CN")) {
         lang = 'zh_CN';
+    } else if (!lang && uri === '/') {
+        lang = "en_US";
     }
 
     $("#language-chooser").val(lang || "en_US");
