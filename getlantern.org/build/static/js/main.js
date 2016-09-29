@@ -121,7 +121,7 @@ $(document).ready(function(){
         lang = window.localStorage.getItem("lang");
     }
 
-    if (uri.includes("/CN")) {
+    if (uri && uri.includes("/CN")) {
         lang = 'zh_CN';
     }
 
