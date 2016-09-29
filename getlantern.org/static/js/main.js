@@ -104,8 +104,12 @@ $(document).ready(function(){
   };
 
   var language_chooser = function() {
+
+    var uri = window.location.pathname;
+
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
+
       $("[data-localize]").localize("/static/locale/lang", { language: lang });
       if (Modernizr.localstorage) {
           window.localStorage.setItem("lang", lang);
@@ -115,6 +119,10 @@ $(document).ready(function(){
 
     if (Modernizr.localstorage) {
         lang = window.localStorage.getItem("lang");
+    }
+
+    if (uri && uri.includes("/CN")) {
+        lang = 'zh_CN';
     }
 
     $("#language-chooser").val(lang || "en_US");
@@ -130,16 +138,19 @@ $(document).ready(function(){
   };
 
   var show_notice = function(lang) {
+      var show = false;
+      var uri = window.location.pathname;
+
       if (!lang) {
           lang = $('#language-chooser').find("option:selected").val() || "en";
       }
-            
-      var show = false;
+
       if (lang === 'zh_CN') {
           show = true;
-          if (Modernizr.localstorage && window.localStorage.getItem("hide-notice")) {
-              show = false;
-          }
+      }
+
+      if (show && Modernizr.localstorage && window.localStorage.getItem("hide-notice")) {
+          show = false;
       }
 
       if (show) {
