@@ -106,11 +106,12 @@ $(document).ready(function(){
   var language_chooser = function() {
 
     var uri = window.location.pathname;
+    var hostname = window.location.hostname;
 
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
 
-      $("[data-localize]").localize("/static/locale/lang", { language: lang });
+      $("[data-localize]").localize("static/locale/lang", { language: lang });
       if (Modernizr.localstorage) {
           window.localStorage.setItem("lang", lang);
       }
@@ -121,7 +122,7 @@ $(document).ready(function(){
         lang = window.localStorage.getItem("lang");
     }
 
-    if (uri && uri.includes("/CN")) {
+    if (hostname && hostname.includes("s3.amazonaws.com") && !hostname.includes("getlantern.org")) {
         lang = 'zh_CN';
     } else if (!lang && uri === '/') {
         lang = "en_US";
@@ -129,14 +130,23 @@ $(document).ready(function(){
 
     $("#language-chooser").val(lang || "en_US");
 
-    $("[data-localize]").localize("/static/locale/lang", {language: lang });
+    $("[data-localize]").localize("static/locale/lang", {language: lang });
     on_change_lang(lang);
   };
 
   var on_change_lang = function(lang) {
       check_rtl();
       change_gplay_barge();
+      change_faq_link(lang);
       show_notice(lang);
+  };
+
+  var change_faq_link = function(lang) {
+
+      lang = lang || "en";
+
+      $('#faqlink').attr('href', (lang == 'zh_CN') ? 
+         "https://github.com/getlantern/forum" : "./faq/index.html");
   };
 
   var show_notice = function(lang) {
