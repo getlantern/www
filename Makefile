@@ -14,10 +14,12 @@ build:
 deploy-beta: build
 	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
 
-deploy-cn-mirrors: build
+copy-cn-index:
 	echo "Copying CN index to main directory" && \
 	cp $(SOURCE)/pages/index.html $(SOURCE)/tmp.html && \
-	cp $(SOURCE)/pages/CN/index.html $(SOURCE)/pages/index.html && \
+	cp $(SOURCE)/pages/CN/index.html $(SOURCE)/pages/index.html
+
+deploy-cn-mirrors: copy-cn-index build
 	cd $(SOURCE)/build && \
 	for NAME in $(MIRRORS); do \
 		echo "Deploying to $$NAME" && \

@@ -152,6 +152,7 @@ $(document).ready(function(){
   var show_notice = function(lang) {
       var show = false;
       var uri = window.location.pathname;
+      var hideNotice = "hide-notice-" + uri;
 
       if (!lang) {
           lang = $('#language-chooser').find("option:selected").val() || "en";
@@ -161,7 +162,7 @@ $(document).ready(function(){
           show = true;
       }
 
-      if (show && Modernizr.localstorage && window.localStorage.getItem("hide-notice")) {
+      if (show && Modernizr.localstorage && window.localStorage.getItem(hideNotice)) {
           show = false;
       }
 
@@ -170,7 +171,7 @@ $(document).ready(function(){
           $("#notice #close-notice").click(function() {
               // uncomment to remember visitor's choice
               if (Modernizr.localstorage) {
-                window.localStorage.setItem("hide-notice", true);
+                window.localStorage.setItem(hideNotice, true);
               }
               $("#notice").hide();
           });

@@ -9,59 +9,12 @@
 
 {% include 'cn/features.html' %}
 
-        <section class="w100" id="reasons">
-            <div class="section-wrapper">
-                <h2 data-localize="WHY_PRO_AWESOME">蓝灯专业版为什么这么好？</h2>
-                <div class="awesome-reasons">
-                    <div>
-                        <span class="checkmark">
-							<img src="{% static '/static/images/large_check.svg' %}" alt="">
-                        </span>
-                        <span class="text"><b data-localize="REASON_1">更快速度：</b> <span data-localize="REASON_1_DETAIL">使用最快的线路访问网站、应用和视频。</span></span>
-                    </div>
-                    <div>
-                        <span class="checkmark">
-							<img src="{% static '/static/images/large_check.svg' %}" alt="">
-                        </span>
-                        <span class="text"><b data-localize="REASON_2">无限流量：</b> <span data-localize="REASON_2_DETAIL">蓝灯专业版提供无限高速流量。</span></span>
-                    </div>
-                    <div>
-                        <span class="checkmark">
-							<img src="{% static '/static/images/large_check.svg' %}" alt="">
-                        </span>
-                        <span class="text"><b data-localize="REASON_3">多个设备：</b> <span data-localize="REASON_3_DETAIL">蓝灯专业版支持多达3台设备。</span></span>
-                    </div>
-                    <div>
-                        <span class="checkmark">
-							<img src="{% static '/static/images/large_check.svg' %}" alt="">
-                        </span>
-                        <span class="text"><b data-localize="REASON_4">不惧封锁：</b> <span data-localize="REASON_4_DETAIL">蓝灯专业版自动寻找亚洲、欧洲、美国的最佳服务器，保证您的上网顺畅。</span></span>
-                    </div>
-                </div>
-                <span data-localize="JUST_RELAX">请放松，让蓝灯专业版为您提供最好的网络连接。</span>
-                <p class="centered" data-localize="VISIT_FAQ">加入蓝灯论坛来了解更多</p>
-                <a id="faqlink" href="https://github.com/getlantern/forum" target="_blank" class="faqlink" data-localize="FAQ_LINK">蓝灯论坛</a>
-            </div>
-        </section>
+{% include 'cn/reasons.html' %}
 
 {% include 'cn/enterprise.html' %}
 
 {% include 'cn/press.html' %}
 
+{% include 'cn/comingsoon.html' %}
 
-<section class="w100" id="coming-soon">
-	<div class="section-wrapper">
-		<div class="cs-image">
-			<img src="{% static '/static/images/pink_wall.svg' %}" alt="">
-		</div>
-		<div class="cs-text">
-			<div class="quote">
-				<span class="stars">★ ★ ★ ★ ★</span>
-				<p data-localize="USER_COMMENT_1">“赞爆了。真的比什么VPN都好。”</p>
-				<span class="author" data-localize="USER_COMMENT_2">——Google Play 上的蓝灯用户评论</span>
-			</div>
-			<p class="cs-ios" data-localize="IOS_COMING_SOON">iOS 版蓝灯即将发布</p>
-		</div>
-	</div>
-</section>
 {% endblock %}
