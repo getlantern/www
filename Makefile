@@ -6,18 +6,18 @@ WGET 		  := $(call get-command,wget)
 
 MIRRORS  := $(LANTERN_WEBSITE_MIRROR)
 S3_BUCKET ?= lantern
- 
 
- 
+
+
 space :=
-space +=                               
+space +=
 join-with = $(subst $(space),$1,$(strip $2))
 
 require-s3cmd:
 	@if [[ -z "$(S3CMD)" ]]; then echo 'Missing "s3cmd" command. Use "brew install s3cmd" or see https://github.com/s3tools/s3cmd/blob/master/INSTALL'; exit 1; fi
 
 require-wget:
-	@if [[ -z "$(WGET)" ]]; then echo 'Missing "wget" command.'; exit 1; fi 
+	@if [[ -z "$(WGET)" ]]; then echo 'Missing "wget" command.'; exit 1; fi
 
 run:
 	cd $(SOURCE) && cactus serve
@@ -48,7 +48,7 @@ fetch-installers: require-wget
 		BETA=$$(echo $$NAME | sed s/"$$BASE_NAME"/$$BETA_BASE_NAME/) && \
 		URLS+=$$(echo " $$BETA"); \
 	done && \
-	echo "$$URLS" | xargs	 
+	echo "$$URLS" | xargs
 
 copy-cn-index:
 	echo "Copying CN index to main directory" && \
