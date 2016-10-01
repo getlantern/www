@@ -3,15 +3,11 @@ get-command = $(shell which="$$(which $(1) 2> /dev/null)" && if [[ ! -z "$$which
 
 S3CMD := $(call get-command,s3cmd)
 WGET 		  := $(call get-command,wget)
-
-MIRRORS  := $(LANTERN_WEBSITE_MIRRORS)
+WEBSITE_MIRRORS  := $(shell cat "$(SECRETS_DIR)/website-mirrors.txt")
 S3_BUCKET ?= lantern
 
-
-
-space :=
-space +=
-join-with = $(subst $(space),$1,$(strip $2))
+require-secrets-dir:
+	@if [[ -z "$$SECRETS_DIR" ]]; then echo "SECRETS_DIR environment value is required."; exit 1; fi
 
 require-s3cmd:
 	@if [[ -z "$(S3CMD)" ]]; then echo 'Missing "s3cmd" command. Use "brew install s3cmd" or see https://github.com/s3tools/s3cmd/blob/master/INSTALL'; exit 1; fi
@@ -25,16 +21,16 @@ run:
 build:
 	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build
 
-copy-installers:
-	@URLS="$(shell make fetch-installers)" && \
-	for NAME in $(MIRRORS); do \
+copy-installers: require-secrets-dir
+	@URLS="$$(make fetch-installers)" && \
+	for NAME in $(WEBSITE_MIRRORS); do \
 		echo "Copying installers to $$NAME"; \
 		for URL in $$URLS; do \
 			$(S3CMD) cp s3://$(S3_BUCKET)/$$URL s3://$$NAME && \
 			$(S3CMD) setacl s3://$$NAME/$$URL --acl-public; \
 		done; \
 	done; \
-	echo "DONE"
+	echo "Finished copying installers to mirrors"
 
 deploy-beta: build copy-installers
 	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
