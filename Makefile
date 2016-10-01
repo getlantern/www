@@ -4,7 +4,7 @@ get-command = $(shell which="$$(which $(1) 2> /dev/null)" && if [[ ! -z "$$which
 S3CMD := $(call get-command,s3cmd)
 WGET 		  := $(call get-command,wget)
 
-MIRRORS  := $(LANTERN_WEBSITE_MIRROR)
+MIRRORS  := $(LANTERN_WEBSITE_MIRRORS)
 S3_BUCKET ?= lantern
 
 
@@ -55,7 +55,7 @@ copy-cn-index:
 	cp $(SOURCE)/pages/index.html $(SOURCE)/tmp.html && \
 	cp $(SOURCE)/pages/CN/index.html $(SOURCE)/pages/index.html
 
-deploy-cn-mirrors: copy-cn-index build
+deploy-cn-mirrors: copy-installers copy-cn-index build
 	cd $(SOURCE)/build && \
 	for NAME in $(MIRRORS); do \
 		echo "Deploying to $$NAME" && \
