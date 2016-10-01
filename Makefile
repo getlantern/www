@@ -2,8 +2,22 @@ SOURCE ?= getlantern.org
 get-command = $(shell which="$$(which $(1) 2> /dev/null)" && if [[ ! -z "$$which" ]]; then printf %q "$$which"; fi)
 
 S3CMD := $(call get-command,s3cmd)
+WGET 		  := $(call get-command,wget)
 
-MIRRORS  := $(LANTERN_WEBSITE_MIRRORS)
+MIRRORS  := $(LANTERN_WEBSITE_MIRROR)
+S3_BUCKET ?= lantern
+ 
+
+ 
+space :=
+space +=                               
+join-with = $(subst $(space),$1,$(strip $2))
+
+require-s3cmd:
+	@if [[ -z "$(S3CMD)" ]]; then echo 'Missing "s3cmd" command. Use "brew install s3cmd" or see https://github.com/s3tools/s3cmd/blob/master/INSTALL'; exit 1; fi
+
+require-wget:
+	@if [[ -z "$(WGET)" ]]; then echo 'Missing "wget" command.'; exit 1; fi 
 
 run:
 	cd $(SOURCE) && cactus serve
@@ -11,8 +25,30 @@ run:
 build:
 	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build
 
-deploy-beta: build
+copy-installers:
+	@URLS="$(shell make fetch-installers)" && \
+	for NAME in $(MIRRORS); do \
+		echo "Copying installers to $$NAME"; \
+		for URL in $$URLS; do \
+			$(S3CMD) cp s3://$(S3_BUCKET)/$$URL s3://$$NAME && \
+			$(S3CMD) setacl s3://$$NAME/$$URL --acl-public; \
+		done; \
+	done; \
+	echo "DONE"
+
+deploy-beta: build copy-installers
 	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
+
+fetch-installers: require-wget
+	@BASE_NAME="lantern-installer-internal" && \
+	URLS="" && \
+	BETA_BASE_NAME="lantern-installer-beta" && \
+	for URL in $$($(S3CMD) ls s3://$(S3_BUCKET)/ | grep $$BASE_NAME | awk '{print $$4}'); do \
+		NAME=$$(basename $$URL) && \
+		BETA=$$(echo $$NAME | sed s/"$$BASE_NAME"/$$BETA_BASE_NAME/) && \
+		URLS+=$$(echo " $$BETA"); \
+	done && \
+	echo "$$URLS" | xargs	 
 
 copy-cn-index:
 	echo "Copying CN index to main directory" && \

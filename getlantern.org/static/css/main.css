@@ -181,7 +181,7 @@ ul.why-download {
 ul.why-download li {
     color: #006064;
     font-size: 1.5rem;
-    margin: 0 .5rem 2rem .5rem;
+    margin: 0 .5rem 1rem .5rem;
     width: auto;
     text-align: left;
     display: inline-block;
@@ -730,9 +730,15 @@ section#faq-section {
         min-width: 300px;
     }
     ul.why-download {
-        margin: 2.5rem auto;
-        width: 95%;
+        margin: 2.5rem auto; 
+        text-align: center;
+        width: 75%;
     }
+
+    #download-now {
+        padding: 3rem 0;
+    }
+
     span.learn-more {
         color: #006064;
         font-size: 1.2rem;
@@ -767,7 +773,6 @@ section#faq-section {
     }
     ul.why-download li {
         font-size: 1.8rem;
-        margin: 0 0 2rem 0;
         width: 100%;
     }
     ul.why-download li span {
@@ -784,12 +789,6 @@ section#faq-section {
     }
     .download-buttons span {
         font-size: 1.1rem;
-    }
-    .get-desktop {
-        display: none !important;
-    }
-    .get-desktop#on-mobile {
-        display: block !important;
     }
     .google-play span {
         font-size: 1.1rem;

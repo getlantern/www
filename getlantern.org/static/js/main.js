@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var ANDROID_LINK = "https://s3.amazonaws.com/lantern/lantern-installer-beta.apk";
+  var ANDROID_LINK = "lantern-installer-beta.apk";
 
   
   $('#close-notice').click(function(){
@@ -21,10 +21,10 @@ $(document).ready(function(){
   var set_download_link = function() {
       var os = platform.os.architecture + platform.os.family;
       var os_links = [
-      {regexp: "[2-6]{2}[Ww]indows", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.exe"},
-      {regexp: "[2-6]{2}OS X", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta.dmg"},
-      {regexp: "32.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-32-bit.deb"},
-      {regexp: "64.*", link: "https://s3.amazonaws.com/lantern/lantern-installer-beta-64-bit.deb"},
+      {regexp: "[2-6]{2}[Ww]indows", link: "lantern-installer-beta.exe"},
+      {regexp: "[2-6]{2}OS X", link: "lantern-installer-beta.dmg"},
+      {regexp: "32.*", link: "lantern-installer-beta-32-bit.deb"},
+      {regexp: "64.*", link: "lantern-installer-beta-64-bit.deb"},
       // for Android devices with large screen
       {regexp: "Android", link: ANDROID_LINK},
       {regexp: ".*", link: "https://github.com/getlantern/lantern#lantern-"}
@@ -45,9 +45,10 @@ $(document).ready(function(){
   var prepare_android_download = function() {
       $("#download-android-button").attr("href", ANDROID_LINK);
       if (platform.os.family === "Android") {
+          var downloadBtn = document.getElementById("download-button");
           $("#download-android").css("display", "block");
           $("#other-systems").css("display", "block");
-          $("#download-android-button").before($("#download-button"));
+          $("#download-android-button").after(downloadBtn);
       }
   }; 
 
