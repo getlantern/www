@@ -31,7 +31,7 @@ copy-installers: require-secrets-dir
 	done; \
 	echo "Finished copying installers to mirrors"
 
-deploy-beta: build copy-installers
+deploy-beta: build
 	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
 
 get-installer-urls: require-wget

@@ -139,6 +139,7 @@ $(document).ready(function(){
       check_rtl();
       change_gplay_barge();
       change_faq_link(lang);
+      change_logo(lang);
       show_notice(lang);
   };
 
@@ -148,6 +149,15 @@ $(document).ready(function(){
 
       $('#faqlink').attr('href', (lang == 'zh_CN') ? 
          "https://github.com/getlantern/forum" : "./faq/index.html");
+  };
+
+  var change_logo = function(lang) {
+      if (!lang) {
+          lang = $('#language-chooser').find("option:selected").val() || "en";
+      }
+
+      $('#logo').attr('src', (lang == 'zh_CN') ?
+              './static/images/chineselogo.svg' : './static/images/logo.png');
   };
 
   var show_notice = function(lang) {
@@ -191,5 +201,6 @@ $(document).ready(function(){
   init_mandrill();
   language_chooser();
   show_notice();
+  change_logo();
   update_version_number();
 });
