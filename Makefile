@@ -3,7 +3,6 @@ get-command = $(shell which="$$(which $(1) 2> /dev/null)" && if [[ ! -z "$$which
 
 S3CMD := $(call get-command,s3cmd)
 WGET 		  := $(call get-command,wget)
-WEBSITE_MIRRORS  := $(shell cat "$(SECRETS_DIR)/website-mirrors.txt")
 S3_BUCKET ?= lantern
 
 require-secrets-dir:
@@ -23,7 +22,7 @@ build:
 
 copy-installers: require-secrets-dir
 	@URLS="$$(make fetch-installers)" && \
-	for NAME in $(WEBSITE_MIRRORS); do \
+	for NAME in $(shell cat "$(SECRETS_DIR)/website-mirrors.txt"); do \
 		echo "Copying installers to $$NAME"; \
 		for URL in $$URLS; do \
 			$(S3CMD) cp s3://$(S3_BUCKET)/$$URL s3://$$NAME && \
@@ -35,7 +34,7 @@ copy-installers: require-secrets-dir
 deploy-beta: build copy-installers
 	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
 
-fetch-installers: require-wget
+get-installer-urls: require-wget
 	@BASE_NAME="lantern-installer-internal" && \
 	URLS="" && \
 	BETA_BASE_NAME="lantern-installer-beta" && \
@@ -51,9 +50,9 @@ copy-cn-index:
 	cp $(SOURCE)/pages/index.html $(SOURCE)/tmp.html && \
 	cp $(SOURCE)/pages/CN/index.html $(SOURCE)/pages/index.html
 
-deploy-cn-mirrors: copy-installers copy-cn-index build
+deploy-cn-mirrors: require-secrets-dir copy-cn-index build
 	cd $(SOURCE)/build && \
-	for NAME in $(MIRRORS); do \
+	for NAME in $(shell cat "$(SECRETS_DIR)/website-mirrors.txt"); do \
 		echo "Deploying to $$NAME" && \
 		$(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://$$NAME; \
 	done; \
