@@ -109,10 +109,12 @@ $(document).ready(function(){
     var uri = window.location.pathname;
     var hostname = window.location.hostname;
 
+    var localeDir = $('#localedir').data('locale-dir');
+
     $("#language-chooser").change(function() {
       var lang = $(this).find("option:selected").val() || "en";
 
-      $("[data-localize]").localize("static/locale/lang", { language: lang });
+      $("[data-localize]").localize(localeDir, { language: lang });
       if (Modernizr.localstorage) {
           window.localStorage.setItem("lang", lang);
       }
@@ -131,7 +133,7 @@ $(document).ready(function(){
 
     $("#language-chooser").val(lang || "en_US");
 
-    $("[data-localize]").localize("static/locale/lang", {language: lang });
+    $("[data-localize]").localize(localeDir, {language: lang });
     on_change_lang(lang);
   };
 
@@ -156,8 +158,13 @@ $(document).ready(function(){
           lang = $('#language-chooser').find("option:selected").val() || "en";
       }
 
-      $('#logo').attr('src', (lang == 'zh_CN') ?
-              './static/images/chineselogo.svg' : './static/images/logo.png');
+      if (lang == 'zh_CN') {
+        $('#logo').hide();  
+        $('#chineselogo').show();
+      } else {
+          $('#logo').show();  
+          $('#chineselogo').hide();
+      }
   };
 
   var show_notice = function(lang) {

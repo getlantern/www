@@ -176,7 +176,6 @@ ul.why-download {
     padding: 0;
     display: inline-block;
     text-align: center;
-    width: 100%;
 }
 ul.why-download li {
     color: #006064;
@@ -732,7 +731,6 @@ section#faq-section {
     ul.why-download {
         margin: 2.5rem auto;
         text-align: center;
-        width: 75%;
     }
 
     #download-now {
@@ -773,6 +771,7 @@ section#faq-section {
     }
     ul.why-download li {
         font-size: 1.8rem;
+        display: table;
     }
     ul.why-download li span {
         margin-top: .2rem;
