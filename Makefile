@@ -21,7 +21,7 @@ build:
 	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build
 
 copy-installers: require-secrets-dir
-	@URLS="$$(make fetch-installers)" && \
+	@URLS="$$(make get-installer-urls)" && \
 	for NAME in $(shell cat "$(SECRETS_DIR)/website-mirrors.txt"); do \
 		echo "Copying installers to $$NAME"; \
 		for URL in $$URLS; do \
@@ -32,7 +32,7 @@ copy-installers: require-secrets-dir
 	echo "Finished copying installers to mirrors"
 
 deploy-beta: build
-	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://beta.getlantern.org
+	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://beta.getlantern.org
 
 get-installer-urls: require-wget
 	@BASE_NAME="lantern-installer-internal" && \
@@ -59,5 +59,5 @@ deploy-cn-mirrors: require-secrets-dir copy-cn-index build
 	mv ../tmp.html ../pages/index.html
 
 deploy-prod: build
-	cd $(SOURCE)/build && s3cmd sync -P --recursive . s3://getlantern.org
+	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://getlantern.org
 
