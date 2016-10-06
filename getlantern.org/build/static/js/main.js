@@ -8,11 +8,6 @@ $(document).ready(function(){
     return false;
   });
   
-  $('a#on-mobile').click(function(){
-    $('.send-link').toggle('slow');
-    return false;
-  });
-
   var template_map = {
     "fa-IR": "download-link-from-lantern-website-fa-ir",
     "zh-CN": "download-link-from-lantern-website-zh-cn"
@@ -41,6 +36,11 @@ $(document).ready(function(){
           ga('send', 'event', 'button', 'click', 'download');
       });
   }; 
+
+  $('a#on-mobile').click(function(){
+      $('.send-link').toggle('slow');
+      return false;
+  });
 
   var prepare_android_download = function() {
       $("#download-android-button").attr("href", ANDROID_LINK);

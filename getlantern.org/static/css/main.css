@@ -200,6 +200,11 @@ span.blue-checkmark {
     text-align: center;
     direction: rtl;
 }
+
+#send-download-link-email {
+    direction: ltr !important;
+}
+
 .download-buttons a {
     display: block;
     float: none;
@@ -644,6 +649,11 @@ section#faq-section {
 }
 /*Media queries*/
 
+@media all and (min-width: 500px) {
+    div.send-link {
+        display: none !important;
+    }
+}
 @media all and (max-width: 1000px) and (min-width: 910px) {
     ul.why-download li {
         font-size: 1.25rem;

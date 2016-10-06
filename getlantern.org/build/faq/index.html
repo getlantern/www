@@ -242,10 +242,11 @@ fbq('track', 'PageView');
 
       <a href="" id="download-button" class="get-desktop" data-localize="GET_DESKTOP">Get Desktop</a>
       <a href="" id="download-android-button" class="get-android" data-localize="GET_ANDROID">Get Android</a>
+      <a href="" class="get-desktop" id="on-mobile" data-localize="GET_DESKTOP">Get Desktop</a>
       <div class="send-link">
-        <form action="">
-          <input type="email" placeholder="your@email.com">
-          <input type="submit" value="Send Link">
+        <form id="send-download-form" action="">
+          <input id="send-download-link-email" type="email" placeholder="your@email.com">
+          <input type="submit" value="Send Link" data-localize="SEND_LINK">
         </form>
       </div>
       <span data-localize="FOR_OS">For Windows, Android, Mac, Ubuntu. iOS coming soon</span>
