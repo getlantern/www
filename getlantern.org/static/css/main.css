@@ -788,6 +788,12 @@ section#faq-section {
     .download-buttons span {
         font-size: 1.1rem;
     }
+    .get-desktop {
+        display: none !important;
+    }
+    .get-desktop#on-mobile {
+        display: block !important;
+    }
     .google-play span {
         font-size: 1.1rem;
         margin-top: 0rem;
