@@ -94,16 +94,6 @@ $(document).ready(function(){
       $("#gplay_badge").attr("src", "/static/images/gplay/"+lang+".png");
   };
 
-  var update_version_number = function() {
-      var last_release = "https://api.github.com/repos/getlantern/lantern/releases/latest";
-      $.getJSON(last_release, function(data) {
-          if (data.tag_name) {
-              $("#version-number").text(data.tag_name);
-              $("#current-version").css("visibility", "visible");
-          }
-      });
-  };
-
   var language_chooser = function() {
 
     var uri = window.location.pathname;
@@ -209,5 +199,4 @@ $(document).ready(function(){
   language_chooser();
   show_notice();
   change_logo();
-  update_version_number();
 });
