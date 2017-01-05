@@ -395,29 +395,28 @@ a.faqlink {
     min-height: 40px;
     border-radius: 3px;
 }
-/*Enterprise*/
-#enterprise {
+/* Reseller */
+#reseller {
     padding: 3rem 0;
     background: #006064;
 }
 
-#enterprise .section-wrapper {
+#reseller .section-wrapper {
     overflow: auto;
 }
 
-#enterprise h3 {
+#reseller h3 {
     color: #ffffff;
     padding-top: 20px;
     font-size: 2.25rem;
     text-align: center;
 }
 
-.enterprise {
+.reseller {
     width: 100%;
     color: #ffffff;
     padding: 0;
-    padding-bottom: 30px;
-    margin: 40px 0 0 0;
+    margin: 21px 0 0 0;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
@@ -426,9 +425,17 @@ a.faqlink {
     font-family: "Istok Web";
 }
 
-.enterprise a {
-    color: #00bcd4;
+#resellerContact {
+    margin-top: 28px;
+    display: block;
+    padding-bottom:30px;
+}
+
+.reseller a {
+    color: #ffea00;
+    font-weight: 700;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 /*Press*/

@@ -91,7 +91,7 @@ $(document).ready(function(){
 
   var change_gplay_barge = function() {
       var lang = $("#language-chooser").val();
-      $("#gplay_badge").attr("src", "/static/images/gplay/"+lang+".png");
+      $("#gplay_badge").attr("src", "static/images/gplay/"+lang+".png");
   };
 
   var language_chooser = function() {
