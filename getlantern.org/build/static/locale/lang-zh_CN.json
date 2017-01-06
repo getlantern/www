@@ -1,4 +1,5 @@
 {
+    "LANTERN": "蓝灯",
     "BETTER_THAN_A_VPN": "蓝灯 - 秒杀VPN",
     "WHY_PRO_AWESOME": "蓝灯专业版为什么这么好？",
     "DOWNLOAD_NOW_UPGRADE_PRO": "现在下载并升级到专业版",
@@ -38,8 +39,9 @@
     "FAQ_LINK": "蓝灯论坛",
     "VISIT_FAQ": "阅读蓝灯论坛以了解更多",
     "PRESS": "媒体报道",
-    "ENTERPRISE": "蓝灯企业版",
-    "ENTERPRISE_CONTACT": "你的企业想和蓝灯合作?<br/>请联系<a target=\"_blank\" href=\"mailto:enterprise@getlantern.org\">enterprise@getlantern.org</a>获取更多信息.",
+    "MAKE_MONEY": "赚一波！",
+    "RESELLER_INTEREST": "想要和蓝灯一起赚钱吗？现在成为蓝灯专业版经销商！",
+    "RESELLER_CONTACT": "联系：<a target=\"_blank\" href=\"mailto:reseller@getlantern.org\">reseller@getlantern.org</a>",
     "IOS_COMING_SOON": "iOS 版蓝灯即将发布",
     "USER_COMMENT_1": "“赞爆了。真的比什么VPN都好。”",
     "USER_COMMENT_2": "——Google Play 上的蓝灯用户评论",
