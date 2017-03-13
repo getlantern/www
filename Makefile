@@ -55,10 +55,10 @@ deploy-cn-mirrors: require-secrets-dir copy-cn-index build
 	cd $(SOURCE)/build && \
 	for NAME in $(shell cat "$(SECRETS_DIR)/website-mirrors.txt"); do \
 		echo "Deploying to $$NAME" && \
-		$(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://$$NAME; \
+		$(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://$$NAME; \
 	done; \
 	mv ../tmp.html ../pages/index.html
 
 deploy-prod: build
-	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://getlantern.org
+	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://getlantern.org
 
