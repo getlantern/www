@@ -17,8 +17,9 @@ require-wget:
 run:
 	cd $(SOURCE) && cactus serve
 
+
 build:
-	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build
+	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build && cp -R fanqiang build/
 
 copy-installers: require-secrets-dir
 	@URLS="$$(make get-installer-urls)" && \
