@@ -95,5 +95,9 @@
   "ANSWER_14_A": "Once you download and install Lantern, the Lantern icon will appear in the system tray on the lower right of your screen on Windows and in the menu bar at the top of your screen on OSX. As long as the icon is is there, it means Lantern is running and that you can access blocked sites in any browser automatically. If you ever wish to stop Lantern, you can do so in the menu that appears when you click on the Lantern icon in the system tray or menu bar.",
   "QUESTION_15": "Where do I go if I have more questions?",
   "ANSWER_15_A": "If you have more questions, please connect with us on <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">Facebook</a> or visit our <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">User Forum</a>.",
-  "ANSWER_15_B": "If you have more technical questions, please see the <a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum."
+  "ANSWER_15_B": "If you have more technical questions, please see the <a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.",
+  "OUTDATED_TITLE": "Lantern is out-of-date",
+  "OUTDATED_NOTICE": "You are using an old version of Lantern which will soon no longer work.",
+  "OUTDATED_UPDATE": "Update now to experience the fastest, most unblockable Lantern yet!",
+  "OUTDATED_BUTTON": "Update now"
 }
