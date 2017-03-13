@@ -16,7 +16,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/outdated/index.html</loc>
+        <loc>/outdated.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
