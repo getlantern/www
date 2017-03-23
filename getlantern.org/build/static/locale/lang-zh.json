@@ -39,9 +39,9 @@
     "FAQ_LINK": "蓝灯论坛",
     "VISIT_FAQ": "阅读蓝灯论坛以了解更多",
     "PRESS": "媒体报道",
-    "MAKE_MONEY": "赚一波！",
+    "MAKE_MONEY": "赚大钱！",
     "RESELLER_INTEREST": "想要和蓝灯一起赚钱吗？现在成为蓝灯专业版经销商！",
-    "RESELLER_CONTACT": "联系：<a target=\"_blank\" href=\"mailto:reseller@getlantern.org\">reseller@getlantern.org</a>",
+    "RESELLER_CONTACT": "更多信息: <a href='https://reseller.lantern.io/'>https://reseller.lantern.io</a>",
     "IOS_COMING_SOON": "iOS 版蓝灯即将发布",
     "USER_COMMENT_1": "“赞爆了。真的比什么VPN都好。”",
     "USER_COMMENT_2": "——Google Play 上的蓝灯用户评论",
@@ -83,7 +83,7 @@
     "QUESTION_9": "我为什么要为蓝灯专业版付费？",
     "ANSWER_9_A": "专业版需要付费，GFW就没办法一下子注册很多帐号，来批量封锁IP。所以付费能有效抵御GFW的封锁。如果GFW批量付费购买蓝灯专业版，我们会使用其提供的资金购买更多服务器。",
     "QUESTION_10": "蓝灯专业版的费用怎样？",
-    "ANSWER_10_A": "一年180元，两年320元。支持支付宝，以及信用卡支付。",
+    "ANSWER_10_A": "您可以选择用 US$31 购买一年专业版，或用 US$48 购买两年。",
     "QUESTION_11": "我可以获得免费的蓝灯专业版吗？",
     "ANSWER_11_A": "用户可以与朋友分享邀请码。好友购买两年套餐后，双方都赠送三个月的专业版使用时间；好友购买一年套餐后，双方都会赠送一个月的使用时间。",
     "QUESTION_12": "为什么蓝灯有带宽限制？",
@@ -95,5 +95,9 @@
     "ANSWER_14_A": "一旦您下载并安装蓝灯，蓝灯图标将出现在您 Windows 屏幕右下角系统托盘中，在您 OSX 屏幕顶部的菜单栏中。只要该图标是有，这意味着蓝灯正在运行并且您可以在任何浏览器中自动访问阻止网站。如果您想要停止蓝灯，在系统托盘或菜单栏上单击蓝灯图标，在出现菜单中选择相应操作。",
     "QUESTION_15": "如果我有别的问题，去哪里寻求帮助？",
     "ANSWER_15_A": "如果您有更多的问题，请在 <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">Facebook</a> 上与我们联系或访问我们的 <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">用户论坛</a>。\n",
-    "ANSWER_15_B": "如果你有什么更技术性的问题，你可以前往开发者论坛的<a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">开发者问答专区</a>。"
+    "ANSWER_15_B": "如果你有什么更技术性的问题，你可以前往开发者论坛的<a href=\"https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">开发者问答专区</a>。",
+    "OUTDATED_TITLE": "蓝灯不是最新版",
+    "OUTDATED_NOTICE": "您正在使用旧版本的蓝灯。不久它就不能完美工作了。",
+    "OUTDATED_UPDATE": "立即更新，体验最快最抗封锁的蓝灯！",
+    "OUTDATED_BUTTON": "立即更新"
 }
