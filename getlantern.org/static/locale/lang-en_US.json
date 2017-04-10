@@ -99,5 +99,6 @@
   "OUTDATED_TITLE": "Lantern is out-of-date",
   "OUTDATED_NOTICE": "You are using an old version of Lantern which will soon no longer work.",
   "OUTDATED_UPDATE": "Update now to experience the fastest, most unblockable Lantern yet!",
-  "OUTDATED_BUTTON": "Update now"
+  "OUTDATED_BUTTON": "Update now",
+  "OUTDATED_LANTERN_VERSION": "Lantern version"
 }
