@@ -10,3 +10,4 @@ node_modules
 bower_components
 dist
 invalidate.json
+version-beta.txt

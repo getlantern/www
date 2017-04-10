@@ -99,5 +99,6 @@
     "OUTDATED_TITLE": "蓝灯不是最新版",
     "OUTDATED_NOTICE": "您正在使用旧版本的蓝灯。不久它就不能完美工作了。",
     "OUTDATED_UPDATE": "立即更新，体验最快最抗封锁的蓝灯！",
-    "OUTDATED_BUTTON": "立即更新"
+    "OUTDATED_BUTTON": "立即更新",
+    "OUTDATED_LANTERN_VERSION": "蓝灯最新版本"
 }
