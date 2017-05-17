@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
-  var ANDROID_LINK = "lantern-installer-beta.apk";
+  var ANDROID_LINK = "lantern-installer.apk";
 
   var set_download_link = function() {
     var os = platform.os.architecture + platform.os.family;
     var os_links = [
-      {regexp: "[2-6]{2}[Ww]indows", link: "lantern-installer-beta.exe"},
-      {regexp: "[2-6]{2}OS X", link: "lantern-installer-beta.dmg"},
+      {regexp: "[2-6]{2}[Ww]indows", link: "lantern-installer.exe"},
+      {regexp: "[2-6]{2}OS X", link: "lantern-installer.dmg"},
       // for Android devices with large screen
       {regexp: ".*Android", link: ANDROID_LINK},
-      {regexp: "32.*", link: "lantern-installer-beta-32-bit.deb"},
-      {regexp: "64.*", link: "lantern-installer-beta-64-bit.deb"},
+      {regexp: "32.*", link: "lantern-installer-32-bit.deb"},
+      {regexp: "64.*", link: "lantern-installer-64-bit.deb"},
       {regexp: ".*", link: "https://github.com/getlantern/lantern#lantern-"}
     ];
     for (i = 0; i < os_links.length; ++i) {
