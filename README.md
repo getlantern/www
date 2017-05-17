@@ -20,9 +20,8 @@ Then upload the contents of the `lantern-site/build` directory.
 
 ## Deploying to getlantern.org
 
-Use the `deploy` target to upload the contents of the `lantern-site/build`
-directory.
+Use the `deploy-prod` target.
 
 ```
-make deploy
+make deploy-prod
 ```
