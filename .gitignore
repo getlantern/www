@@ -2,10 +2,11 @@
 
 *.DS_Store
 *.build
-.build
+build
 *.pyc
 *.sw?
 .tmp
+.ropeproject
 node_modules
 bower_components
 dist
