@@ -11,7 +11,7 @@ for fname in src_html:
         p.feed(f.read())
         p.close()
 
-with open("lang/en-US.json", "w") as f:
+with open("lang/en_US.json", "w") as f:
     json.dump(strings, f,
               ensure_ascii=False,
               sort_keys=True,
