@@ -41,7 +41,7 @@ class Transformer(HTMLParser):
 
     def handle_data(self, data):
         k = data.strip()
-        t = self.translations.get(k, "")
+        t = self.translations.get(k, k)
         if t != "":
             self.stack.append('%s%s\n' % (self._indent(), t))
 
