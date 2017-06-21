@@ -29,8 +29,8 @@ def transform(fname, **args):
                              encoding='utf-8') as w:
                     w.write(Transformer.T(mapping, src))
 
-transform('src/en/index.html', exclude=['zh-CN'], root='build')
-transform('src/ch/index.html', only=['zh-CN'], root='build')
+transform('src/en/index.html', exclude=['zh_CN'], root='build')
+transform('src/ch/index.html', only=['zh_CN'], root='build')
 transform('src/faq/index.html', root='build', html_name='faq.html')
 copy('src/robots.txt', 'build')
 copy('src/sitemap.xml', 'build')
