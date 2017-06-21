@@ -5,16 +5,17 @@ import os
 import io
 from os import path
 from shutil import copy, copytree
-from lib import Transformer
+from jinja2 import Template
+from lib import Transformer, template_vars
 
-
-def transform(fname, **args):
+# generate reads the src_name, generate copies for each lang files.
+def generate(src_name, **args):
     exclude = map(lambda x: x + '.json', args.get('exclude', []))
     only = map(lambda x: x + '.json', args.get('only', []))
     root = args.get('root', '')
     html_name = args.get('html_name', None)
-    with io.open(fname, encoding='utf-8') as fsrc:
-        src = fsrc.read()
+    with io.open(src_name, encoding='utf-8') as fsrc:
+        src = Template(fsrc.read()).render(template_vars)
         lang_files = [f for f in os.listdir('lang') if f.endswith('.json')]
         if len(only) > 0:
             lang_files = set(lang_files) & set(only)
@@ -29,9 +30,14 @@ def transform(fname, **args):
                              encoding='utf-8') as w:
                     w.write(Transformer.T(mapping, src))
 
-transform('src/en/index.html', exclude=['zh_CN'], root='build')
-transform('src/ch/index.html', only=['zh_CN'], root='build')
-transform('src/faq/index.html', root='build', html_name='faq.html')
+generate('src/en/index.html', exclude=['zh_CN'], root='build')
+generate('src/ch/index.html', only=['zh_CN'], root='build')
+generate('src/faq/index.html', root='build', html_name='faq.html')
+with open('src/index.html') as f:
+    with open('build/index.html', 'w') as w:
+        w.write(Template(f.read()).render(template_vars))
+
 copy('src/robots.txt', 'build')
 copy('src/sitemap.xml', 'build')
 copytree('src/static', 'build/static')
+

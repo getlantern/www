@@ -34,7 +34,8 @@ copy-installers: require-secrets-dir
 	echo "Finished copying installers to mirrors"
 
 deploy-beta: build
-	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://beta.getlantern.org
+	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://beta.getlantern.org && \
+	echo "Done! Visit http://beta.getlantern.org.s3-website-us-east-1.amazonaws.com/"
 
 get-installer-urls: require-wget
 	@BASE_NAME="lantern-installer-internal" && \

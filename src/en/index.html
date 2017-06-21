@@ -27,8 +27,9 @@
         
         <div id="dd" class="select-dropdown" tabindex="1">Select language
             <ul class="dropdown">
-		      <li><a href="/en_US/">English (United States)</a></li>
-		      <li><a href="/zh_CN/">Chinese (Simplified)</a></li>
+              {% for lang, text in language_mapping | dictsort %}
+              <li><a href="/{{lang}}/">{{text}}</a></li>
+              {% endfor %}
 			</ul>
 		</div>
        

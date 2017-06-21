@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lantern</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- redirect after 5s, in case if JavaScript doesn't work -->
+    <meta http-equiv="refresh" content="5; url=en_US/">
+  </head>
+  <body>
+    <script type="text/javascript">
+      // redirect based on browser's language preference.
+      var lang =
+        // Chrome (32+) and FireFox (32+) of user preferred language
+        window.navigator.languages && window.navigator.languages[0]
+        // UI language
+        || navigator.language
+        // IE 11-
+        || navigator.userLanguage;
+        lang = lang.replace('-', '_');
+        path = lang in {{available_languages}} ? lang : 'en_US';
+        window.location.pathname = path + '/';
+    </script>
+  </body>
+</html>
