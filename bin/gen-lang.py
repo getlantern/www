@@ -2,6 +2,7 @@
 
 import io
 import json
+from HTMLParser import HTMLParser
 from jinja2 import Template
 from lib import Parser, template_vars
 

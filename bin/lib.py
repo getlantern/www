@@ -1,3 +1,4 @@
+import cgi
 from HTMLParser import HTMLParser
 
 
@@ -5,11 +6,35 @@ class Parser(HTMLParser):
     def __init__(self, strings):
         HTMLParser.__init__(self)
         self.strings = strings
+        self.text = ""
+
+    def handle_starttag(self, tag, attrs):
+        self._end_data()
+
+    def handle_endtag(self, tag):
+        self._end_data()
+
+    def handle_startendtag(self, tag, attrs):
+        self._end_data()
 
     def handle_data(self, data):
-        k = data.strip()
-        if k != "":
-            self.strings[k] = k
+        self.text += data
+
+
+    def handle_entityref(self, name):
+        self.text += self.unescape('&' + name + ';')
+
+
+    def handle_charref(self, name):
+        self.text += self.unescape('&#' + name + ';')
+
+
+    def _end_data(self):
+        text = self.text.strip()
+        if  text != "":
+            self.strings[text] = text
+
+        self.text = ""
 
 
 class Transformer(HTMLParser):
@@ -20,6 +45,7 @@ class Transformer(HTMLParser):
         self.level = 0
         self.stack = []
         self.translations = translations
+        self.text = ""
 
     def handle_decl(self, decl):
         self.stack.append('<!%s>\n' % (decl))
@@ -29,21 +55,38 @@ class Transformer(HTMLParser):
                           (self._indent(), tag, self.__html_attrs(attrs)))
         if tag not in Transformer._empty_tags:
             self.level += 1
+        self._end_data()
 
     def handle_endtag(self, tag):
         if tag not in Transformer._empty_tags:
             self.level -= 1
         self.stack.append('%s</%s>\n' % (self._indent(), tag))
+        self._end_data()
 
     def handle_startendtag(self, tag, attrs):
         self.stack.append('%s<%s%s/>\n' %
                           (self._indent(), tag, self.__html_attrs(attrs)))
+        self._end_data()
 
     def handle_data(self, data):
-        k = data.strip()
+        self.text += data
+
+    def handle_entityref(self, name):
+        self.text += self.unescape('&' + name + ';')
+
+
+    def handle_charref(self, name):
+        self.text += self.unescape('&#' + name + ';')
+
+
+    def _end_data(self):
+        k = self.text.strip()
         t = self.translations.get(k, k)
         if t != "":
-            self.stack.append('%s%s\n' % (self._indent(), t))
+            self.stack.append('%s%s\n' % (self._indent(), cgi.escape(t)))
+
+        self.text = ""
+
 
     def _indent(self):
         return ''.join(map(lambda x: " ", range(self.level*2)))
