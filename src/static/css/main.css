@@ -145,6 +145,12 @@ a.download {
   font-weight: 100;
 }
 
+#intro-desktop .intro-bg > span a {
+  text-decoration: inherit;
+  color: inherit;
+  font-weight: 300;
+}
+
 a.download-btn {
   line-height: 4rem;
   width: 20rem;
