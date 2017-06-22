@@ -2,9 +2,9 @@
 
 import io
 import json
-from HTMLParser import HTMLParser
 from jinja2 import Template
-from lib import Parser, template_vars
+from lib import Parser
+from config import template_vars
 
 src_html = ["src/en/index.html", "src/ch/index.html", "src/faq/index.html"]
 strings = dict()

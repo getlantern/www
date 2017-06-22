@@ -6,7 +6,9 @@ import io
 from os import path
 from shutil import copy, copytree
 from jinja2 import Template
-from lib import Transformer, template_vars
+from lib import Transformer
+from config import template_vars
+
 
 # generate reads the src_name, generate copies for each lang files.
 def generate(src_name, **args):
@@ -40,4 +42,3 @@ with open('src/index.html') as f:
 copy('src/robots.txt', 'build')
 copy('src/sitemap.xml', 'build')
 copytree('src/static', 'build/static')
-

@@ -122,13 +122,3 @@ class Transformer(HTMLParser):
         _p.feed(markup)
         _p.close()
         return ''.join(_p.stack)
-
-language_mapping = {
-    'en_US': 'English (United States)',
-    'zh_CN': 'Chinese (Simplified)'
-}
-available_languages = language_mapping.keys()
-template_vars = dict(
-    language_mapping=language_mapping,
-    available_languages=available_languages
-)
