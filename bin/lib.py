@@ -1,7 +1,10 @@
 from HTMLParser import HTMLParser
 
+_no_split_tags = ['a', 'b']
+_empty_tags = ['meta', 'link', 'img', 'br', 'input']
 
-def html_attrs(attrs):
+
+def _html_attrs(attrs):
     if attrs:
         _attrs = [('%s="%s"' % (k, v)) for k, v in attrs]
         return ' %s' % (' '.join(_attrs))
@@ -16,14 +19,15 @@ class Parser(HTMLParser):
         self.text = ''
 
     def handle_starttag(self, tag, attrs):
-        if tag in ['a', 'b'] and self.text.strip() != '':
-            self.text += ' <%s%s>' % (tag, html_attrs(attrs))
-            self.hit_anchor = True
+        if tag in _no_split_tags + ['br'] and self.text.strip() != '':
+            self.text += ' <%s%s>' % (tag, _html_attrs(attrs))
+            if tag in _no_split_tags:
+                self.hit_anchor = True
         else:
             self._end_data()
 
     def handle_endtag(self, tag):
-        if tag in ['a', 'b'] and self.hit_anchor and self.text.strip() != '':
+        if tag in _no_split_tags and self.hit_anchor and self.text.strip() != '':
             self.text += '</%s>' % (tag)
             self.hit_anchor = False
         else:
@@ -50,7 +54,6 @@ class Parser(HTMLParser):
 
 
 class Transformer(HTMLParser):
-    _empty_tags = ['meta', 'link', 'img', 'br', 'input']
 
     def __init__(self, translations):
         HTMLParser.__init__(self)
@@ -64,30 +67,31 @@ class Transformer(HTMLParser):
         self.stack.append('<!%s>\n' % (decl))
 
     def handle_starttag(self, tag, attrs):
-        if tag in ['a', 'b'] and self.text.strip() != '':
-            self.text += ' <%s%s>' % (tag, html_attrs(attrs))
-            self.hit_anchor = True
+        if tag in _no_split_tags + ['br'] and self.text.strip() != '':
+            self.text += ' <%s%s>' % (tag, _html_attrs(attrs))
+            if tag in _no_split_tags:
+                self.hit_anchor = True
         else:
             self._end_data()
             self.stack.append('%s<%s%s>\n' %
-                              (self._indent(), tag, html_attrs(attrs)))
-            if tag not in Transformer._empty_tags:
+                              (self._indent(), tag, _html_attrs(attrs)))
+            if tag not in _empty_tags:
                 self.level += 1
 
     def handle_endtag(self, tag):
-        if tag in ['a', 'b'] and self.hit_anchor and self.text.strip() != '':
+        if tag in _no_split_tags and self.hit_anchor and self.text.strip() != '':
             self.text += '</%s>' % (tag)
             self.hit_anchor = False
         else:
             self._end_data()
-            if tag not in Transformer._empty_tags:
+            if tag not in _empty_tags:
                 self.level -= 1
             self.stack.append('%s</%s>\n' % (self._indent(), tag))
 
     def handle_startendtag(self, tag, attrs):
         self._end_data()
         self.stack.append('%s<%s%s/>\n' %
-                          (self._indent(), tag, html_attrs(attrs)))
+                          (self._indent(), tag, _html_attrs(attrs)))
 
     def handle_data(self, data):
         self.text += data.strip()
