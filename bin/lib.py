@@ -15,21 +15,24 @@ class Parser(HTMLParser):
     def __init__(self, strings):
         HTMLParser.__init__(self)
         self.strings = strings
-        self.hit_anchor = False
+        self.hit_end_tag = False
+        self.in_no_split_tag = False
         self.text = ''
 
     def handle_starttag(self, tag, attrs):
+        self.hit_end_tag = False
         if tag in _no_split_tags + ['br'] and self.text.strip() != '':
             self.text += ' <%s%s>' % (tag, _html_attrs(attrs))
             if tag in _no_split_tags:
-                self.hit_anchor = True
+                self.in_no_split_tag = True
         else:
             self._end_data()
 
     def handle_endtag(self, tag):
-        if tag in _no_split_tags and self.hit_anchor and self.text.strip() != '':
+        self.hit_end_tag = True
+        if tag in _no_split_tags and self.in_no_split_tag and self.text.strip() != '':
             self.text += '</%s>' % (tag)
-            self.hit_anchor = False
+            self.in_no_split_tag = False
         else:
             self._end_data()
 
@@ -37,7 +40,10 @@ class Parser(HTMLParser):
         self._end_data()
 
     def handle_data(self, data):
-        self.text += data.strip()
+        stripped = data.strip()
+        if len(stripped) > 0 and stripped[0].isalpha() and self.hit_end_tag:
+            self.text += ' '
+        self.text += stripped
 
     def handle_entityref(self, name):
         self.text += '&' + name + ';'
@@ -60,17 +66,19 @@ class Transformer(HTMLParser):
         self.level = 0
         self.stack = []
         self.translations = translations
-        self.hit_anchor = False
+        self.hit_end_tag = False
+        self.in_no_split_tag = False
         self.text = ''
 
     def handle_decl(self, decl):
         self.stack.append('<!%s>\n' % (decl))
 
     def handle_starttag(self, tag, attrs):
+        self.hit_end_tag = False
         if tag in _no_split_tags + ['br'] and self.text.strip() != '':
             self.text += ' <%s%s>' % (tag, _html_attrs(attrs))
             if tag in _no_split_tags:
-                self.hit_anchor = True
+                self.in_no_split_tag = True
         else:
             self._end_data()
             self.stack.append('%s<%s%s>\n' %
@@ -79,9 +87,10 @@ class Transformer(HTMLParser):
                 self.level += 1
 
     def handle_endtag(self, tag):
-        if tag in _no_split_tags and self.hit_anchor and self.text.strip() != '':
+        self.hit_end_tag = True
+        if tag in _no_split_tags and self.in_no_split_tag and self.text.strip() != '':
             self.text += '</%s>' % (tag)
-            self.hit_anchor = False
+            self.in_no_split_tag = False
         else:
             self._end_data()
             if tag not in _empty_tags:
@@ -94,7 +103,10 @@ class Transformer(HTMLParser):
                           (self._indent(), tag, _html_attrs(attrs)))
 
     def handle_data(self, data):
-        self.text += data.strip()
+        stripped = data.strip()
+        if len(stripped) > 0 and stripped[0].isalpha() and self.hit_end_tag:
+            self.text += ' '
+        self.text += stripped
 
     def handle_entityref(self, name):
         self.text += '&' + name + ';'
