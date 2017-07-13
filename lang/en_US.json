@@ -1,6 +1,5 @@
 {
 "- Lantern User comment on GooglePlay Store": "- Lantern User comment on GooglePlay Store",
-"Arabic": "Arabic",
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.",
 "Better performance": "Better performance",
 "Can I get Lantern Pro for free?": "Can I get Lantern Pro for free?",
@@ -12,6 +11,7 @@
 "Download Lantern to easily access blocked videos, <br>news, social media, apps and more": "Download Lantern to easily access blocked videos, <br>news, social media, apps and more",
 "Easy": "Easy",
 "English (United States)": "English (United States)",
+"Español": "Español",
 "Every user gets a unique referral code that can be shared with friends. For each friend that signs up for Pro, you get 2 free months of Pro. Start inviting!": "Every user gets a unique referral code that can be shared with friends. For each friend that signs up for Pro, you get 2 free months of Pro. Start inviting!",
 "FAQs": "FAQs",
 "Facebook": "Facebook",
@@ -21,7 +21,7 @@
 "Faster speeds": "Faster speeds",
 "Faster than a VPN": "Faster than a VPN",
 "For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.": "For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.",
-"French": "French",
+"Français": "Français",
 "Frequently Asked Questions": "Frequently Asked Questions",
 "GitHub": "GitHub",
 "How do I know if Lantern is working?": "How do I know if Lantern is working?",
@@ -52,7 +52,6 @@
 "Secure": "Secure",
 "Select language": "Select language",
 "Sign up for our newsletter": "Sign up for our newsletter",
-"Spanish": "Spanish",
 "Support": "Support",
 "Terms of Service": "Terms of Service",
 "The payment feature makes Lantern more blocking resistant because censors cannot infiltrate or block Lantern Pro without paying, giving our Lantern Pro users more stability. We’ve offered Lantern Pro at a competitive price to help us stay around to continue to provide you with the fastest and most blocking resistant way to get online.": "The payment feature makes Lantern more blocking resistant because censors cannot infiltrate or block Lantern Pro without paying, giving our Lantern Pro users more stability. We’ve offered Lantern Pro at a competitive price to help us stay around to continue to provide you with the fastest and most blocking resistant way to get online.",
@@ -71,6 +70,7 @@
 "With a Pro account, you can use Lantern Pro on three devices and enjoy the benefits of Lantern Pro on your desktop and mobile devices.": "With a Pro account, you can use Lantern Pro on three devices and enjoy the benefits of Lantern Pro on your desktop and mobile devices.",
 "With servers distributed globally, Lantern Pro’s dynamic server allocation is constantly looking to connect you to the best performing server ensuring a smooth and uninterrupted connection. If one server is not performing, the user is transferred to another, ensuring steady connection. This allows for improved defense against censor interference with your connection. The Lantern dev team works on a 24 hour schedule to be able to identify blocking techniques by censors and respond quickly to ensure that any users experiencing blocking are online as soon as possible.": "With servers distributed globally, Lantern Pro’s dynamic server allocation is constantly looking to connect you to the best performing server ensuring a smooth and uninterrupted connection. If one server is not performing, the user is transferred to another, ensuring steady connection. This allows for improved defense against censor interference with your connection. The Lantern dev team works on a 24 hour schedule to be able to identify blocking techniques by censors and respond quickly to ensure that any users experiencing blocking are online as soon as possible.",
 "You can purchase one year of Pro for $32 (USD), or two years of Pro for $48 (USD).": "You can purchase one year of Pro for $32 (USD), or two years of Pro for $48 (USD).",
+"عربى": "عربى",
 "“ <b>Awesome and Fast</b> Lantern is much better than a VPN. Love this app, just shared it with all my friends.”": "“ <b>Awesome and Fast</b> Lantern is much better than a VPN. Love this app, just shared it with all my friends.”",
 "“ <b>Best</b> The quickest and the best app ever. Others just keep on buffering but this one is lightning quick.”": "“ <b>Best</b> The quickest and the best app ever. Others just keep on buffering but this one is lightning quick.”",
 "“ <b>Perfect</b> Use it daily to get WhatsApp calls while behind a restrictive firewall. I love it.”": "“ <b>Perfect</b> Use it daily to get WhatsApp calls while behind a restrictive firewall. I love it.”",
@@ -78,5 +78,6 @@
 "“ <b>一个字 快</b>”": "“ <b>一个字 快</b>”",
 "“简单易用快速，适合任何人群”": "“简单易用快速，适合任何人群”",
 "“超好用啊，比那些刷好评的靠谱多了”": "“超好用啊，比那些刷好评的靠谱多了”",
-"“速度相当快，而且稳定”": "“速度相当快，而且稳定”"
+"“速度相当快，而且稳定”": "“速度相当快，而且稳定”",
+"简体中文": "简体中文"
 }

@@ -91,9 +91,9 @@
     border: 1px white solid;
 }
 
-.select-dropdown .dropdown li:nth-child(1) a { 
-    border-bottom: 1px solid #000;
-}
+/* .select-dropdown .dropdown li:nth-child(1) a { */ 
+/*     border-bottom: 1px solid #000; */
+/* } */
 
 .select-dropdown .dropdown li i {
     margin-right: 5px;

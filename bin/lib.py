@@ -118,7 +118,7 @@ class Transformer(HTMLParser):
         k = self.text.strip()
         t = self.translations.get(k, '')
         if t == '' and k != '':
-            print '"%s" does not have a translation!' % (k)
+            # print '"%s" does not have a translation!' % (k)
             t = k
         if t != '':
             self.stack.append('%s%s\n' % (self._indent(), t))

@@ -27,7 +27,7 @@
         
         <div id="dd" class="select-dropdown" tabindex="1">Select language
             <ul class="dropdown">
-              {% for lang, text in language_mapping | dictsort %}
+              {% for lang, text in language_mapping %}
               <li><a href="/{{lang}}/">{{text}}</a></li>
               {% endfor %}
 			</ul>

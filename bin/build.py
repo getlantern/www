@@ -17,7 +17,7 @@ def generate(src_name, **args):
     root = args.get('root', '')
     html_name = args.get('html_name', None)
     with io.open(src_name, encoding='utf-8') as fsrc:
-        src = Template(fsrc.read()).render(template_vars)
+        src = fsrc.read()
         lang_files = [f for f in os.listdir('lang') if f.endswith('.json')]
         if len(only) > 0:
             lang_files = set(lang_files) & set(only)
@@ -30,7 +30,10 @@ def generate(src_name, **args):
                 with io.open(path.join(dest, html_name or 'index.html'),
                              'w',
                              encoding='utf-8') as w:
-                    w.write(Transformer.T(mapping, src))
+                    # Note: intentionally not render template until now, to
+                    # avoid accidentally pulling in translations for language
+                    # names.
+                    w.write(Template(Transformer.T(mapping, src)).render(template_vars))
 
 generate('src/en/index.html', exclude=['zh_CN'], root='build')
 generate('src/ch/index.html', only=['zh_CN'], root='build')
