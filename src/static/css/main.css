@@ -141,7 +141,7 @@ a.download {
 }
 
 #intro-desktop .intro-bg > span {
-  font-size: 1.2rem;
+  font-size: inherit;
   font-weight: 100;
 }
 
