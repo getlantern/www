@@ -44,4 +44,5 @@ with open('src/index.html') as f:
 
 copy('src/robots.txt', 'build')
 copy('src/sitemap.xml', 'build')
+copy('src/favicon.ico', 'build')
 copytree('src/static', 'build/static')
