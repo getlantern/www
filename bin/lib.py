@@ -26,6 +26,8 @@ class Parser(HTMLParser):
             if tag in _no_split_tags:
                 self.in_no_split_tag = True
         else:
+            if [item for item in attrs if item[0] == "name" and item[1] == "description"]:
+                self.text = [item[1] for item in attrs if item[0] == "content"][0]
             self._end_data()
 
     def handle_endtag(self, tag):
@@ -80,7 +82,10 @@ class Transformer(HTMLParser):
             if tag in _no_split_tags:
                 self.in_no_split_tag = True
         else:
-            self._end_data()
+            if [item for item in attrs if item[0] == "name" and item[1] == "description"]:
+                attrs = [(k, v) if (k != "content") else (k, self.translations.get(v, v)) for (k, v) in attrs]
+            else:
+                self._end_data()
             self.stack.append('%s<%s%s>\n' %
                               (self._indent(), tag, _html_attrs(attrs)))
             if tag not in _empty_tags:
