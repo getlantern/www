@@ -26,10 +26,10 @@
             <img src="../static/images/logo_ch.svg" alt="Lantern">
           </a>
         </h1>
-        
+
         <div id="dd" class="select-dropdown" tabindex="1">Select language
-            <ul class="dropdown">
-              {% for lang, text in language_mapping %}
+          <ul class="dropdown">
+            {% for lang, text in language_mapping %}
               <li><a href="/{{lang}}/">{{text}}</a></li>
               {% endfor %}
 			</ul>
@@ -42,6 +42,14 @@
       </div>
     </header>
 
+    <div id="notice" style="display: none;">
+      <a id="close-notice" href="#">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+      <p>
+      请从官网<a href="https://getlantern.org" target="_blank">GetLantern.org</a>或<a href="https://github.com/getlantern/forum#蓝灯lantern最新版本下载" target="_blank">蓝灯官方论坛</a>(免翻墙)下载蓝灯软件。其他网站的下载链接都可能包含有病毒。
+      </p>
+    </div>
     
 <section class="w100 intro-desktop" id="intro-desktop">
   <div>

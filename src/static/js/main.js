@@ -7,39 +7,52 @@ $(document).ready(function(){
     dots: true,
     arrows: false,
   });
-  
+
   $('.question a').click(function(){
     $(this).closest('div').toggleClass('show');
     return false;
   });
-  
 
-			function DropDown(el) {
-				this.dd = el;
-				this.initEvents();
-			}
-			DropDown.prototype = {
-				initEvents : function() {
-					var obj = this;
 
-					obj.dd.on('click', function(event){
-						$(this).toggleClass('active');
-						event.stopPropagation();
-					});	
-				}
-			}
+  function DropDown(el) {
+    this.dd = el;
+    this.initEvents();
+  }
+  DropDown.prototype = {
+    initEvents : function() {
+      var obj = this;
 
-			$(function() {
+      obj.dd.on('click', function(event){
+        $(this).toggleClass('active');
+        event.stopPropagation();
+      });	
+    }
+  }
 
-				var dd = new DropDown( $('#dd') );
+  $(function() {
 
-				$(document).click(function() {
-					// all dropdowns
-					$('.select-dropdown').removeClass('active');
-				});
+    var dd = new DropDown( $('#dd') );
 
-			});
+    $(document).click(function() {
+      // all dropdowns
+      $('.select-dropdown').removeClass('active');
+    });
 
-  
+  });
+
+  var hideNotice = "hide-notice-" + window.location.pathname;
+  var show = true;
+  if (show && window.localStorage.getItem(hideNotice)) {
+    show = false;
+  }
+  if (show) {
+    $("#notice").show();
+    $("#notice #close-notice").click(function() {
+      $("#notice").hide();
+      window.localStorage.setItem(hideNotice, true);
+    });
+  } else {
+    $("#notice").hide();
+  }
 });
-	
+

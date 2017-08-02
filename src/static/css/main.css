@@ -81,6 +81,32 @@ a.download {
   font-size: 9px;
 }
 
+/*Notice - Chinese only*/
+#notice {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 5.2rem;
+    max-width: 360px;
+    max-height: 170px;
+    background-color: #f50057;
+    z-index: 10;
+}
+#notice * {
+    color: #fff;
+    font-size: 18px;
+}
+a#close-notice {
+    padding: 10px;
+    display: block;
+    float: right;
+}
+#notice p {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 90%;
+}
 
 /*Intro Desktop*/
 
