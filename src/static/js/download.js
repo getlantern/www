@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-  var set_download_link = function(id, link) {
-    $('#'+id).attr('href', link);
-    $('#'+id).on('click', function() {
-      ga('send', 'event', 'button', 'click', id);
+  var set_download_link = function(cls, link) {
+    $('.'+cls).attr('href', link);
+    $('.'+cls).on('click', function() {
+      ga('send', 'event', 'button', 'click', cls);
     });
   };
   var os = platform.os.architecture + platform.os.family;

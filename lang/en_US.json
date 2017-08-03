@@ -20,7 +20,7 @@
 "Fast, reliable and secure access to the open internet": "Fast, reliable and secure access to the open internet",
 "Faster speeds": "Faster speeds",
 "Faster than a VPN": "Faster than a VPN",
-"For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.": "For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.",
+"For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.": "For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.",
 "Français": "Français",
 "Frequently Asked Questions": "Frequently Asked Questions",
 "GitHub": "GitHub",

@@ -252,6 +252,11 @@ a.download-btn {
   font-weight: 300;
 }
 
+#intro-mobile .bottom-info span a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 
 /*Features*/
 
