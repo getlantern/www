@@ -20,7 +20,7 @@
 "Fast, reliable and secure access to the open internet": "Acceso rápido fiable y seguro a la Internet abierta",
 "Faster speeds": "Velocidades más rápidas",
 "Faster than a VPN": "Más rápido que una VPN",
-"For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.": "Para <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.",
+"For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.": "For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.",
 "Français": "Français",
 "Frequently Asked Questions": "Preguntas frecuentes (FAQ)",
 "GitHub": "GitHub",
@@ -30,11 +30,12 @@
 "If you choose to send Lantern diagnostic and usage data, we will never share, sell or lease this data to third parties or use it for any other purpose than making our services better for our users. Lantern collects diagnostic information when users share feedback and other information for debugging purposes, and anonymous usage analytics of our apps and website to offer you a better user experience. The Lantern settings allow you to configure this according to your personal preferences.": "Si escoge enviar a Lantern datos de diagnóstico y uso, nunca compartiremos, venderemos o prestaremos estos datos a terceros, ni los usaremos para otro propósito que mejorar nuestros servicios para nuestros usuarios. Lantern recopila información de diagnóstico cuando los usuarios comparten reacciones y otra información para propósitos de depuración, y análíticas anónimas de uso de nuestras aplicaciones y del sitio web para ofrecerle una mejor experiencia de usuario. La configuración de Lantern le permite configurar esto de acuerdo a sus preferencias personales.",
 "If you have more questions, please connect with us on <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">Facebook</a> or visit our <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">User Forum</a>. <br> <br>If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.": "Si tiene más preguntas, por favor, conecte con nosotros en <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">Facebook</a> o visite nuestro <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">Foro de Usuarios</a>. <br> <br>Si tiene más preguntas técnicas, por favor, vea la <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">sección Preguntas y Respuestas de Desarrolladores</a> de nuestro foro de desarrolladores.",
 "Innovate Labs, LLC <br>830 Traction Ave #3a <br>Los Angeles, CA 90013": "Innovate Labs, LLC <br>830 Traction Ave #3a <br>Los Angeles, CA 90013",
-"Lantern": "Lantern",
+"Lantern - Faster than a VPN": "Lantern - Más rápido que una VPN",
 "Lantern Pro Reseller": "Revendedor de Lantern Pro",
 "Lantern Pro gives you all the features of our free version and more:": "Lantern Pro le proporciona todas las características de nuestra versión gratuita y más:",
 "Lantern Pro gives you the fastest connection to the open internet by using optimized servers, that are less-crowded than our free servers, to offer you the best speed possible.": "Lantern Pro le proporciona la conexión más rápida a la Internet abierta usando servidores optimizados, que están menos abarrotados que nuestros servidores gratuitos, para ofrecerle la mejor velocidad posible.",
 "Lantern Pro provides you with unlimited data to browse the web, stream videos and download content so that you will always have a fast unblocked connection. You can access all of your online content and information whenever needed.": "Lantern Pro le provee de datos ilimitados para navegar la web, transmitir streams de vídeo y descargar contenido, así que siempre tendrá una conexión rápida no bloqueda. Puede acceder a todo su contenido e información en línea en el momento en que lo necesite.",
+"Lantern delivers fast, reliable and secure access to the open internet. Download Lantern for free access to blocked videos, news, social media and more. Available for Windows, Android, Mac, Ubuntu.": "Lantern entrega acceso rápido, fiable y seguro a la Internet abierta. Descargue Lantern para acceso gratuito a vídeos, noticias y medios sociales bloqueados, entre otros. Disponible para Windows, Android, Mac, Ubuntu.",
 "Lantern encrypts all of your traffic to blocked sites and services to protect your data and privacy.": "Lantern cifra todo su tráfico hacia sitios y servicios bloqueados para proteger sus datos y privacidad.",
 "Lantern encrypts all your traffic in transit through our servers to protect your data and privacy.": "Lantern cifra todo su tráfico en tránsito a través de nuestros servidores para proteger sus datos y privacidad.",
 "Lantern is a software application for desktop and mobile that delivers fast, reliable and secure access to blocked websites and apps.": "Lantern es una aplicación de software para escritorio y móvil que entrega un acceso rápido, fiable y seguro a sitios web y aplicaciones bloqueadas.",
@@ -79,5 +80,6 @@
 "“简单易用快速，适合任何人群”": "“简单易用快速，适合任何人群”",
 "“超好用啊，比那些刷好评的靠谱多了”": "“超好用啊，比那些刷好评的靠谱多了”",
 "“速度相当快，而且稳定”": "“速度相当快，而且稳定”",
-"简体中文": "简体中文"
+"简体中文": "简体中文",
+"请从官网 <a href=\"https://getlantern.org\" target=\"_blank\">GetLantern.org</a> 或 <a href=\"https://github.com/getlantern/forum#蓝灯lantern最新版本下载\" target=\"_blank\">蓝灯官方论坛</a>(免翻墙)下载蓝灯软件。其他网站的下载链接都可能包含有病毒。": "请从官网 <a href=\"https://getlantern.org\" target=\"_blank\">GetLantern.org</a> 或 <a href=\"https://github.com/getlantern/forum#蓝灯lantern最新版本下载\" target=\"_blank\">蓝灯官方论坛</a>(免翻墙)下载蓝灯软件。其他网站的下载链接都可能包含有病毒。"
 }

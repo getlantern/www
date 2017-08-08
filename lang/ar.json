@@ -20,7 +20,7 @@
 "Fast, reliable and secure access to the open internet": "وصول سريع وموثوق وآمن الى الانترنت المفتوح",
 "Faster speeds": "سرعات أسرع",
 "Faster than a VPN": "أسرع من برامج الـ VPN",
-"For <a id=\"download-windows\">Windows</a>, <a id=\"download-android\">Android</a>, <a id=\"download-mac\">Mac</a>, <a id=\"download-ubuntu\">Ubuntu</a>.": "<a id=\"download-windows\">للويندوز</a>، <a id=\"download-android\">للأندرويد</a>، <a id=\"download-mac\">للماك</a>، <a id=\"download-ubuntu\">للأوبونتو</a>.",
+"For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.": "For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.",
 "Français": "Français",
 "Frequently Asked Questions": "الأسئلة الشائعة",
 "GitHub": "GitHub",
@@ -30,11 +30,12 @@
 "If you choose to send Lantern diagnostic and usage data, we will never share, sell or lease this data to third parties or use it for any other purpose than making our services better for our users. Lantern collects diagnostic information when users share feedback and other information for debugging purposes, and anonymous usage analytics of our apps and website to offer you a better user experience. The Lantern settings allow you to configure this according to your personal preferences.": "اذا قمت باختيار ارسال بيانات استخدام تطبيق لانترن وبياناته التشخيصية، سوف لا نقوم بمشاركة وبيع أو تأجير هذه البيانات لأطراف خارجية أو نستخدمها لأي غرض آخر باستنثاء تحسين خدماتنا لمستخدمينا. يقوم تطبيق لانترن بجمع معلومات تشخيصية عندما يقوم المستخدمون بمشاركة ملاحظاتهم أو أي معلومات أخرى لغرض المعالجة، ويقوم أيضاً بجمع تحليلات الاستخدام لتطبيقاتنا وموقعنا من أجل تقديم تجربة مستخدم أفضل لك. تسمح لك اعدادات تطبيق لانترن بتكوين ذلك وفقاً لتفضيلاتك الشخصية. ",
 "If you have more questions, please connect with us on <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">Facebook</a> or visit our <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">User Forum</a>. <br> <br>If you have more technical questions, please see the <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">Developers Q&amp;A section</a> of our developers forum.": "اذا كان لديم المزيد من الأسئلة، يرجى التواصل معنا على <a href=\"https://www.facebook.com/getlantern?fref=ts\" target=\"_blank\">الفيسبوك</a> أو زيارة <a href=\"https://groups.google.com/forum/#!forum/lantern-users-en\" target=\"_blank\">منتدى المستخدم الخاص بنا</a>. <br><br>اذا كان لديك المزيد من الأسئلة التقنية، <a href=\" https://github.com/getlantern/lantern/wiki/%5Bdevelopers%5D-Questions-and-Answers\" target=\"_blank\">يرجى الذهاب الى قسم المطورين</a>في منتدى المطورين الخاص بنا.",
 "Innovate Labs, LLC <br>830 Traction Ave #3a <br>Los Angeles, CA 90013": "  830Traction Ave #3a <br> Innovate Labs, LLC <br>لوس أنجلوس، كاليفورنيا 90013",
-"Lantern": "لانترن ",
+"Lantern - Faster than a VPN": "Lantern - Faster than a VPN",
 "Lantern Pro Reseller": "بائع تجزئة تطبيق لانترن برو",
 "Lantern Pro gives you all the features of our free version and more:": "يمنحك تطبيق لانترن برو جميع ميزات الاصدار المجاني والكثير من الأمور الأخرى:",
 "Lantern Pro gives you the fastest connection to the open internet by using optimized servers, that are less-crowded than our free servers, to offer you the best speed possible.": "يمنحك لانترن برو الاتصال الأسرع للانترنت المفتوح باستخدام خوادم محسنة قليلة الازدحام بشكل مختلف عن خوادمنا المجانية، وذلك من أجل تقديم أفضل سرعة ممكنة لك.",
 "Lantern Pro provides you with unlimited data to browse the web, stream videos and download content so that you will always have a fast unblocked connection. You can access all of your online content and information whenever needed.": "يمنحك لانترن برو بيانات غير محدودة لتصفح الويب، وتشغيل مقاطع الفيديو، وتحميل المحتوى لتتمكن دائماً من امتلاك اتصال سريع وغير محظور. يمكنك الوصول الى المحتوى والمعلومات الخاصة بك على الانترنت عند حاجتك اليها.",
+"Lantern delivers fast, reliable and secure access to the open internet. Download Lantern for free access to blocked videos, news, social media and more. Available for Windows, Android, Mac, Ubuntu.": "Lantern delivers fast, reliable and secure access to the open internet. Download Lantern for free access to blocked videos, news, social media and more. Available for Windows, Android, Mac, Ubuntu.",
 "Lantern encrypts all of your traffic to blocked sites and services to protect your data and privacy.": "يقوم تطبيق لانترن بتشفير جميع الزيارات الخاصة بك الى المواقع المحظورة والخدمات لتحمي نفسك وخصوصيتك. ",
 "Lantern encrypts all your traffic in transit through our servers to protect your data and privacy.": "يقوم تطبيق لانترن بتشفير زياراتك خلال خدماتنا لحماية بياناتك وخصوصيتك.",
 "Lantern is a software application for desktop and mobile that delivers fast, reliable and secure access to blocked websites and apps.": "لانترن هو تطبيق برمجي للحواسيب المكتبية والهواتف النقالة الذي يقدم وصول آمن وموثوق وسريع الى التطبيقات والمواقع المحظورة.",
@@ -79,5 +80,6 @@
 "“简单易用快速，适合任何人群”": "“简单易用快速，适合任何人群”",
 "“超好用啊，比那些刷好评的靠谱多了”": "“超好用啊，比那些刷好评的靠谱多了”",
 "“速度相当快，而且稳定”": "“速度相当快，而且稳定”",
-"简体中文": "简体中文"
+"简体中文": "简体中文",
+"请从官网 <a href=\"https://getlantern.org\" target=\"_blank\">GetLantern.org</a> 或 <a href=\"https://github.com/getlantern/forum#蓝灯lantern最新版本下载\" target=\"_blank\">蓝灯官方论坛</a>(免翻墙)下载蓝灯软件。其他网站的下载链接都可能包含有病毒。": "请从官网 <a href=\"https://getlantern.org\" target=\"_blank\">GetLantern.org</a> 或 <a href=\"https://github.com/getlantern/forum#蓝灯lantern最新版本下载\" target=\"_blank\">蓝灯官方论坛</a>(免翻墙)下载蓝灯软件。其他网站的下载链接都可能包含有病毒。"
 }
