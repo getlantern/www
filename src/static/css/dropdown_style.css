@@ -1,0 +1,133 @@
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+::selection {
+    background: transparent; 
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+.wrapper-demo {
+    margin: 60px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Dropdown */
+
+.select-dropdown {
+    /* Size and position */
+    position: relative; /* Enable absolute positionning for children and pseudo elements */
+    width: 130px;
+    margin: 0 auto;
+    padding: 12px 10px;
+
+    /* Styles */
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: black transparent;
+}
+
+.select-dropdown .dropdown {
+  /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: 0;
+    width: 130px;
+
+    /* Styles */
+    background: white;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    list-style: none;
+    border: 1px solid #000;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select-dropdown .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-size: 8px;
+    border: 1px white solid;
+}
+
+/* .select-dropdown .dropdown li:nth-child(1) a { */ 
+/*     border-bottom: 1px solid #000; */
+/* } */
+
+.select-dropdown .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.select-dropdown .dropdown li:hover a {
+    color: #00BCD4;
+}
+
+/* Active state */
+
+.select-dropdown.active:after {
+    border-width: 0 6px 6px 6px;
+}
+
+.select-dropdown.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* No CSS3 support */
+
+.no-opacity       .select-dropdown .dropdown,
+.no-pointerevents .select-dropdown .dropdown {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity       .select-dropdown.active .dropdown,
+.no-pointerevents .select-dropdown.active .dropdown {
+    display: block;
+}

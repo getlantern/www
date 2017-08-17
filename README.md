@@ -1,27 +1,11 @@
 # getlantern.org
 
-This site requires [cactus](https://github.com/koenbok/Cactus).
+This site requires [Jinja2](jinja.pocoo.org).
 
-```
-make run
-# Running webserver at http://127.0.0.1:8000 for /Users/rev/projects/lantern/www/lantern-site/.build
-# Type control-c to exit
-```
+`make run` to build and serve HTML on 8080 port. Visiting / redirects to preferred language of the browser, or `en_US` if the language is not supported.
 
-## Creating a build
+Modify bin/config.py to add more supported languages.
 
-In order to create a build use the `build` target of the Makefile.
+`make deploy-beta` deploys to http://beta.getlantern.org.s3-website-us-east-1.amazonaws.com/
 
-```
-make build
-```
-
-Then upload the contents of the `lantern-site/build` directory.
-
-## Deploying to getlantern.org
-
-Use the `deploy-prod` target.
-
-```
-make deploy-prod
-```
+`make deploy-prod` deploys to https://getlantern.org.

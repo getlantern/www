@@ -1,4 +1,3 @@
-SOURCE ?= getlantern.org
 get-command = $(shell which="$$(which $(1) 2> /dev/null)" && if [[ ! -z "$$which" ]]; then printf %q "$$which"; fi)
 
 S3CMD := $(call get-command,s3cmd)
@@ -14,12 +13,17 @@ require-s3cmd:
 require-wget:
 	@if [[ -z "$(WGET)" ]]; then echo 'Missing "wget" command.'; exit 1; fi
 
-run:
-	cd $(SOURCE) && cactus serve
+require-jinjia2:
+	@if [[ -z "$(shell pip show Jinja2)" ]]; then echo '"pip install Jinjia2" first'; exit 1; fi
 
+gen-lang: require-jinjia2
+	bin/gen-lang.py
 
-build:
-	cd $(SOURCE) && rm -rf .build build && cactus build -c config.json && mv .build build && cp -R fanqiang build/
+build: gen-lang
+	rm -rf .build build && bin/build.py # && cp -R fanqiang build/
+
+run: build
+	cd build && python -m SimpleHTTPServer
 
 copy-installers: require-secrets-dir
 	@URLS="$$(make get-installer-urls)" && \
@@ -33,7 +37,8 @@ copy-installers: require-secrets-dir
 	echo "Finished copying installers to mirrors"
 
 deploy-beta: build
-	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive . s3://beta.getlantern.org
+	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://beta.getlantern.org && \
+	echo "Done! Visit http://beta.getlantern.org.s3-website-us-east-1.amazonaws.com/"
 
 get-installer-urls: require-wget
 	@BASE_NAME="lantern-installer-internal" && \
@@ -48,11 +53,11 @@ get-installer-urls: require-wget
 
 copy-cn-index:
 	echo "Copying CN index to main directory" && \
-	cp $(SOURCE)/pages/index.html $(SOURCE)/tmp.html && \
-	cp $(SOURCE)/pages/CN/index.html $(SOURCE)/pages/index.html
+	cp pages/index.html tmp.html && \
+	cp pages/CN/index.html pages/index.html
 
 deploy-cn-mirrors: require-secrets-dir copy-cn-index build
-	cd $(SOURCE)/build && \
+	cd build && \
 	for NAME in $(shell cat "$(SECRETS_DIR)/website-mirrors.txt"); do \
 		echo "Deploying to $$NAME" && \
 		$(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://$$NAME; \
@@ -60,5 +65,5 @@ deploy-cn-mirrors: require-secrets-dir copy-cn-index build
 	mv ../tmp.html ../pages/index.html
 
 deploy-prod: build
-	cd $(SOURCE)/build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://getlantern.org
+	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://getlantern.org
 

@@ -1,8 +1,8 @@
 [main]
 host = https://www.transifex.com
 
-[lantern.getlantern-org]
-file_filter = getlantern.org/static/locale/lang-<lang>.json
-source_file = getlantern.org/static/locale/lang-en_US.json
+[lantern.getlantern-org-v4]
+file_filter = lang/<lang>.json
+source_file = lang/en_US.json
 source_lang = en_US
 type = KEYVALUEJSON
