@@ -9,7 +9,7 @@ _language_mapping = [
     ('es', u'Español'),
     ('ar', u'عربى'),
     ('th', u'ไทย'),
-    ('ms', u'Melayu'),
+    ('ms', u'Malay'),
     ('id', u'bahasa Indonesia'),
     ('ru_RU', u'русский')
 ]
