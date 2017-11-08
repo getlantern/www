@@ -24,6 +24,7 @@ def generate(src_name, **args):
         lang_files = set(lang_files) - set(exclude)
         for fname in lang_files:
             with open(path.join('lang', fname)) as fl:
+                print "building %s" % fname
                 mapping = json.load(fl)
                 dest = path.join(root, fname.replace('.json', ''))
                 path.exists(dest) or os.makedirs(dest)
