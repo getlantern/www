@@ -11,7 +11,8 @@ _language_mapping = [
     ('th', u'ไทย'),
     ('ms', u'Malay'),
     ('id', u'bahasa Indonesia'),
-    ('ru_RU', u'русский')
+    ('ru_RU', u'русский'),
+    ('de', u'Deutsch')
 ]
 _available_languages = [l[0] for l in _language_mapping]
 template_vars = dict(
