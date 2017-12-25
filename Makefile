@@ -13,10 +13,10 @@ require-s3cmd:
 require-wget:
 	@if [[ -z "$(WGET)" ]]; then echo 'Missing "wget" command.'; exit 1; fi
 
-require-jinjia2:
-	@if [[ -z "$(shell pip show Jinja2)" ]]; then echo '"pip install Jinjia2" first'; exit 1; fi
+require-jinja2:
+	@if [[ -z "$(shell pip show Jinja2)" ]]; then echo '"pip install Jinja2" first'; exit 1; fi
 
-gen-lang: require-jinjia2
+gen-lang: require-jinja2
 	bin/gen-lang.py
 
 build: gen-lang
