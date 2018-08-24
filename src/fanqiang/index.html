@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__getlantern_org" dir="ltr"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Lantern</title>
+    <title data-localize="LANTERN">翻墙</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="/static/images/headerlogo.png">
@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/main.css">
-    <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script> -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
     <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,15 +23,15 @@ ga('send', 'pageview');
     </script>
 
     <!-- Facebook Pixel Code -->
-    <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-        document,'script','//connect.facebook.net/en_US/fbevents.js');
-fbq('init', '486497101510375');
-fbq('track', 'PageView');
-    </script>
+    <!-- <script> -->
+<!-- !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? -->
+    <!-- n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n; -->
+<!-- n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0; -->
+<!-- t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, -->
+    <!--     document,'script','//connect.facebook.net/en_US/fbevents.js'); -->
+<!-- fbq('init', '486497101510375'); -->
+<!-- fbq('track', 'PageView'); -->
+    <!-- </script> -->
     <noscript>&lt;img height="1" width="1" style="display:none"
                                         src="https://www.facebook.com/tr?id=486497101510375&amp;ev=PageView&amp;noscript=1"
                                         /&gt;</noscript>
@@ -55,11 +56,11 @@ fbq('track', 'PageView');
       <div class="header-wrapper">
         <h1><a href="/index.html">
         <p id="localedir" style="display:none;" data-locale-dir="/static/locale/lang"></p>
-        <img id="logo" src="/static/images/logo.png" alt="Lantern" style="display: none;">
-        <img id="chineselogo" style="" src="/static/images/chineselogo.svg" alt="Lantern">
+        <img id="logo" src="/static/images/logo.png" alt="翻墙" style="display: block;">
+        <img id="chineselogo" style="display: none;" src="/static/images/chineselogo.svg" alt="翻墙">
         </a></h1>
         
-        <a href="#download-now" class="download">下载</a>
+        <a href="#download-now" class="download" data-localize="DOWNLOAD">Download</a>
         
         <div class="language-wrapper">
           <select id="language-chooser" name="language-chooser" data-cip-id="cIPJQ342845640">
@@ -83,62 +84,62 @@ fbq('track', 'PageView');
 
     
 
-<div id="notice" style="display: block;">
+<div id="notice" style="display: none;">
   <a id="close-notice" href="#">
     <i class="fa fa-times" aria-hidden="true"></i>
   </a>
   <p>
-    <a href="https://getlantern.org" target="_blank">GetLantern.org</a>是翻墙唯一的官方网站。其他网站的下载链接都可能包含有病毒，并且盗取你的资金和个人信息。请从<a href="https://getlantern.org" target="_blank">官网</a>或<a href="https://github.com/getlantern/forum#蓝灯lantern最新版本下载" target="_blank">GitHub</a>(免翻墙)下载翻墙软件。
+    <a href="https://getlantern.org" target="_blank">GetLantern.org</a>是蓝灯唯一的官方网站。其他网站的下载链接都可能包含有病毒，并且盗取你的资金和个人信息。请从<a href="https://getlantern.org" target="_blank">官网</a>或<a href="https://github.com/getlantern/forum#蓝灯lantern最新版本下载" target="_blank">GitHub</a>(免翻墙)下载蓝灯软件。
   </p>
 </div>
 
 
 <section class="w100" id="cover-img">
   <hgroup>
-  <h2>翻墙 - 秒杀VPN</h2>
+  <h2 data-localize="BETTER_THAN_A_VPN">翻墙 - Better than a VPN</h2>
   </hgroup>
 </section>
 
 
 <section class="w100" id="download-now">
   <div class="section-wrapper">
-    <h2>现在下载并升级到专业版</h2>
+    <h2 data-localize="DOWNLOAD_NOW_UPGRADE_PRO">Download Now and Upgrade to Pro</h2>
     <ul class="why-download">
       <li>
         <span class="blue-checkmark">
             <img src="/static/images/blue_check.svg" alt="">
         </span>
-        <span>速度更快</span>
+        <span data-localize="FASTER_SPEED">Faster Speed</span>
       </li>
       <li>
         <span class="blue-checkmark">
             <img src="/static/images/blue_check.svg" alt="">
         </span>
-        <span>无限流量</span>
+        <span data-localize="UNLIMITED_DATA">Unlimited Data</span>
       </li>
       <li>
         <span class="blue-checkmark">
             <img src="/static/images/blue_check.svg" alt="">
         </span>
-        <span>不怕封锁</span>
+        <span data-localize="BLOCKING_RESISTANCE">Blocking Resistance</span>
       </li>
     </ul>
     <div class="download-buttons">
 
-      <a href="lantern-installer.dmg" id="download-button" class="get-desktop">获得桌面版</a>
-      <a href="lantern-installer.apk" id="download-android-button" class="get-android">获得安卓版</a>
-      <a href="" class="get-desktop" id="on-mobile">获得桌面版</a>
+      <a href="lantern-installer.dmg" id="download-button" class="get-desktop" data-localize="GET_DESKTOP">Get Desktop</a>
+      <a href="lantern-installer.apk" id="download-android-button" class="get-android" data-localize="GET_ANDROID">Get Android</a>
+      <a href="" class="get-desktop" id="on-mobile" data-localize="GET_DESKTOP">Get Desktop</a>
       <div class="send-link">
         <form id="send-download-form" action="">
           <input id="send-download-link-email" type="email" placeholder="your@email.com">
-          <input type="submit" value="发送链接">
+          <input type="submit" value="Send Link" data-localize="SEND_LINK">
         </form>
       </div>
-      <span>支持Windows、安卓、Mac 和 Ubuntu。iOS 版本即将发布</span>
+      <span data-localize="FOR_OS">For Windows, Android, Mac, Ubuntu. iOS coming soon</span>
     </div>
     <div class="google-play">
         <a href="https://play.google.com/store/apps/details?id=org.getlantern.lantern" target="_blank">
-            <img id="gplay_badge" src="/static/images/gplay/zh_CN.png" alt="">
+            <img id="gplay_badge" src="/static/images/gplay/en_US.png" alt="">
         </a>
     </div>
     <span class="learn-more">Learn More ↓</span>
@@ -151,23 +152,23 @@ fbq('track', 'PageView');
     <div class="icons">
      <div class="col">
          <img src="/static/images/icon_fast.svg" alt="">
-       <span>快速</span>
-       <p>翻墙让你高速访问全球网络</p>
+       <span data-localize="FEATURE_1">Fast</span>
+       <p data-localize="FEATURE_1_DETAIL">翻墙 delivers fast access to the open Internet</p>
     </div>
     <div class="col">
         <img src="/static/images/icon_easy.svg" alt="">
-      <span>简单</span>
-      <p>下载、安装、开始浏览和使用程序，就这么简单！</p>
+      <span data-localize="FEATURE_2">Easy</span>
+      <p data-localize="FEATURE_2_DETAIL">Just download, install, and start browsing and using apps!</p>
     </div>
     <div class="col">
         <img src="/static/images/icon_smart.svg" alt="">
-      <span>机智</span>
-      <p>翻墙使用一系列技术保持可用</p>
+      <span data-localize="FEATURE_3">Smart</span>
+      <p data-localize="FEATURE_3_DETAIL">翻墙 uses a variety of tecniques to stay unblocked</p>
     </div>
     <div class="col">
         <img src="/static/images/icon_secure.svg " alt="">
-      <span>安全</span>
-      <p>翻墙加密您与受屏蔽网站间的交流</p>
+      <span data-localize="FEATURE_4">Secure</span>
+      <p data-localize="FEATURE_4_DETAIL">翻墙 encrypts all of your traffic to blocked sites</p>
     </div>
   </div>
   </div>
@@ -176,45 +177,45 @@ fbq('track', 'PageView');
 
 <section class="w100" id="reasons">
   <div class="section-wrapper">
-    <h2>翻墙专业版为什么这么好？</h2>
+    <h2 data-localize="WHY_PRO_AWESOME">Why is 翻墙 Pro so awesome?</h2>
     <div class="awesome-reasons">
       <div>
         <span class="checkmark">
 			<img src="/static/images/large_check.svg" alt="">
 		</span>
-        <span class="text"><b>使用最快的线路访问网站、应用和视频。</span></span>
+        <span class="text"><b data-localize="REASON_1">Faster Speed:</b> <span data-localize="REASON_1_DETAIL">Race through websites, apps, and videos with the fastest connection possible.</span></span>
       </div>
       <div>
         <span class="checkmark">
 			<img src="/static/images/large_check.svg" alt="">
         </span>
-        <span class="text"><b>翻墙专业版提供无限高速流量。</span></span>
+        <span class="text"><b data-localize="REASON_2">No Data Limits:</b> <span data-localize="REASON_2_DETAIL">翻墙 Pro has unlimited high-speed data.</span></span>
       </div>
       <div>
         <span class="checkmark">
 			<img src="/static/images/large_check.svg" alt="">
         </span>
-        <span class="text"><b>翻墙专业版支持多达3台设备。</span></span>
+        <span class="text"><b data-localize="REASON_3">Multiple Devices:</b> <span data-localize="REASON_3_DETAIL">翻墙 Pro works on up to 3 devices.</span></span>
       </div>
       <div>
         <span class="checkmark">
 		  <img src="/static/images/large_check.svg" alt="">
         </span>
-        <span class="text"><b>翻墙专业版自动寻找亚洲、欧洲、美国的最佳服务器，保证您的上网顺畅。</span></span>
+        <span class="text"><b data-localize="REASON_4">Blocking Resistant:</b> <span data-localize="REASON_4_DETAIL">翻墙 Pro finds the best server in Asia, Europe and US to keep you online and surfing.</span></span>
       </div>
     </div>
-    <span>请放松，让翻墙专业版为您提供最好的网络连接。</span>
-    <p class="centered">阅读翻墙论坛以了解更多</p>
-    <a id="faqlink" href="https://github.com/getlantern/forum" class="faqlink">翻墙论坛</a>
+    <span data-localize="JUST_RELAX">Just relax and let 翻墙 Pro get you the best Internet connection possible.</span>
+    <p class="centered" data-localize="VISIT_FAQ">Visit our FAQ page to learn more about 翻墙</p>
+    <a id="faqlink" href="./faq/index.html" class="faqlink" data-localize="FAQ_LINK">FAQ</a>
   </div>
 </section> 
 
 
 <section class="w100" id="enterprise">
     <div class="section-wrapper">
-        <h3>翻墙企业版</h3>
+        <h3 data-localize="ENTERPRISE">翻墙 Enterprise</h3>
         <div class="enterprise">
-            <span>enterprise@getlantern.org</a>获取更多信息.</span>
+            <span data-localize="ENTERPRISE_CONTACT">Interested in 翻墙 for your business?<br>Contact <a target="_blank" href="mailto:enterprise@getlantern.org">enterprise@getlantern.org</a> for more information.</span>
         </div>
     </div>
 </section>
@@ -226,7 +227,7 @@ fbq('track', 'PageView');
 
 <section class="w100" id="press">
   <div class="section-wrapper">
-    <h3>媒体报道</h3>
+    <h3 data-localize="PRESS">Read about 翻墙</h3>
   <div class="press">
     <a href="http://sinosphere.blogs.nytimes.com/2015/03/30/q-and-a-adam-fisk-on-evading-internet-censorship-in-china/" target="_blank">
         <img src="/static/images/nytimes.svg" alt="">
@@ -265,10 +266,10 @@ fbq('track', 'PageView');
         <div class="cs-text">
             <div class="quote">
                 <span class="stars">★ ★ ★ ★ ★</span>
-                <p>“赞爆了。真的比什么VPN都好。”</p>
-                <span class="author">——Google Play 上的翻墙用户评论</span>
+                <p data-localize="USER_COMMENT_1">"Awesome. It's truly better than any VPN."</p>
+                <span class="author" data-localize="USER_COMMENT_2">- 翻墙 User comment on Google Play Store</span>
             </div>
-            <p class="cs-ios">iOS 版翻墙即将发布</p>
+            <p class="cs-ios" data-localize="IOS_COMING_SOON">翻墙 for iOS coming soon</p>
         </div>
     </div>
 </section> 
@@ -279,11 +280,11 @@ fbq('track', 'PageView');
 
     <footer>
     <div class="newsletter">
-    <h4>注册我们的新闻邮件，接收最新消息</h4>
+    <h4 data-localize="NEWSLETTER_1">Sign up for our newsletter to receive updates</h4>
     <form class="news-form" action="//getlantern.us2.list-manage.com/subscribe/post?u=0ac18298d5d0330dcda8f48aa&amp;id=f06770f311" method="POST" target="_blank">
       <input name="EMAIL" type="email" placeholder="your@email.com" data-cip-id="cIPJQ342845639">
-      <button>订阅</button>
-      <!--<input type="submit" value="Join">-->
+      <button data-localize="NEWSLETTER_2" type="submit">Join</button>
+      <!--<input type="submit" value="Join" data-localize="NEWSLETTER_2">-->
     </form>
   </div>
   
@@ -323,4 +324,4 @@ fbq('track', 'PageView');
   
   
 
-</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+</body></html>
