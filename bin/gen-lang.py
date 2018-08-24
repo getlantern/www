@@ -6,7 +6,7 @@ from jinja2 import Template
 from lib import Parser
 from config import template_vars
 
-src_html = ["src/en/index.html", "src/ch/index.html", "src/faq/index.html"]
+src_html = ["src/en/index.html", "src/ch/index.html", "src/faq/index.html", "src/outdated/index.html"]
 strings = dict()
 for fname in src_html:
     with io.open(fname, encoding="utf-8") as f:

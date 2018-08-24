@@ -43,6 +43,8 @@ class Parser(HTMLParser):
 
     def handle_data(self, data):
         stripped = data.strip()
+        if stripped.startswith('<!--'):
+            return
         if len(stripped) > 0 and stripped[0].isalpha() and self.hit_end_tag:
             self.text += ' '
         self.text += stripped

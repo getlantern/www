@@ -21,7 +21,7 @@
         || navigator.userLanguage;
         lang = lang.replace('-', '_');
         path = lang in {{available_languages}} ? lang : 'en_US';
-        window.location.pathname = path + '/';
+        window.location.pathname = path + '/' + {{html_name}} + '.html';
     </script>
   </body>
 </html>
