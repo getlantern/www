@@ -24,7 +24,7 @@ def generate(src_name, **args):
         lang_files = set(lang_files) - set(exclude)
         for fname in lang_files:
             with open(path.join('lang', fname)) as fl:
-                print "building %s" % fname
+                print("building %s" % fname)
                 mapping = json.load(fl)
                 dest = path.join(root, fname.replace('.json', ''))
                 path.exists(dest) or os.makedirs(dest)
@@ -39,11 +39,15 @@ def generate(src_name, **args):
 generate('src/en/index.html', exclude=['zh_CN'], root='build')
 generate('src/ch/index.html', only=['zh_CN'], root='build')
 generate('src/faq/index.html', root='build', html_name='faq.html')
-with open('src/index.html') as f:
-    with open('build/index.html', 'w') as w:
-        w.write(Template(f.read()).render(template_vars))
+generate('src/outdated/index.html', root='build/', html_name='outdated.html')
+for html_name in ['index', 'outdated']:
+    with open('src/index.html') as f:
+        template_vars['html_name'] = '"%s"' % html_name
+        with open('build/' + '%s.html'%html_name, 'w') as w:
+            w.write(Template(f.read()).render(template_vars))
 
 copy('src/robots.txt', 'build')
 copy('src/sitemap.xml', 'build')
 copy('src/favicon.ico', 'build')
 copytree('src/static', 'build/static')
+copytree('src/fanqiang', 'build/fanqiang')
