@@ -20,7 +20,11 @@
         // IE 11-
         || navigator.userLanguage;
         lang = lang.replace('-', '_');
-        path = {{available_languages}}.indexOf(lang) >= 0 ? lang : 'en_US';
+        var parts = window.location.pathname.split('/');
+        // remove the last part of the path (index.html) before adding language suffix
+        parts.pop();
+        path = parts.join('/') + '/' + ({{available_languages}}.indexOf(lang) >= 0 ? lang : 'en_US');
+        console.log(path);
         window.location.pathname = path + '/' + {{html_name}} + '.html';
     </script>
   </body>
