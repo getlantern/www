@@ -6,6 +6,12 @@
     <title>Lantern - Faster than a VPN</title>
     <meta name="description" content="Lantern delivers fast, reliable and secure access to the open internet. Download Lantern for free access to blocked videos, news, social media and more. Available for Windows, Android, Mac, Ubuntu.">
     <meta name="viewport" content="width=device-width">
+
+    {% for lang in available_languages %}
+    <link rel="alternate" href="../{{lang}}/index.html" hreflang="{{lang|replace('_', '-')}}">
+    {% endfor %}
+    <link rel="alternate" href="../en_US/index.html" hreflang="x-default">
+
     <link rel="icon" sizes="124x124" href="/favicon.ico?v=2">
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
@@ -22,18 +28,19 @@
     <header class="fixed">
       <div class="header-wrapper">
         <h1>
-          <a href="./">
+          <a href="index.html">
             <img src="../static/images/logo_en.svg" alt="Lantern">
           </a>
         </h1>
         
         <div id="dd" class="select-dropdown" tabindex="1">Select language
             <ul class="dropdown">
-		      <li><a href="/en_US/">English (United States)</a></li>
-		      <li><a href="/zh_CN/">Chinese (Simplified)</a></li>
+              {% for lang, text in language_mapping %}
+              <li><a href="../{{lang}}/faq.html">{{text}}</a></li>
+              {% endfor %}
 			</ul>
 		</div>
-       
+
         <a href="" class="download">Download Free</a>
         
         <a href="./faq.html">FAQs</a>
