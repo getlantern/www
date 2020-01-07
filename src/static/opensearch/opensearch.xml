@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>Lantern Search</ShortName>
+<Description>Lantern Private Search</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">https://lantern.io/images/logo-16x16.png</Image>
+<Url type="text/html" template="https://lantern.io/?q={searchTerms}&amp;cat=web&amp;pl=opensearch&amp;language=english"></Url>
+</OpenSearchDescription>
