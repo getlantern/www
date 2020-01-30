@@ -34,7 +34,9 @@ def generate(src_name, **args):
                     # Note: intentionally not render template until now, to
                     # avoid accidentally pulling in translations for language
                     # names.
-                    w.write(Template(Transformer.T(mapping, src)).render(template_vars))
+                    tvars = template_vars.copy()
+                    tvars["lang"] = fname.replace('.json', '')
+                    w.write(Template(Transformer.T(mapping, src)).render(tvars))
 
 generate('src/en/index.html', exclude=['zh_CN'], root='build')
 generate('src/ch/index.html', only=['zh_CN'], root='build')
