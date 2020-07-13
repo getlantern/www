@@ -4,6 +4,7 @@
 _language_mapping = [
     ('en_US', u'English (United States)'),
     ('zh_CN', u'简体中文'),
+    ('zh_HK', u'正體中文'),
     ('fa_IR', u'فارسی'),
     ('fr', u'Français'),
     ('es', u'Español'),
