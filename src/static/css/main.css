@@ -71,7 +71,7 @@ a.download {
   color: #FF4081;
   text-decoration:none;
   text-transform: uppercase;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .select-dropdown {
@@ -273,6 +273,10 @@ a.download-btn {
   margin: 0 2%;
 }
 
+.feat-col:first-child p, .feat-col:first-child li{
+  text-align: left;
+}
+
 .feat-col img {
   height: 6rem;
 }
@@ -282,10 +286,18 @@ a.download-btn {
   margin: 1rem 0;
 }
 
-.feat-col p {
+.feat-col p, .feat-col li, .feat-col a {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem;
+}
+
+.feat-col a {
+  color: #00BCD4;
+}
+
+.feat-col li {
+  list-style: inside url(../images/x.svg);
 }
 
 /*Reviews*/

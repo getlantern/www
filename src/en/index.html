@@ -107,13 +107,21 @@
   <div class="section-wrapper">
 
     <div class="feat-col">
+    {% if lang == 'zh_HK' %}
+      <img src="../static/images/icon_no_logs.png" alt="">
+    {% else %}
       <img src="../static/images/icon_fast.png" alt="">
+    {% endif %}
       <h3>Fast</h3>
       <p>Lantern uses geo-optimized servers, and only proxies blocked sites, to maximize browsing speed, letting you stream HD videos instantaneously.</p>
     </div>
 
     <div class="feat-col">
+    {% if lang == 'zh_HK' %}
+      <img src="../static/images/icon_no_court_orders.png" alt="">
+    {% else %}
       <img src="../static/images/icon_reliable.png" alt="">
+    {% endif %}
       <h3>Reliable</h3>
       <p>Lantern uses a variety of techniques to bypass internet censorship and firewalls so you can keep surfing with uninterrupted access.</p>
     </div>
