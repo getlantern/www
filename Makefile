@@ -26,11 +26,11 @@ run: build
 	cd build && python -m SimpleHTTPServer
 
 deploy-beta: build
-	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://beta.getlantern.org && \
-	echo "Done! Visit http://beta.getlantern.org.s3-website-us-east-1.amazonaws.com/"
+	cd build && $(S3CMD) --no-check-certificate --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync --recursive --no-mime-magic --guess-mime-type . s3://beta.getlantern.org && \
+	echo "Done! Visit http://beta.getlantern.org.amazonaws.com/"
 
 deploy-prod: build
-	cd build && $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://getlantern.org
+	cd build && $(S3CMD) --no-check-certificate --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync --recursive --no-mime-magic --guess-mime-type . s3://getlantern.org
 
 deploy-cn-mirrors: require-secrets-dir build
 	cd build && \
@@ -39,7 +39,7 @@ deploy-cn-mirrors: require-secrets-dir build
 		  echo "***Skipping $$NAME"; \
 		else \
 		  echo "***Deploying to $$NAME" && \
-		  $(S3CMD) --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync -P --recursive --no-mime-magic --guess-mime-type . s3://$$NAME; \
+		  $(S3CMD) --no-check-certificate --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync --recursive --no-mime-magic --guess-mime-type . s3://$$NAME; \
 		fi; \
 	done; \
 
