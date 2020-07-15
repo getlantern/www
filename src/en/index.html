@@ -107,7 +107,7 @@
   <div class="section-wrapper">
 
     <div class="feat-col">
-    {% if lang == 'zh_HK' %}
+    {% if lang in ['zh_HK', 'zh_TW'] %}
       <img src="../static/images/icon_no_logs.png" alt="">
     {% else %}
       <img src="../static/images/icon_fast.png" alt="">
@@ -117,7 +117,7 @@
     </div>
 
     <div class="feat-col">
-    {% if lang == 'zh_HK' %}
+    {% if lang in ['zh_HK', 'zh_TW'] %}
       <img src="../static/images/icon_no_court_orders.png" alt="">
     {% else %}
       <img src="../static/images/icon_reliable.png" alt="">
