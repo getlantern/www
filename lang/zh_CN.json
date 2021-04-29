@@ -50,7 +50,7 @@
 "Browsing history": "浏览历史",
 "Traffic destination or metadata": "流量目的地和元数据",
 "DNS queries": "DNS查询",
-"Please read our <a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">privacy policy</a>.": "请阅读我们的隐私政策",
+"Please read our <a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">privacy policy</a>.": "请阅读我们的<a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">隐私政策</a>",
 "Lantern does not cooperate with any law enforcement in any country. Please read our <a href=\"https://s3.amazonaws.com/lantern/TransparencyReport.pdf\" target=\"_blank\">transparency report</a>.\n        We responded to the FBI under penalty of perjury (5 years in prison) that we do not process any information\n        regarding a\n        proxy IP. Please read the <a href=\"https://lantern.s3.amazonaws.com/subpoena.pdf\" target=\"_blank\">grand jury\n          subpoena</a> and <a href=\"https://lantern.s3.amazonaws.com/correspondences.pdf\" target=\"_blank\">our\n          response</a>.": "蓝灯不与任何国家的警方合作。请阅读蓝灯透明度报告。我们告诉美国联邦调查局(FBI)我们没有储存关于代理服务器IP的任何信息。请阅读美国联邦调查局的传票和我们的回复。",
 "Lantern uses geo-optimized servers, and only proxies blocked sites, to maximize browsing speed, letting you stream 1080P YouTube instantaneously.": "蓝灯会根据你的网络环境智能选择最快的服务器，只代理被封锁的网站，达到最快的浏览体验。可以让您立刻观看1080P YouTube 视频。",
 "Lantern uses geo-optimized servers, and only proxies blocked sites, to maximize browsing speed, letting you stream HD videos instantaneously.": "蓝灯会根据你的网络环境智能选择最快的服务器，只代理被封锁的网站，达到最快的浏览体验。可以让您立刻观看高清视频。",
