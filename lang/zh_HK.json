@@ -49,7 +49,7 @@
 "Browsing history": "浏览历史",
 "Traffic destination or metadata": "流量目的地和元数据",
 "DNS queries": "DNS查询",
-"Please read our <a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">privacy policy</a>.": "请阅读我们的隐私政策",
+"Please read our <a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">privacy policy</a>.": "请阅读我们的<a href=\"https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf\" target=\"_blank\">隐私政策</a>",
 "Lantern does not cooperate with any law enforcement in any country. Please read our <a href=\"https://s3.amazonaws.com/lantern/TransparencyReport.pdf\" target=\"_blank\">transparency report</a>.\n        We responded to the FBI under penalty of perjury (5 years in prison) that we do not process any information\n        regarding a\n        proxy IP. Please read the <a href=\"https://lantern.s3.amazonaws.com/subpoena.pdf\" target=\"_blank\">grand jury\n          subpoena</a> and <a href=\"https://lantern.s3.amazonaws.com/correspondences.pdf\" target=\"_blank\">our\n          response</a>.": "藍燈不予港警合作，忽略香港法庭命令。請閱讀藍燈透明度報告。 我们告诉美国联邦调查局(FBI)我们没有储存关于代理服务器IP的任何信息。请阅读美国联邦调查局的法庭传票和我们的回复。",
 "Lantern is easy to use, just download and install to start streaming, browsing and using apps - no configuration required.": "使用藍燈非常簡單。下載安裝後，一鍵就可以保護上網安全隱私-不需要任何繁瑣的設置。",
 "Lantern is out-of-date": "藍燈不是最新版",
