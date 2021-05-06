@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Lantern - Open Internet for All</title>
-    <meta name="description" content="Lantern delivers fast, reliable and secure access to the open internet. Download Lantern for free access to blocked videos, news, social media and more. Available for Windows, Android, iOS, Mac, Ubuntu.">
+    <title>Lantern - Private Internet for All</title>
+    <meta name="description" content="Lantern delivers private, fast, reliable and secure access to the open internet. One click to a private and secure Internet. Available for Windows, Android, iOS, Mac, Ubuntu.">
     <meta name="viewport" content="width=device-width">
 
     {% for lang in available_languages %}
@@ -68,11 +68,10 @@
 <section class="w100 intro-desktop" id="intro-desktop">
   <div>
     <h2>Open Internet for All</h2>
-    <span>Fast, reliable and secure access to the open internet</span>
+    <span>Private, fast, reliable and secure access to the open internet</span>
   </div>
   <div class="intro-bg with-images">
-    <p>Download Lantern to easily access blocked videos,<br>
- news, social media, apps and more</p>
+    <p>One click to a private and secure Internet</p>
     <a href="" class="download-btn">Download Free</a>
     <span>
       For
@@ -123,29 +122,34 @@
   <div class="section-wrapper">
 
     <div class="feat-col">
-    {% if lang in ['zh_HK', 'zh_TW'] %}
       <img src="../static/images/icon_no_logs.png" alt="">
-    {% else %}
-      <img src="../static/images/icon_fast.png" alt="">
-    {% endif %}
-      <h3>Fast</h3>
-      <p>Lantern uses geo-optimized servers, and only proxies blocked sites, to maximize browsing speed, letting you stream HD videos instantaneously.</p>
+      <h3>No logging</h3>
+      <p>Lantern does not store:</p>
+      <ul>
+        <li>Linking Lantern account to real identity (such as purchase information)</li>
+        <li>Connection logs (time stamps of connection of IP addresses from client to Lantern server)</li>
+        <li>Browsing history</li>
+        <li>Traffic destination or metadata</li>
+        <li>DNS queries</li>
+      </ul>
+      <p>Please read our <a href='https://s3.amazonaws.com/lantern/LanternPrivacyPolicy.pdf' target='_blank'>privacy policy</a>.</p>
     </div>
 
     <div class="feat-col">
-    {% if lang in ['zh_HK', 'zh_TW'] %}
       <img src="../static/images/icon_no_court_orders.png" alt="">
-    {% else %}
-      <img src="../static/images/icon_reliable.png" alt="">
-    {% endif %}
-      <h3>Reliable</h3>
-      <p>Lantern uses a variety of techniques to bypass internet censorship and firewalls so you can keep surfing with uninterrupted access.</p>
+      <h3>No cooperation with law enforcement</h3>
+      <p>Lantern does not cooperate with any law enforcement in any country. Please read our <a href="https://s3.amazonaws.com/lantern/TransparencyReport.pdf" target="_blank">transparency report</a>.
+      We responded to the FBI under penalty of perjury (5 years in prison) that we do not process any information regarding a
+      proxy IP. Please read the <a href="https://lantern.s3.amazonaws.com/subpoena.pdf" target="_blank">grand jury subpoena</a> and <a href="https://lantern.s3.amazonaws.com/correspondences.pdf" target="_blank">our response</a>.</p>
     </div>
 
     <div class="feat-col">
       <img src="../static/images/icon_secure.png" alt="">
-      <h3>Secure</h3>
-      <p>Lantern encrypts all of your traffic to blocked sites and services to protect your data and privacy.</p>
+      <h3>Security</h3>
+      <p>Lantern encrypts all of your traffic to blocked sites and services to protect your data and privacy. Lantern passed
+        <a href="https://www.nccgroup.trust/globalassets/our-research/us/public-reports/2017/lantern-report-1.4.pdf"
+          target="_blank">multiple third party white box security audits</a> to ensure security of our code.
+      </p>
     </div>
 
     <div class="feat-col">
