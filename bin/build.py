@@ -19,7 +19,7 @@ def generate(src_name, **args):
     with io.open(src_name, encoding='utf-8') as fsrc:
         src = fsrc.read()
         lang_files = [f for f in os.listdir('lang') if f.endswith('.json')]
-        if len(only) > 0:
+        if len(list(only)) > 0:
             lang_files = set(lang_files) & set(only)
         lang_files = set(lang_files) - set(exclude)
         for fname in lang_files:

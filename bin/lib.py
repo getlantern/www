@@ -1,4 +1,4 @@
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 
 _no_split_tags = ['a', 'b']
 _empty_tags = ['meta', 'link', 'img', 'br', 'input']

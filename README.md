@@ -10,6 +10,8 @@ Modify bin/config.py to add more supported languages.
 
 `make deploy` deploys to https://getlantern.org, plus all S3 mirrors.
 
+`make run` runs a local version at http://localhost:8000
+
 ## Translations
 
 To update translations, you need the transifex CLI tool. You can install this with:

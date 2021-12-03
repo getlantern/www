@@ -23,7 +23,7 @@ build: gen-lang
 	rm -rf .build build && bin/build.py
 
 run: build
-	cd build && python -m SimpleHTTPServer
+	cd build && python -m http.server
 
 deploy-beta: build
 	cd build && $(S3CMD) --no-check-certificate --acl-public --add-header='Cache-Control: private, max-age=0, no-cache' sync --recursive --no-mime-magic --guess-mime-type . s3://beta.getlantern.org && \

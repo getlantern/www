@@ -15,7 +15,7 @@ for fname in src_html:
         p.close()
 
 with io.open("lang/en_US.json", "w", encoding="utf-8") as f:
-    f.write(unicode(
+    f.write(str(
         json.dumps(strings,
                    ensure_ascii=False,
                    sort_keys=True,
