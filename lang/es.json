@@ -3,7 +3,7 @@
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "Como los usuarios de Lantern continúan creciendo, los costes de mantenerlo se incrementan significativamente cada mes. Para seguir en la brecha y continuar creando e innovando para nuestros usuarios, necesitamos apoyar nuestras operaciones cargando una pequeña cuota para un servicio ilimitado. <br> <br>Para mantener en marcha nuestra versión gratuita (Free), hemos implementado una limitación de ancho de banda de 500 MB/mes. Cuando se alcance el límite de ancho de banda la conexión se ralentiza, y a los usuarios Free se les incita a actualizar a Lantern Pro.",
 "Better performance": "Mejor rendimiento",
 "Browsing history": "Browsing history",
-"CONTACT US: <br>support@getlantern.org": "CONTACTE CON NOSOTROS: <br>support@getlantern.org",
+"CONTACT US: <br>support@getlantern.org <br>press@getlantern.org": "CONTACTE CON NOSOTROS: <br>support@getlantern.org <br>press@getlantern.org",
 "Can I get Lantern Pro for free?": "¿Puedo conseguir Lantern Pro de forma gratuita?",
 "Can anyone view my traffic when I’m using Lantern?": "¿Puede alguien ver mi tráfico cuando estoy usando Lantern?",
 "Connection logs (time stamps of connection of IP addresses from client to Lantern server)": "Connection logs (time stamps of connection of IP addresses from client to Lantern server)",
