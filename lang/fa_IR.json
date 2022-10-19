@@ -3,7 +3,7 @@
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "همچنان که که کاربران فانوس در حال رشد هستند ، هزینه های نگهداری آن هر ماه افزایش چشمگیری دارد. برای جلب توجه و حفظ ساخت و ساز و نوآوری برای کاربران ما، ما ملزم به اخذ  هزینه کوچک برای خدمات نامحدود پشتیبانی هستیم. <br><br> برای اجرای نسخه رایگان ما، ما محدودیت پهنای باند 500 مگابایت در ماه را اجرا کردیم. هنگامی که محدودیت پهنای باند رسید، اتصال آهسته می شود و کاربران رایگان به فانوس pro ارتقا می یابند.",
 "Better performance": "عملکرد بهتر",
 "Browsing history": "Browsing history",
-"CONTACT US: <br>support@getlantern.org": "با ما تماس بگیرید: <br>support@getlantern.org",
+"CONTACT US: <br>support@getlantern.org <br>press@getlantern.org": "<br>support@getlantern.org <br>press@getlantern.org :با ما تماس بگیرید",
 "Can I get Lantern Pro for free?": "آیا می توانم فانوس Pro را به صورت رایگان دریافت کنم؟",
 "Can anyone view my traffic when I’m using Lantern?": "آیا کسی می تواند ترافیک من را زمانی که از لنترن استفاده می کنم ببیند؟",
 "Connection logs (time stamps of connection of IP addresses from client to Lantern server)": "Connection logs (time stamps of connection of IP addresses from client to Lantern server)",

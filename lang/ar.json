@@ -3,7 +3,7 @@
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "بزيادة مستخدمي تطبيق لانترنت، فإن تكلفة صيانته تزداد بشكل كبير كل شهر. من أجل تقديم كل ما هو أفضل لمستخدمينا، فإننا نحتاج الى دعم عملياتنا من خلال فرض رسوم رمزية لخدمة غير محدودة. <br><br>من أجل الحفاظ على عمل اصدارنا المجاني، فإننا قمنا بإجراء حد لعرض النطاق الترددي يصل الى 500 ميجابيت في الشهر. عندما يتم الوصول الى حد عرض النطاق الترددي، فإن الاتصال يبطئ ويطلب من المستخدمين المجانيين الترقية الى حساب لانترن برو.",
 "Better performance": "أداء أفضل",
 "Browsing history": "Browsing history",
-"CONTACT US: <br>support@getlantern.org": "CONTACT US: <br>support@getlantern.org",
+"CONTACT US: <br>support@getlantern.org <br>press@getlantern.org": "CONTACT US: <br>support@getlantern.org <br>press@getlantern.org",
 "Can I get Lantern Pro for free?": "هل يمكنني الحصول على تطبيق لانترن برو مجاناً؟",
 "Can anyone view my traffic when I’m using Lantern?": "هل يمكن لأي شخص رؤية زياراتي عند استخدامي لتطبيق لانترن؟",
 "Connection logs (time stamps of connection of IP addresses from client to Lantern server)": "Connection logs (time stamps of connection of IP addresses from client to Lantern server)",

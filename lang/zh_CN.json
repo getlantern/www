@@ -3,7 +3,7 @@
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "随着蓝灯用户的持续增长，每月维持它的费用大幅度增长。为了能够长期为我们的用户提供持续的产品建设和创新，我们需要通过收取少量费用来支持我们的活动。<br><br>为了维持我们免费版本的运营，我们实施了每月500MB的带宽限制。达到带宽限制后，网速会变慢，免费用户将会被提示升级到蓝灯Pro专业版。",
 "Better performance": "性能更好",
 "Browsing history": "Browsing history",
-"CONTACT US: <br>support@getlantern.org": "联系我们： <br>support@getlantern.org",
+"CONTACT US: <br>support@getlantern.org <br>press@getlantern.org": "联系我们：<br>support@getlantern.org <br>press@getlantern.org",
 "Can I get Lantern Pro for free?": "我可以获得免费的蓝灯专业版吗？",
 "Can anyone view my traffic when I’m using Lantern?": "我使用蓝灯时，别人能看到我的访问内容吗？",
 "Connection logs (time stamps of connection of IP addresses from client to Lantern server)": "Connection logs (time stamps of connection of IP addresses from client to Lantern server)",
