@@ -40,7 +40,7 @@ header {
 header.fixed {
   position: fixed;
   z-index: 5;
-  top:0;
+  top: 0;
 }
 
 .header-wrapper {
@@ -57,9 +57,9 @@ h1 a img {
   height: 3.5rem;
 }
 
-header div > a {
+header div>a {
   color: #000;
-  text-decoration:none;
+  text-decoration: none;
   float: right;
   font-weight: 300;
   margin-right: 2.5rem;
@@ -69,7 +69,7 @@ header div > a {
 
 a.download {
   color: #FF4081;
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -83,29 +83,32 @@ a.download {
 
 /*Notice - Chinese only*/
 #notice {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 5.2rem;
-    max-width: 360px;
-    max-height: 170px;
-    background-color: #f50057;
-    z-index: 10;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 5.2rem;
+  max-width: 360px;
+  max-height: 170px;
+  background-color: #f50057;
+  z-index: 10;
 }
+
 #notice * {
-    color: #fff;
-    font-size: 18px;
+  color: #fff;
+  font-size: 18px;
 }
+
 a#close-notice {
-    padding: 10px;
-    display: block;
-    float: right;
+  padding: 10px;
+  display: block;
+  float: right;
 }
+
 #notice p {
-    display: block;
-    float: left;
-    padding: 10px;
-    width: 90%;
+  display: block;
+  float: left;
+  padding: 10px;
+  width: 90%;
 }
 
 /*Intro Desktop*/
@@ -166,12 +169,12 @@ a#close-notice {
   font-weight: 300;
 }
 
-#intro-desktop .intro-bg > span {
+#intro-desktop .intro-bg>span {
   font-size: inherit;
   font-weight: 100;
 }
 
-#intro-desktop .intro-bg > span a {
+#intro-desktop .intro-bg>span a {
   text-decoration: inherit;
   color: inherit;
   font-weight: 300;
@@ -228,7 +231,7 @@ a.download-btn {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  text-align: center; 
+  text-align: center;
 }
 
 #intro-mobile span {
@@ -273,7 +276,8 @@ a.download-btn {
   margin: 0 2%;
 }
 
-.feat-col:first-child p, .feat-col:first-child li{
+.feat-col:first-child p,
+.feat-col:first-child li {
   text-align: left;
 }
 
@@ -286,7 +290,9 @@ a.download-btn {
   margin: 1rem 0;
 }
 
-.feat-col p, .feat-col li, .feat-col a {
+.feat-col p,
+.feat-col li,
+.feat-col a {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem;
@@ -321,7 +327,8 @@ a.download-btn {
   margin: 0 auto;
 }
 
-.car-item p.quote, .car-item p.quote b {
+.car-item p.quote,
+.car-item p.quote b {
   font-size: 3.6rem;
   font-weight: 300;
   font-style: italic;
@@ -332,7 +339,7 @@ a.download-btn {
 }
 
 .car-item p.quote b {
-  font-weight:500; 
+  font-weight: 500;
 }
 
 .car-item span {
@@ -399,12 +406,13 @@ footer {
   padding: 1rem .5rem;
 }
 
-.footer-link a, .footer-link a span {
+.footer-link a,
+.footer-link a span {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 .desktop-txt {
@@ -447,62 +455,62 @@ h4 {
 }
 
 input[type="email"] {
-    border: 1px solid #000;
-    border-radius: 0;
-    height: 3.4rem;
-    display: block;
-    padding: 0 .5rem;
-    background: #fff;
-    color: #000;
-    float: left;
-    width: 25rem;
-    outline: none;
-    font-size: 1.6rem;
+  border: 1px solid #000;
+  border-radius: 0;
+  height: 3.4rem;
+  display: block;
+  padding: 0 .5rem;
+  background: #fff;
+  color: #000;
+  float: left;
+  width: 25rem;
+  outline: none;
+  font-size: 1.6rem;
 }
 
 button[type="submit"],
 input[type="submit"] {
-    display: block;
-    height: 3.4rem;
-    border: none;
-    background: #000;
-    padding: 0 10px;
-    border-radius: 0;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: normal;
-    float: left;
-    outline: none;
-    font-size: 1.6rem;
+  display: block;
+  height: 3.4rem;
+  border: none;
+  background: #000;
+  padding: 0 10px;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  float: left;
+  outline: none;
+  font-size: 1.6rem;
 }
 
 form.news-form {
-    display: block;
-    margin: .5rem 0;
+  display: block;
+  margin: .5rem 0;
 }
 
 .newsletter input[type="email"]::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
+  /* Chrome/Opera/Safari */
 
-    color: #000;
+  color: #000;
 }
 
 .newsletter input[type="email"]::-moz-placeholder {
-    /* Firefox 19+ */
+  /* Firefox 19+ */
 
-    color: #000;
+  color: #000;
 }
 
 .newsletter input[type="email"]:-ms-input-placeholder {
-    /* IE 10+ */
+  /* IE 10+ */
 
-    color: #000;
+  color: #000;
 }
 
 .newsletter input[type="email"]:-moz-placeholder {
-    /* Firefox 18- */
+  /* Firefox 18- */
 
-    color: #000;
+  color: #000;
 }
 
 .address {
@@ -538,7 +546,8 @@ section#faq-section {
   margin: 0 auto 3rem auto;
 }
 
-#faq-section p.centered, #faq-section p.centered a {
+#faq-section p.centered,
+#faq-section p.centered a {
   margin-bottom: 2rem;
   font-size: 1.7rem;
   font-weight: 300;
@@ -552,7 +561,7 @@ section#faq-section {
   width: 100%;
 }
 
-.question > a {
+.question>a {
   font-size: 1.8rem;
   color: #000000;
   text-decoration: none;
@@ -615,9 +624,10 @@ section#faq-section {
 
 /*Tablet*/
 
-@media all and (max-width: 800px) and (min-width: 500px){
-  
-  body, html {
+@media all and (max-width: 800px) and (min-width: 500px) {
+
+  body,
+  html {
     font-size: 12px;
     zoom: 80%;
   }
@@ -625,48 +635,49 @@ section#faq-section {
   .section-wrapper {
     width: 100%;
   }
-  
+
   .select-dropdown {
     width: 220px !important;
     font-size: 9px !important;
     padding: 14px !important;
     height: 46px;
   }
-  
+
   .select-dropdown .dropdown {
     width: 220px !important;
     left: -2px !important;
   }
-  
+
   .select-dropdown .dropdown li a {
     width: 217px !important;
     font-size: 9px !important;
     border: none;
   }
-  
-  
+
+
 }
-  
-  
+
+
 
 
 /*Mobile*/
 
 @media all and (max-width: 499px) and (min-width: 300px) {
-  
-  body, html {
+
+  body,
+  html {
     font-size: 12px;
   }
-  
+
   header {
     height: 4rem;
   }
-  
+
   h1 a img {
     height: 2.8rem;
     margin: -.5rem;
   }
-  
+
   .select-dropdown {
     height: 37px;
     border: none;
@@ -674,40 +685,40 @@ section#faq-section {
     padding: 13px 10px !important;
     margin-top: -5px !important;
   }
-  
+
   .select-dropdown .dropdown {
     width: auto !important;
   }
-  
-  header div > a {
+
+  header div>a {
     display: none;
   }
-  
+
   .intro-desktop {
     display: none;
   }
-  
+
   #intro-mobile {
     display: block;
   }
-  
+
   #features {
     padding-bottom: 3rem;
     background: #fff;
   }
-  
+
   .feat-col {
     width: 90%;
     margin: 0 4% 4rem 4%;
   }
-  
+
   #reviews {
     border-top: 1px solid #e5e5e5;
     padding: 4rem 0;
   }
 
   .car-item p.quote,
-  .car-item p.quote b{
+  .car-item p.quote b {
     font-size: 1.9rem;
     line-height: 2.4rem;
   }
@@ -715,19 +726,19 @@ section#faq-section {
   .car-item span {
     font-size: 1.1rem;
   }
-  
+
   #press {
     padding: 1rem 0;
   }
-  
+
   #press .section-wrapper {
     width: 90%;
   }
-  
+
   .press {
     margin: 1rem 0;
   }
-  
+
   .desktop-txt {
     display: none;
   }
@@ -735,7 +746,7 @@ section#faq-section {
   .mobile-txt {
     display: block;
   }
-  
+
   footer {
     padding: 2rem 0;
   }
@@ -752,11 +763,11 @@ section#faq-section {
     border-bottom: 1px solid #f5f5f5;
     margin-right: 0;
   }
-  
+
   div.footer-link:nth-child(n+7) {
     width: 48%;
   }
-  
+
   .newsletter {
     width: 100%;
     text-align: center;
@@ -778,23 +789,24 @@ section#faq-section {
     height: 2.8rem;
     width: 30%;
   }
-  
+
   .address {
     text-align: center;
     padding: 1rem 0;
   }
-  
-  #faq-section p.centered, 
+
+  #faq-section p.centered,
   #faq-section p.centered a,
-  .answer p, .answer p a,
-  .question > a {
+  .answer p,
+  .answer p a,
+  .question>a {
     font-size: 1.4rem;
   }
-  
-  .question > a {
+
+  .question>a {
     padding-right: 4rem;
   }
-  
+
   .question a i {
     margin-right: -3rem;
   }
@@ -802,21 +814,23 @@ section#faq-section {
   #faq-section .section-wrapper {
     width: 90%;
   }
-  
+
   #faq-section h2 {
     font-size: 2.2rem;
   }
-  
+
 }
 
 @media all and (max-width: 350px) and (min-width: 300px) {
   #intro-mobile h2 {
     font-size: 2.4rem;
   }
-  #intro-mobile, #intro-mobile.ch-lang {
+
+  #intro-mobile,
+  #intro-mobile.ch-lang {
     background-size: auto 425px;
   }
-  
+
   #intro-mobile .bottom-info {
     bottom: 0rem;
   }
@@ -825,7 +839,7 @@ section#faq-section {
 
 /*Mid Screen*/
 
-@media all and (max-width: 1400px) and (min-width: 800px){ 
+@media all and (max-width: 1400px) and (min-width: 800px) {
   .select-dropdown {
     height: 32px;
     padding: 10px 10px !important;
@@ -833,12 +847,12 @@ section#faq-section {
 
 }
 
-@media all and (max-width: 1600px) and (min-width: 1400px){ 
+@media all and (max-width: 1600px) and (min-width: 1400px) {
 
   * {
     font-size: 12px;
   }
-  
+
   #intro-desktop .intro-bg.with-images {
     background-image: url('../images/2560_Large_Laptop.png'), url('../images/900_Large_Phone.png');
     background-position: left -130px top 23px, right -100px top -45px;
@@ -855,12 +869,12 @@ section#faq-section {
 
 /*Large Screen*/
 
-@media all and (max-width: 2100px) and (min-width: 1601px){ 
+@media all and (max-width: 2100px) and (min-width: 1601px) {
 
   * {
     font-size: 13px;
   }
-  
+
   #intro-desktop .intro-bg.with-images {
     background-image: url('../images/2560_Large_Laptop.png'), url('../images/1540_Large_Phone.png');
     background-position: left -150px top 23px, right -100px top -45px;
@@ -878,12 +892,12 @@ section#faq-section {
 
 /*Extra Large Screen*/
 
-@media all and (max-width: 3000px) and (min-width: 2101px){ 
+@media all and (max-width: 3000px) and (min-width: 2101px) {
 
   * {
     font-size: 15px;
   }
-  
+
   #intro-desktop .intro-bg.with-images {
     background-image: url('../images/2560_Large_Laptop.png'), url('../images/1540_Large_Phone.png');
     background-position: left -215px top 23px, right -170px top -45px;
@@ -902,3 +916,7 @@ section#faq-section {
 }
 
 
+.min-txt {
+  font-size: 10px;
+  display: inline;
+}

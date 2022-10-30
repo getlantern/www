@@ -1,5 +1,9 @@
 {
+"), <a class=\"download-android\">Android</a>, <a>iOS</a>, <a class=\"download-mac\">Mac</a>,\n      Ubuntu ( <a class=\"download-ubuntu-64\">64bit</a>": "), <a class=\"download-android\">Android</a>, <a>iOS</a>, <a class=\"download-mac\">Mac</a>,\n      Ubuntu ( <a class=\"download-ubuntu-64\">64bit</a>",
+").": ").",
 "- Lantern User comment on GooglePlay Store": "- Lantern User comment on GooglePlay Store",
+"/": "/",
+"32bit": "32bit",
 "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.": "As Lantern users continue to grow, costs of maintaining it increase significantly each month. In order to stick around and keep building and innovating for our users, we need to support our operations by charging a small fee for unlimited service. <br> <br>To keep our free version running, we implemented a bandwidth limitation of 500 MB/ month. When the bandwidth limit is reached, the connection is slowed down and Free users are prompted to upgrade to Lantern Pro.",
 "Better performance": "Better performance",
 "Browsing history": "Browsing history",
@@ -21,6 +25,7 @@
 "Facebook": "Facebook",
 "Fast, reliable and secure <br>access to the open internet": "Fast, reliable and secure <br>access to the open internet",
 "Faster speeds": "Faster speeds",
+"For\n      Windows ( <a class=\"download-windows-64\">64bit</a>": "For\n      Windows ( <a class=\"download-windows-64\">64bit</a>",
 "For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a>iOS</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.": "For <a class=\"download-windows\">Windows</a>, <a class=\"download-android\">Android</a>, <a>iOS</a>, <a class=\"download-mac\">Mac</a>, <a class=\"download-ubuntu\">Ubuntu</a>.",
 "Français": "Français",
 "Frequently Asked Questions": "Frequently Asked Questions",
